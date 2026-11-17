@@ -1,10 +1,11 @@
 # Hardware inventory / 硬體檔案
 
-All four files are byte-for-byte copies of the supplied handover inputs. See [manifest.json](manifest.json) for SHA-256 values, provenance, and mesh measurements.
+All five files are byte-for-byte copies of the supplied handover inputs: three important STL parts and two SolidWorks source files. See [manifest.json](manifest.json) for SHA-256 values, provenance, and mesh measurements.
 
 | File | Purpose | Format / readiness |
 | --- | --- | --- |
-| [sensor_base_adapt_for_thick_PCB.SLDPRT](cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | Revised 9DTact base for thicker camera PCB | Editable SolidWorks source; **STEP and printable STL still needed** |
+| [sensor_base_adapt_for_thick_PCB.STL](mesh/sensor_base_adapt_for_thick_PCB.STL) | **01 ·** Revised 9DTact base for thicker camera PCB | Supplied printable mesh; confirm scale, print settings and fit |
+| [sensor_base_adapt_for_thick_PCB.SLDPRT](cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | Editable source for the base design | SolidWorks source; **STEP still needed**; source configuration/export correspondence not inspected |
 | [isolation_ring_out_11.4_in_10.3.STL](mesh/isolation_ring_out_11.4_in_10.3.STL) | Revised camera isolation ring | Supplied mesh; slicer scale, print settings and fit need confirmation |
 | [finger_tip_tactile_with_chip_holder.STL](mesh/finger_tip_tactile_with_chip_holder.STL) | LEAP fingertip attachment with chip holder | Supplied mesh, derived from official LEAP CAD |
 | [finger_tip_tactile1_wrq.SLDPRT](cad/finger_tip_tactile1_wrq.SLDPRT) | LEAP fingertip attachment source variant | Editable SolidWorks source, derived from official LEAP CAD; **not verified as the source of the chip-holder STL** |
@@ -15,6 +16,7 @@ All four files are byte-for-byte copies of the supplied handover inputs. See [ma
 
 | Mesh | Triangles | Coordinate extents X × Y × Z |
 | --- | ---: | --- |
+| Sensor base | 7,968 | 32.500 × 7.700 × 25.500 |
 | Isolation ring | 586 | 11.300 × 2.800 × 11.400 |
 | Chip-holder fingertip | 1,676 | 34.735 × 42.000 × 35.500 |
 
@@ -22,7 +24,9 @@ STL does not encode units. These are measured numerical mesh bounds, provisional
 
 ## Exporting for fabrication
 
-Open each `.SLDPRT` in a compatible SolidWorks installation. Confirm the active configuration and units, then export STEP for editable exchange and STL for slicing. Record the configuration, STL export tolerance and the source checksum. Re-open the export to compare bounds and important features. Do not simply rename the source extension to `.STL` or assume the two fingertip variants match.
+The three supplied STL files can be opened directly in a slicer after verifying scale. For editable exchange, open each `.SLDPRT` in a compatible SolidWorks installation, confirm the active configuration and units, and export STEP. For any new STL export, record the configuration, export tolerance and source checksum, then compare bounds and important features. Do not simply rename a source extension to `.STL` or assume the two fingertip variants match.
+
+Individual geometry sheets: [base](../assets/parts/sensor-base.png) · [ring](../assets/parts/isolation-ring.png) · [LEAP mount](../assets/parts/leap-fingertip.png). [Rotating preview](../assets/parts-turntable.gif). The display rotation only changes the view; source files remain unchanged.
 
 Base, ring and mount print materials, layer heights, supports and orientation are not in the supplied notes. Record the lab's successful settings before publishing a validated recipe. **The white optical shell cannot be printed in PLA and is reused in this revision.**
 

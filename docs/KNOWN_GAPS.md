@@ -4,7 +4,8 @@ This is a status list, not a claim that the build has passed verification.
 
 ## Manufacturing
 
-- [ ] Export `sensor_base_adapt_for_thick_PCB.SLDPRT` as STEP and STL; verify units and geometry against the supplied source.
+- [x] Include the builder-supplied `sensor_base_adapt_for_thick_PCB.STL` alongside its same-name SolidWorks source.
+- [ ] Export the sensor base as STEP; verify its source configuration, STL scale and physical fit.
 - [ ] Export the LEAP SolidWorks variant to STEP; determine whether it matches the supplied chip-holder STL or is a distinct variant.
 - [ ] Add the **actual 3D printed mold files**, material, surface preparation, sealing method, release method, and successful print settings. Do not order acrylic molds from the original BOM.
 - [ ] Add the camera-window manufacturing drawing, exact thickness, tolerances, and Hazaiya quotation specification.

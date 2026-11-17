@@ -11,16 +11,17 @@ def cell(value):
     return str(value).replace('|', '\\|').replace('\n', '<br>')
 
 
-def render(data):
+def render_zh(data):
     lines = [
-        '# Japan BOM / 日本採購與製作表', '',
+        '# 日本採購與製作表', '',
+        '[English BOM](BOM_JP.md) · **繁體中文**', '',
         f'查核日期：{data["review_date"]}。此表由 [bom_jp.json](bom_jp.json) 產生。', '',
         '**這是採購交接草稿，尚未完成日本材料的整機重製驗證。** 相機是製作者曾購買的 Amazon JP 項目；其他 Amazon「搜尋」連結不是已核實商品、庫存或相容性保證。未取得各材料耗用量與修改後五金數量，不能據此計算整機成本。', '',
         '★ = 製作者指定沿用並跳過採購。`builder_purchased` = 製作者曾買過，並非本次重測。`candidate` = 有可查的候選供應來源，須實測。`search_only` = 只有搜尋／選型入口。`fabrication_required` = 須加工／列印，可能仍缺生產檔。`conditional` / `optional` = 先確認需求。', '',
         '## 優先處理', '',
         '- 第二層：保留淘寶 Shore 0 號為目前已知實作；日本 Shore A 0 等效品尚未核實。[材料研究與小樣方案](../docs/MATERIALS.zh-TW.md)。',
         '- Window：透明壓克力送 Hazaiya，需補最終圖面；模具用 3D 列印，**不購買原版壓克力模具板**。',
-        '- 底座先補 STL/STEP；取得列印模具檔；相機的 USB 轉接板是否另購先核對變體。',
+        '- 底座 STL 已補齊；取得列印模具檔與 window 圖面；相機的 USB 轉接板是否另購先核對變體。',
         '- Ecoflex 日本個別商品頁出現「売り切れ」；頁面存在不等於有貨，交期須另確認。', '',
     ]
     for section in data['sections']:
@@ -44,20 +45,63 @@ def render(data):
     return '\n'.join(lines)
 
 
+def render_en(data):
+    lines = [
+        '# Japan BOM and fabrication list', '',
+        '**English** · [繁體中文](BOM_JP.zh-TW.md)', '',
+        f'Last reviewed: {data["review_date"]}. Generated from [bom_jp.json](bom_jp.json).', '',
+        'This handover lists Japan sourcing routes and fabrication requirements. The camera is a builder-reported Amazon Japan purchase. Other Amazon **search** links are not verified listings, stock confirmation or qualified substitutes. Material consumption and modified-build fastener quantities are not yet recorded; no total build cost is claimed.', '',
+        '## Read the status before buying', '',
+        '| Status | Meaning |',
+        '| --- | --- |',
+        '| `builder_purchased` | Builder previously purchased the linked product; not re-tested in this review |',
+        '| `candidate` | Identified candidate / supplier; physical compatibility still needs validation |',
+        '| `search_only` | Search and selection route only; no exact SKU verified |',
+        '| `fabrication_required` | Print or machine the part; check file and setting readiness |',
+        '| `conditional` / `optional` | Confirm whether it is needed before purchasing |',
+        '| `reuse_skip` · ★ | Reuse the existing lab assembly; procurement is intentionally deferred |', '',
+        '## First decisions', '',
+        '- **Layer 2:** keep the Taobao Shore 0 option as the recorded build material. A Japan-sourced Shore A 0 equivalent is not qualified. [Material research and sample-test plan](../docs/MATERIALS.zh-TW.md) (Chinese).',
+        '- **Window:** outsource the clear acrylic optical window to Hazaiya after checking the drawing. **3D print the casting molds; do not order the original acrylic mold plates.**',
+        '- **Camera:** record the purchased variant and check whether USB conversion is already included.',
+        '- **Reusable parts:** keep the existing ★ LED board and ★ white shell. **Do not print the white shell in PLA.**',
+        '- **Stock:** reviewed individual SAC Ecoflex pages displayed sold-out text. Confirm the selected pack, stock and delivery directly.', '',
+    ]
+    for section in data['sections']:
+        lines += [f'## {section["title_en"]}', '',
+                  '| ID / item | Quantity basis | Specification / candidate | Japan source / file | Status and checks |',
+                  '| --- | --- | --- | --- | --- |']
+        for item in data['items']:
+            if item['section'] != section['id']:
+                continue
+            links = '<br>'.join(f'[{cell(link["label_en"])}]({link["url"]})' for link in item['links']) or 'Reuse existing assembly'
+            row = [f'**{item["id"]}**<br>{item["name_en"]}', item['quantity_basis_en'],
+                   item['specification_en'], links,
+                   f'`{item["status"]}`<br>{item["validation_note_en"]}']
+            lines.append('| ' + ' | '.join(cell(value) for value in row) + ' |')
+        lines.append('')
+    lines += ['## Keep the next build reproducible', '',
+              'Legacy purchasing references: [TAOBAO_REFERENCE.md](TAOBAO_REFERENCE.md). Original-design fastener counts are references, not measurements of the modified assembly. Resolve the legacy `M2-5-3` dimensional order against its drawing before selecting inserts.', '',
+              'To mark an item `lab_validated`, add its exact product/variant, date, material or fabrication settings and a completed [build record](../docs/BUILD_RECORD_TEMPLATE.md). Recalibrate after changing the camera, optical parts, silicone or mechanics; separately validate any learned force model.', '',
+              'Prices, shipping origin, stock and shipping cost are not verified. Japanese lab purchase history has not been invented for any candidate.', '']
+    return '\n'.join(lines)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
     data = json.loads((ROOT / 'bom/bom_jp.json').read_text())
-    content = render(data)
-    target = ROOT / 'bom/BOM_JP.md'
-    if args.check:
-        if not target.exists() or target.read_text() != content:
-            raise SystemExit('BOM_JP.md is stale; run python3 scripts/render_bom.py')
-        print(f'BOM table matches JSON: {len(data["items"])} entries')
-    else:
-        target.write_text(content)
-        print(f'Wrote {target.relative_to(ROOT)}')
+    for name, renderer in [('BOM_JP.md', render_en), ('BOM_JP.zh-TW.md', render_zh)]:
+        content = renderer(data)
+        target = ROOT / 'bom' / name
+        if args.check:
+            if not target.exists() or target.read_text() != content:
+                raise SystemExit(f'{name} is stale; run python3 scripts/render_bom.py')
+            print(f'{name} matches JSON: {len(data["items"])} entries')
+        else:
+            target.write_text(content)
+            print(f'Wrote {target.relative_to(ROOT)}')
 
 
 if __name__ == '__main__':

@@ -1,75 +1,136 @@
 # 9DTact-HashimotoLab
 
-**9DTact hardware adaptations, LEAP Hand fingertips, and fabrication handover in Japan.**
+**A visual hardware handover for 9DTact + LEAP Hand, fabricated in Japan.**<br>
+9DTact 硬體修改、LEAP Hand 固定件與實驗室製作交接。
 
-[繁體中文交接指南](docs/HANDOVER.zh-TW.md) · [Japan BOM / 日本採購表](bom/BOM_JP.md) · [Hardware files](hardware/README.md) · [Build record](docs/BUILD_RECORD_TEMPLATE.md)
+[交接指南](docs/HANDOVER.zh-TW.md) · [BOM · English](bom/BOM_JP.md) · [BOM · 繁中](bom/BOM_JP.zh-TW.md) · [硬體下載](hardware/README.md) · [製作紀錄](docs/BUILD_RECORD_TEMPLATE.md)
 
-![Actual supplied STL meshes](assets/mesh-preview.png)
+![Three key parts: modified sensor base, isolation ring and LEAP fingertip mount](assets/mesh-preview.png)
 
-This repository records the Hashimoto Lab build of [9DTact](https://github.com/linchangyi1/9DTact). It focuses on the hardware changes and practical fabrication knowledge needed by the next lab member. Use the upstream repository for software and calibration.
+This build adapts [9DTact](https://github.com/linchangyi1/9DTact) for the lab's camera PCB and LEAP Hand mounting. This companion repository collects the modified parts, fabrication choices and Japan sourcing notes; software and calibration remain upstream.
 
-**Status: initial handover draft, 2026-11-18.** The supplied CAD/STL files and the builder's decisions are preserved. Japanese replacement materials, missing manufacturing exports, and printing settings still need validation. This is not yet a fully reproduced build from a verified Japanese shopping list.
+> **Handover in progress / 交接整理中** — All three important STL parts are included. Silicone, assembly and practical know-how photographs will be added by the builder. Japanese replacement materials and print settings still need physical validation.
 
-## What changed
+## Three parts to know first / 三個重要零件
 
-| Area | Hashimoto Lab build | Evidence / files |
+The numbers and colors below match the overview. Each STL link opens the actual mesh file; source CAD is linked separately.
+
+| Part | What changed / 用途 | Files |
 | --- | --- | --- |
-| Second, translucent silicone layer | Taobao material, **Shore A 0** option, replacing the original BOM's Shore A 5 | Builder confirmed; exact product SKU and datasheet still needed |
-| Sensor base | Adapted for a thicker camera PCB | [SolidWorks source](hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT); STEP/STL export needed |
-| Camera isolation ring | Revised ring | [STL](hardware/mesh/isolation_ring_out_11.4_in_10.3.STL) |
-| LEAP Hand mounting | Modified official LEAP fingertip CAD, including a chip holder variant | [STL](hardware/mesh/finger_tip_tactile_with_chip_holder.STL), [SolidWorks source](hardware/cad/finger_tip_tactile1_wrq.SLDPRT); the two files are **not verified as the same revision** |
-| Camera | Builder's previously purchased Amazon Japan item | [ASIN B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65); selected variant and USB interface need recording |
-| Acrylic camera window | Outsource to **はざいや / Hazaiya** | [Vendor](https://www.hazaiya.co.jp/), [drawing quotation](https://www.hazaiya.co.jp/index.php/estimate-drawing); final window drawing needed |
-| Casting molds | **3D printed**, rather than acrylic molds | Builder confirmed process; mold files and successful print settings not yet supplied |
-| ★ LED board | **Reuse existing assembly; skip procurement in this handover** | Not replaced by a generic LED ring |
-| ★ White sensor shell | **Reuse existing shell; do not print in PLA** | Optical/material requirements matter; no replacement material qualified here |
+| **01 · Sensor base** | Adapted for a **thicker camera PCB**／加厚 PCB 底座 | [STL](hardware/mesh/sensor_base_adapt_for_thick_PCB.STL) · [SolidWorks](hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) |
+| **02 · Isolation ring** | Revised **camera light isolation** geometry／相機隔光環 | [STL](hardware/mesh/isolation_ring_out_11.4_in_10.3.STL) |
+| **03 · LEAP fingertip mount** | Connects the tactile sensor to **LEAP Hand**, with a chip holder／含晶片固定位置 | [STL](hardware/mesh/finger_tip_tactile_with_chip_holder.STL) · [SolidWorks variant](hardware/cad/finger_tip_tactile1_wrq.SLDPRT) |
 
-STL preview shows the two supplied meshes separately. It is not an assembly drawing, dimensional certification, or proof of fit. STL coordinates are provisionally interpreted as millimetres; confirm scale in the slicer.
+### 01 · Sensor base / 加厚 PCB 底座
 
-## Start here
+The replacement base accommodates the builder's thicker camera PCB. Inspect the camera seat, fastener access and lens clearance before printing or assembling.
 
-1. Read the [Chinese handover](docs/HANDOVER.zh-TW.md) and [known gaps](docs/KNOWN_GAPS.md).
-2. Check the [hardware inventory](hardware/README.md). Export the base from SolidWorks before printing; obtain the lab's mold files.
-3. Use the [Japan BOM](bom/BOM_JP.md). Only the camera is a builder-reported Amazon purchase. **Amazon search links are sourcing routes, not verified listings or approved substitutes.**
-4. Keep the existing ★ LED board and ★ white shell. Order the acrylic window through Hazaiya using a checked drawing.
-5. Record each silicone batch and print job in a [build record](docs/BUILD_RECORD_TEMPLATE.md), then validate the assembled sensor and recalibrate using upstream software.
+[![Sensor base: perspective, opposite side, face view and edge view](assets/parts/sensor-base.png)](hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)
 
-## Repository layout
+**Use:** [sensor_base_adapt_for_thick_PCB.STL](hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)<br>
+**Edit:** [SolidWorks source](hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) · STEP export still needed.
 
-```text
-hardware/cad/       Supplied SolidWorks sources
-hardware/mesh/      Supplied STL files
-hardware/manifest.json  Checksums, measured mesh bounds, provenance
-bom/               Japanese sourcing table and Taobao cross-reference
-docs/              Handover, material selection, window outsourcing, build records
-assets/            Preview of actual supplied STL geometry
-scripts/           Inventory verification and BOM rendering
-LICENSES/          Scoped notices; see LICENSE.md
+### 02 · Camera isolation ring / 相機隔光環
+
+The revised ring is the light-isolation part around the camera optical path. Check its installed fit and the image near the sensing-area edges.
+
+[![Camera isolation ring: perspective, opposite side, face view and edge view](assets/parts/isolation-ring.png)](hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)
+
+**Use:** [isolation_ring_out_11.4_in_10.3.STL](hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)<br>
+The filename is preserved; its numbers are not a substitute for checking the geometry and mating parts.
+
+### 03 · LEAP fingertip mount / LEAP Hand 連接固定件
+
+Modified from official LEAP Hand fingertip CAD to hold the tactile sensor. The supplied STL includes a chip holder. Check joint travel, cable clearance and the mounting screws on the actual hand.
+
+[![LEAP fingertip with chip holder: perspective, opposite side, face view and edge view](assets/parts/leap-fingertip.png)](hardware/mesh/finger_tip_tactile_with_chip_holder.STL)
+
+**Use:** [finger_tip_tactile_with_chip_holder.STL](hardware/mesh/finger_tip_tactile_with_chip_holder.STL)<br>
+**Related editable variant:** [finger_tip_tactile1_wrq.SLDPRT](hardware/cad/finger_tip_tactile1_wrq.SLDPRT). The source/export relationship between these two variants has not been verified.
+
+<details>
+<summary><strong>360° rotating preview / 旋轉查看三個零件</strong></summary>
+
+<img src="assets/parts-turntable.gif" alt="Rotating views of all three actual STL parts" width="1200">
+
+</details>
+
+All images are rendered from the **actual supplied STL files**. Parts are shown separately at independent scales. Views do not specify print orientation or demonstrate assembly fit. STL has no embedded units; confirm the intended millimetre scale in the slicer. [File hashes, bounds and provenance →](hardware/README.md)
+
+## Fabrication at a glance / 製作路線
+
+```mermaid
+flowchart LR
+    A[Review the 3 STL parts] --> B[Print custom parts and molds]
+    B --> D[Cast silicone layers]
+    C[Order acrylic window from Hazaiya] --> D
+    D --> E[Assemble with reused LED and white shell]
+    E --> F[Mount to LEAP and recalibrate]
 ```
 
-The original five input files remain untouched in the parent handover folder. The original Taobao `.docx` is source material there; it is not bundled into the public-source draft.
+| Item | Lab decision / 本版做法 | Go to |
+| --- | --- | --- |
+| **Camera** | Builder previously purchased **Amazon JP B0C5W1QF65**; record the selected variant and USB interface | [Camera product](https://www.amazon.co.jp/dp/B0C5W1QF65) |
+| **Second silicone layer** | Original Taobao product, **Shore 0 option / Shore A 0**; replaces the original BOM's 5A option | [Material notes & Japan candidates](docs/MATERIALS.zh-TW.md) |
+| **Acrylic window** | Outsource **only the optical window** to **はざいや / Hazaiya** | [Vendor](https://www.hazaiya.co.jp/) · [Drawing / quotation guide](docs/WINDOW_OUTSOURCING.zh-TW.md) |
+| **Casting molds** | **3D print the molds**; do not order the original acrylic mold plates | [Mold files / settings to add](docs/KNOWN_GAPS.md) |
+| **★ LED board** | **Reuse existing assembly — skip procurement** | [BOM](bom/BOM_JP.md) |
+| **★ White shell** | **Reuse existing shell — do not print in PLA** | [Handover](docs/HANDOVER.zh-TW.md) |
 
-## Why a separate repository?
+Only the camera has builder-reported Amazon purchase evidence. Other Amazon search links are marked as sourcing routes. Japan silicone candidates are not yet qualified replacements. [Full BOM →](bom/BOM_JP.md)
 
-This is a focused companion to 9DTact rather than a fork of its complete software, datasets, and models. Upstream fabrication files remain [here](https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication). Our replacements and their provenance are listed explicitly. A companion repository also makes it easier to maintain Japanese procurement notes independently.
+## Practical photographs / 實作照片待補
 
-## Attribution and licenses
+The builder will add real silicone and fabrication photographs. The CAD renders above cover the supplied geometry; they do not stand in for assembly photographs.
 
-9DTact: Changyi Lin, Han Zhang, Jikai Xu, Lei Wu, and Huazhe Xu. [Project](https://linchangyi1.github.io/9DTact/) · [Paper](https://arxiv.org/abs/2308.14277).
+| Photo set | What the next builder should be able to see |
+| --- | --- |
+| **Assembled sensor & LEAP mount** | Final orientation, fastening and cable routing |
+| **Camera / PCB fit** | PCB thickness, seating, screw access and lens clearance |
+| **Three silicone layers** | Actual material packaging, Shore 0 selection and layer sequence |
+| **Printed molds & casting** | Mold shape, surface preparation, sealing, demolding and common failures |
+| **Finished contact surface** | Black coating and sides, good/failed examples, no-contact and contact images |
 
-LEAP Hand: Kenneth Shaw, Ananye Agarwal, and Deepak Pathak. [Project](https://v1.leaphand.com/) · [Official CAD access and terms](https://v1.leaphand.com/cad_request).
+Photo filenames and caption guidance: [assets/photos/README.md](assets/photos/README.md). Add the actual settings and results to a [build record](docs/BUILD_RECORD_TEMPLATE.md).
 
-**Licenses are scoped by file, not blanket MIT.** Original documentation/scripts are MIT; the 9DTact-derived base and ring preserve the upstream MIT notice. LEAP-derived fingertips retain their applicable upstream CAD terms. The original LEAP CAD license supplied with the builder's download has not yet been archived; current official pages give conflicting terms. See [LICENSE.md](LICENSE.md) and [NOTICE.md](NOTICE.md) before redistribution or commercial use. Public release of these two fingertip files needs that discrepancy resolved.
+## Build and hand over / 接手順序
 
-## Contributing fabrication knowledge
+1. Read the [Chinese handover](docs/HANDOVER.zh-TW.md); identify the reused LED board and white shell.
+2. Download the **three STL parts**, confirm scale and dry-fit the camera. Obtain the lab's printed-mold files and settings.
+3. Check the [Japan BOM](bom/BOM_JP.md), prepare the window drawing and test any replacement silicone in small samples.
+4. Assemble, record the fabrication settings, test the LEAP mount through its intended motion, then recalibrate with [upstream 9DTact](https://github.com/linchangyi1/9DTact#3d-shape-reconstruction).
 
-For a replacement part, include the exact seller/SKU, selected variant, date, CAD revision, photos, and what was physically tested. A link found online alone does not establish compatibility. Use the issue templates for a fabrication result or sourcing update.
+**Still to add:** mold files, STEP exports, the final window drawing, print/casting parameters and the builder's photographs. [Complete gap list →](docs/KNOWN_GAPS.md)
 
-## Local checks
+## Credit and file licenses
+
+**9DTact:** Changyi Lin, Han Zhang, Jikai Xu, Lei Wu and Huazhe Xu. [Project](https://linchangyi1.github.io/9DTact/) · [Paper](https://arxiv.org/abs/2308.14277) · [Original fabrication files](https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication).
+
+**LEAP Hand:** Kenneth Shaw, Ananye Agarwal and Deepak Pathak. [Project](https://v1.leaphand.com/) · [Official CAD terms](https://v1.leaphand.com/cad_request).
+
+Licenses are scoped by file: original documentation/scripts and the 9DTact-derived base/ring use MIT terms. LEAP-derived fingertips retain their applicable upstream CAD terms; conflicting official license descriptions still need to be reconciled against the source download. [License scope](LICENSE.md) · [Attribution](NOTICE.md) · [Evidence sources](docs/SOURCES.md)
+
+<details>
+<summary>Repository layout and local checks</summary>
+
+```text
+hardware/cad/        SolidWorks source files
+hardware/mesh/       Three important STL parts
+hardware/manifest.json  Checksums, bounds and provenance
+assets/parts/        Individual multi-view geometry sheets
+assets/photos/      Guidance for the builder's future photographs
+bom/                Japanese sourcing and original Taobao cross-reference
+docs/               Handover, materials, window outsourcing and build records
+scripts/            Inventory checks, BOM rendering and STL preview rendering
+```
 
 ```bash
 python3 scripts/verify_repository.py
 python3 scripts/render_bom.py --check
+# Optional: regenerate geometry figures (numpy, Pillow)
+python3 scripts/render_mesh_preview.py --animate
 ```
 
-These checks verify file integrity and documentation structure. They cannot establish physical fit, silicone performance, availability, or sensor accuracy.
+These checks verify file integrity, local links and BOM consistency, rather than physical fit or material performance. Original files remain unchanged in the parent handover folder. The original Taobao Word document is not bundled here. [Publication notes](docs/PUBLISHING.md)
+
+</details>

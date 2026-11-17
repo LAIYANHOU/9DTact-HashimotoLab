@@ -12,7 +12,35 @@
       "sha256": "7d21a7ae9dfd7dd1c9dd593abbc1bd24ae5f8e3be4c9a15f0e136fd0f8642cea",
       "purpose": "9DTact base adapted for thicker PCB",
       "license_note": "9DTact-derived; upstream MIT notice retained",
-      "readiness": "SolidWorks source; no printable export supplied"
+      "readiness": "SolidWorks source; matching-name STL supplied separately; configuration correspondence not inspected"
+    },
+    {
+      "path": "hardware/mesh/sensor_base_adapt_for_thick_PCB.STL",
+      "original_filename": "sensor_base_adapt_for_thick_PCB.STL",
+      "bytes": 398484,
+      "sha256": "21986b5870aa7ef72465fa3d9a84e3daf725cff0df29154e88256082df61bc1e",
+      "purpose": "User-supplied STL of sensor base adapted for thicker camera PCB",
+      "license_note": "9DTact-derived; upstream MIT notice retained",
+      "readiness": "Supplied mesh; print settings, scale and physical fit need confirmation",
+      "mesh": {
+        "triangles": 7968,
+        "coordinate_min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate_max": [
+          32.5,
+          7.699999809265137,
+          25.5
+        ],
+        "coordinate_extents": [
+          32.5,
+          7.699999809265137,
+          25.5
+        ],
+        "binary_stl_size_valid": true
+      }
     },
     {
       "path": "hardware/mesh/isolation_ring_out_11.4_in_10.3.STL",

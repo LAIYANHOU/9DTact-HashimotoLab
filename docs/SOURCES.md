@@ -4,7 +4,7 @@ Reviewed on 2026-11-18. The distinction between builder reports, source document
 
 ## Builder-provided evidence
 
-- Four local hardware files, preserved byte-for-byte; [checksums and inventory](../hardware/manifest.json).
+- Five local hardware files, preserved byte-for-byte; [checksums and inventory](../hardware/manifest.json).
 - Original `9DTact_BOM.docx`, retained in the parent folder; [24 cleaned source product references](../bom/TAOBAO_REFERENCE.md).
 - Second-layer material: original Taobao translucent-silicone product, selected Shore 0 option; builder describes it as Shore A 0. No Japanese purchase of this material.
 - Camera previously purchased: [Amazon Japan ASIN B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65).

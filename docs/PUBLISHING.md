@@ -22,4 +22,4 @@ gh repo create 9DTact-HashimotoLab --public --source=. --remote=origin --push \
 
 The command creates a public repository under the authenticated account. For a lab organization, use `ORGANIZATION/9DTact-HashimotoLab` as the name. Do not run it against an existing repository without first inspecting that repository and its remotes.
 
-After publication, verify the GitHub URL, default branch, four hardware files, license notices, image rendering and README links. An optional later release can add completed mold files, verified Japan material choices, assembly photographs and a reproducible build record.
+After publication, verify the GitHub URL, default branch, five hardware files, license notices, image rendering and README links. An optional later release can add completed mold files, verified Japan material choices, assembly photographs and a reproducible build record.

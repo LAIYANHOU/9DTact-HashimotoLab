@@ -9,7 +9,7 @@
 | 項目 | 本版決定 | 接手時的注意事項 |
 | --- | --- | --- |
 | 第二層半透明矽膠 | 同一個淘寶商品選 **Shore 0 號／製作者描述為 Shore A 0** | 原 BOM 是 Shore A 5；尚未取得 0 號 SKU 的型號與技術資料，不能沿用 5A 配方當作已驗證流程 |
-| 底座 | `sensor_base_adapt_for_thick_PCB.SLDPRT` | 配合較厚 PCB；目前沒有 STEP／STL，也沒有量測 PCB 厚度與間隙 |
+| 底座 | `sensor_base_adapt_for_thick_PCB.SLDPRT` | 配合較厚 PCB；已補 STL；尚缺 STEP，也未量測 PCB 厚度與間隙 |
 | 相機隔光環 | `isolation_ring_out_11.4_in_10.3.STL` | 檔名尺寸不等於已量測內外徑，請依幾何和實物確認 |
 | LEAP 固定件 | `finger_tip_tactile_with_chip_holder.STL`、`finger_tip_tactile1_wrq.SLDPRT` | 從官方 LEAP CAD 修改；兩檔未核對是否同版本，不可直接視為 source/export 配對 |
 | 相機 | [Amazon JP B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65) | 製作者曾買過；完整型號、選購變體、鏡頭 FOV、PCB 厚度與 USB 介面尚未記錄 |
@@ -21,7 +21,7 @@
 ## 製作前準備
 
 1. 清點現有 LED 板、白色外殼及其螺絲，先拍照記錄組裝與接線。這兩項目前是重製此版本的既有零件依賴。
-2. 讀 [hardware/README.md](../hardware/README.md)，從 SolidWorks 匯出底座 STEP/STL；量測現有相機及 PCB，再做乾裝。
+2. 讀 [hardware/README.md](../hardware/README.md)，下載新增底座 STL、核對比例；需要交換 CAD 時再匯出 STEP，並量測現有相機及 PCB 後乾裝。
 3. 取得模具的列印檔。若必須重新建模，先參考上游模具幾何，核對現有外殼與接觸層厚度；上游平面 DXF 不能直接送進切片軟體當成立體模具。
 4. 依 [window 發包說明](WINDOW_OUTSOURCING.zh-TW.md) 確認圖面後詢價。此處提供的是準備流程，尚未向廠商送件或下單。
 5. 依 [日本 BOM](../bom/BOM_JP.md) 逐項選型。實驗室沒有日本購入第二層矽膠的既有驗證結果；先按 [材料替換紀錄](MATERIALS.zh-TW.md) 做小樣。
@@ -55,6 +55,6 @@
 
 ## 哪些地方最需要補
 
-優先補齊：模具列印檔、底座的 STL/STEP、window 最終圖面、Shore 0 實際包裝／配方、相機選購變體、LEAP 固定方式及各列印參數。完整清單見 [KNOWN_GAPS.md](KNOWN_GAPS.md)。
+優先補齊：模具列印檔、底座的 STEP、window 最終圖面、Shore 0 實際包裝／配方、相機選購變體、LEAP 固定方式及各列印參數。完整清單見 [KNOWN_GAPS.md](KNOWN_GAPS.md)。
 
-原始資料是父資料夾中的 `9DTact_BOM.docx` 和四個 CAD／STL；本 repo 的硬體檔為逐位元複本，原檔未移動或覆寫。
+原始資料是父資料夾中的 `9DTact_BOM.docx` 和五個 CAD／STL；本 repo 的硬體檔為逐位元複本，原檔未移動或覆寫。
