@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-18",
+  "upstream_repository": "https://github.com/linchangyi1/9DTact",
+  "upstream_revision": "main viewed 2026-11-18; commit not pinned",
+  "coordinate_units": "STL has no units; mm assumed provisionally, slicer verification required",
+  "files": [
+    {
+      "path": "hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT",
+      "original_filename": "sensor_base_adapt_for_thick_PCB.SLDPRT",
+      "bytes": 263147,
+      "sha256": "7d21a7ae9dfd7dd1c9dd593abbc1bd24ae5f8e3be4c9a15f0e136fd0f8642cea",
+      "purpose": "9DTact base adapted for thicker PCB",
+      "license_note": "9DTact-derived; upstream MIT notice retained",
+      "readiness": "SolidWorks source; no printable export supplied"
+    },
+    {
+      "path": "hardware/mesh/isolation_ring_out_11.4_in_10.3.STL",
+      "original_filename": "isolation_ring_out_11.4_in_10.3.STL",
+      "bytes": 29384,
+      "sha256": "c4f85997f9e1d2a9774c66b75fd4af51fe5e319d83b42c1d2176736a94cccab9",
+      "purpose": "Revised camera isolation ring",
+      "license_note": "9DTact-derived; upstream MIT notice retained",
+      "readiness": "Mesh; print settings and fit unverified",
+      "mesh": {
+        "triangles": 586,
+        "coordinate_min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coordinate_max": [
+          11.300000190734863,
+          2.799999952316284,
+          11.40000057220459
+        ],
+        "coordinate_extents": [
+          11.300000190734863,
+          2.799999952316284,
+          11.40000057220459
+        ],
+        "binary_stl_size_valid": true
+      }
+    },
+    {
+      "path": "hardware/cad/finger_tip_tactile1_wrq.SLDPRT",
+      "original_filename": "finger_tip_tactile1_wrq.SLDPRT",
+      "bytes": 303147,
+      "sha256": "9402dde3109a350ae6d79ea660f2cb4e81d87a3622bebd03da30d16fae72d7d6",
+      "purpose": "LEAP fingertip attachment source variant",
+      "license_note": "Official LEAP CAD derivative; original grant/version unresolved",
+      "readiness": "Source/export correspondence with supplied STL unverified"
+    },
+    {
+      "path": "hardware/mesh/finger_tip_tactile_with_chip_holder.STL",
+      "original_filename": "finger_tip_tactile_with_chip_holder.STL",
+      "bytes": 83884,
+      "sha256": "f4ae97af28a99cc66cab7254facc85c30199a7163e8edebb6c804c5c9fa51388",
+      "purpose": "LEAP fingertip attachment with chip holder",
+      "license_note": "Official LEAP CAD derivative; original grant/version unresolved",
+      "readiness": "Mesh; source/export correspondence unverified",
+      "mesh": {
+        "triangles": 1676,
+        "coordinate_min": [
+          0.0,
+          0.0,
+          -2.0061770880964027e-30
+        ],
+        "coordinate_max": [
+          34.7354850769043,
+          42.0,
+          35.5
+        ],
+        "coordinate_extents": [
+          34.7354850769043,
+          42.0,
+          35.5
+        ],
+        "binary_stl_size_valid": true
+      }
+    }
+  ]
+}
