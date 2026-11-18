@@ -1,0 +1,17 @@
+Use case: compositing / scientific-educational.
+Asset type: wide high-resolution technical instructional comparison for the GitHub README of 9DTact-HashimotoLab. Create a polished landscape infographic, around 2000 by 1400 pixels, white or very pale blue-gray background, crisp readable English typography.
+Input image 1 is a REAL tutorial frame showing hand pressure on translucent silicone, to be used ONLY in the top-left panel. Input image 2 is a REAL tutorial frame showing hand pressure on black silicone, to be used ONLY in the bottom-left panel. Preserve the actual photographic image content in these left panels; crop away black video pillarboxing and subtitles if needed to fit, do not invent or alter the hands or sensor. Attribute them visibly as tutorial frames. Do NOT describe the source tutorial as universally wrong; this is a lab-specific alternative procedure.
+Composition: a 2-by-2 comparison. Top row is Layer 2 (translucent). Bottom row is Layer 3 (black). Left column is the tutorial method with a clear red X per photo. Right column is a clean, precise, softly shaded technical illustration of the lab's utility-knife release method, with a small teal check. Consistent spacing and readable hierarchy. Avoid excess text.
+Exact text:
+Main title: "Demolding: release the interface"
+Subtitle: "Hashimoto Lab method • Layers 2 and 3"
+Left column heading: "Tutorial: finger-pressure release"
+Right column heading: "Lab method: utility-knife release"
+Row labels: "LAYER 2 • TRANSLUCENT" and "LAYER 3 • BLACK"
+Left captions: "Do not press or pull the silicone edge by hand."
+Right captions: "Carefully separate along the mold–silicone interface."
+Right illustration labels: "Mold", "Silicone", "Utility knife", "Release interface"
+Bottom instruction: "Follow the perimeter. Keep the blade at the interface; do not cut into the sensing surface."
+Small footer: "Reference tutorial: youtube.com/watch?v=VxMceWVz7QQ • Right panels are schematics, not process photographs."
+Right illustrations MUST accurately communicate the following: silicone is a soft rectangular pad held within a surrounding rigid mold frame. In top row pad is pale milky translucent silicone. In bottom row pad has a thin black upper skin and light translucent substrate. Show a realistic small retractable utility knife with a short silver blade. Its tip is at ONE OUTER SIDE SEAM BETWEEN the silicone pad and the inner mold wall. The knife cuts the adhesion at this interface, NOT a line through the middle of the silicone and NOT through the thickness of the sensing pad. The silicone sensing surface must remain intact. Use a short teal perimeter arrow along a wall and a small magnified cross-section inset if needed to make the boundary separation unmistakable: rigid mold wall next to silicone pad, thin blade between them. Blade should be parallel to the mold wall, only at the seam. Draw no person or hand in the right schematic, no surgical blade, no injury. Do not invent cutting depths, dimensions or temperatures. Right schematics should use a gray solid mold to suggest printed molds, without pretending to reproduce unsupplied mold CAD. Exaggerate the tiny seam for clarity and label it "Release interface". Use a warm amber/gray knife handle, teal arrows, dark ink labels.
+Keep red X marks visible but leave hand/silicone interaction legible. Red X means not the chosen lab method. Do not cross out or refer to hot-melt adhesive removal, which is a separate step. No additional panels, no watermarks, no new branding.

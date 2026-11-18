@@ -79,6 +79,16 @@ flowchart LR
 
 Only the camera has builder-reported Amazon purchase evidence. Other Amazon search links are marked as sourcing routes. Japan silicone candidates are not yet qualified replacements. [Full BOM →](bom/BOM_JP.md)
 
+## Demolding: a lab-specific change / 脫模方式修改
+
+After **layer 2 (translucent)** and **layer 3 (black)**, we use a **utility knife to carefully release the mold–silicone interface**, instead of pressing or pulling the silicone edge by hand as shown in the [assembly tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ).
+
+![Layer 2 and layer 3 demolding comparison: tutorial finger-pressure method on the left and utility-knife interface release on the right](assets/process/demolding-comparison.png)
+
+**Follow the perimeter at the mold–silicone seam. Do not cut through the silicone or into the sensing surface.** The right panels are schematics; the red X marks the tutorial action replaced in this lab build. [English instructions / 繁中說明 →](docs/DEMOLDING.md)
+
+第二層與第三層都不用手指壓開或拉開矽膠邊緣；改用美工刀沿模具與矽膠的交界小心分離。移除熱熔膠條是另一個步驟。
+
 ## Practical photographs / 實作照片待補
 
 The builder will add real silicone and fabrication photographs. The CAD renders above cover the supplied geometry; they do not stand in for assembly photographs.

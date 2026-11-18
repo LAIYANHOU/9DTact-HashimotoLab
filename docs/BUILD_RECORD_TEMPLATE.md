@@ -36,6 +36,7 @@ Copy this file to a new dated record for each build. Leave unknowns explicitly m
 | 厚度／模具版本 | TBC | TBC | TBC |
 | 環境／硬化溫度與時間 | TBC | TBC | TBC |
 | 接著劑／離型劑／相容性小樣 | TBC | TBC | TBC |
+| Demolding method / 脫模方式及結果 | TBC | 美工刀沿模具—矽膠界面分離；刀具／結果：TBC | 美工刀沿模具—矽膠界面分離；黑色表皮狀態：TBC |
 | 氣泡、黏性、層間黏合 | TBC | TBC | TBC |
 
 ## 感測與運動結果

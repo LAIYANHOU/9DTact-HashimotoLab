@@ -1,25 +1,35 @@
-# Repository preparation and publication
+# Repository publication and updates
 
-Preferred repository name: **9DTact-HashimotoLab**, selected by the builder.
+Public repository: **[LAIYANHOU/9DTact-HashimotoLab](https://github.com/LAIYANHOU/9DTact-HashimotoLab)**.
 
-This is a separate companion repository rather than a fork of the complete 9DTact software project. The original inputs remain unchanged in the parent handover folder; only the organized source tree belongs in GitHub.
+The builder created the repository and pushed the initial commits, including `a850780`, after authenticating GitHub CLI as `LAIYANHOU`. The existing `origin` remote uses SSH:
 
-## Before the first public push
-
-1. Resolve and archive the applicable LEAP CAD grant for the two derived fingertips and the mesh preview. See [LICENSE.md](../LICENSE.md). If the source revision is covered by current CC BY-SA 4.0, preserve its attribution and share-alike terms; if it is covered by the older noncommercial grant, retain that grant instead.
-2. Keep the BOM status transparent. The current draft may be shared as an incomplete sourcing guide; do not relabel search-only URLs as checked products or candidate silicone as validated.
-3. Run `python3 scripts/verify_repository.py` and `python3 scripts/render_bom.py --check`.
-4. Authenticate GitHub in an environment with a working connection. The preparation environment could not resolve GitHub hosts and did not establish working GitHub authentication. No remote repository has been created.
-
-## Publish after resolving the above
-
-From this repository, review `git status` and create/commit any final license changes first. Then, with the intended GitHub account authenticated:
-
-```bash
-gh repo create 9DTact-HashimotoLab --public --source=. --remote=origin --push \
-  --description '9DTact hardware adaptations, LEAP Hand mounts and fabrication handover in Japan'
+```text
+git@github.com:LAIYANHOU/9DTact-HashimotoLab.git
 ```
 
-The command creates a public repository under the authenticated account. For a lab organization, use `ORGANIZATION/9DTact-HashimotoLab` as the name. Do not run it against an existing repository without first inspecting that repository and its remotes.
+This is a separate companion repository rather than a fork of the complete 9DTact software project. Original inputs remain unchanged in the parent handover folder; only the organized source tree belongs in GitHub. **Do not run `gh repo create` again for this project.**
 
-After publication, verify the GitHub URL, default branch, five hardware files, license notices, image rendering and README links. An optional later release can add completed mold files, verified Japan material choices, assembly photographs and a reproducible build record.
+## Update the existing repository
+
+1. Review the changes, source attribution and applicable file licenses. The original LEAP CAD grant still needs to be archived; see [LICENSE.md](../LICENSE.md).
+2. Keep BOM evidence labels accurate. Search-only URLs are not checked products; candidate silicone is not a validated replacement.
+3. Run the checks and inspect any changed figures:
+
+```bash
+python3 scripts/verify_repository.py
+python3 scripts/render_bom.py --check
+git diff --check
+```
+
+4. Commit the intended files and push through the existing remote:
+
+```bash
+git add --all
+git commit -m 'Describe the fabrication knowledge added'
+git push origin main
+```
+
+The initial preparation environment could not resolve GitHub hosts, so the builder performed the first creation/push in a working terminal. If that limitation persists for later updates, the commit can be prepared locally and pushed from the builder's authenticated terminal.
+
+After a push, verify the GitHub default branch, README figures, hardware files, license notices and relative links. Future revisions can add actual lab demolding photographs, mold files, verified Japan material choices and completed build records.

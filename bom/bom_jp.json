@@ -411,24 +411,30 @@
     {
       "id": "JP-15",
       "section": "tools",
-      "name": "刀具",
+      "name": "美工刀：脫模界面分離／修邊",
       "quantity_basis": "實驗室共用",
-      "specification": "精密修邊刀具；依實際需要與刀刃形式選購。",
+      "specification": "第二層半透明與第三層黑色矽膠脫模時，沿模具—矽膠交界小心分離；實際刀具型號待補。",
       "links": [
         {
           "label": "Amazon JP 搜尋（未核實 SKU）",
-          "url": "https://www.amazon.co.jp/s?k=%E7%B2%BE%E5%AF%86+%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%8A%E3%82%A4%E3%83%95",
+          "url": "https://www.amazon.co.jp/s?k=%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%95+%E7%B2%BE%E5%AF%86",
           "kind": "search",
           "label_en": "Amazon JP search (SKU unverified)"
+        },
+        {
+          "label": "脫模對照與說明",
+          "label_en": "Demolding comparison and instructions",
+          "url": "../docs/DEMOLDING.md",
+          "kind": "local"
         }
       ],
       "status": "search_only",
-      "validation_note": "用途為修邊；避免傷害接觸表皮與 window；SKU 未核實。",
+      "validation_note": "此為製作者確認的脫模方式修改；不用手指壓／拉開邊緣，不切進感測接觸面、黑色表皮或 window。Amazon SKU 未核實。",
       "legacy_reference": "Knife",
-      "name_en": "Precision trimming knife",
+      "name_en": "Utility knife: demolding interface release / trimming",
       "quantity_basis_en": "Shared lab tool",
-      "specification_en": "Select a suitable precision knife and blade for trimming.",
-      "validation_note_en": "Avoid damaging the contact skin or acrylic window. No exact SKU verified."
+      "specification_en": "For demolding both layer 2 (translucent) and layer 3 (black): carefully release the mold–silicone interface. Exact knife model still to be recorded.",
+      "validation_note_en": "Builder-confirmed lab procedure: do not press/pull the silicone edge by hand; keep the blade at the interface, away from the sensing surface, black skin and window. Amazon SKU not verified."
     },
     {
       "id": "JP-16",

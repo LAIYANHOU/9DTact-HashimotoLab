@@ -2,6 +2,8 @@
 
 The builder will supply the actual silicone and know-how photographs. No fabricated process photographs are included.
 
+The first documented procedure difference is illustrated in the [layer 2 / layer 3 demolding comparison](../../docs/DEMOLDING.md): user-supplied tutorial frames on the left, generated knife-interface schematics on the right. Actual lab demolding photographs can be added alongside that explanation later.
+
 ## Suggested photo sets
 
 | Suggested filename | Capture / 拍攝內容 | Caption should record |

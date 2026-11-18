@@ -11,6 +11,7 @@ Reviewed on 2026-11-18. The distinction between builder reports, source document
 - Acrylic camera window can be outsourced to [Hazaiya](https://www.hazaiya.co.jp/); other molds are 3D printed.
 - Existing LED board and white shell are reused. White shell must not be PLA.
 - Both local LEAP fingertip files derive from official LEAP CAD.
+- Demolding layers 2 and 3: builder specifies careful utility-knife release along the mold–silicone interface, replacing hand pressure/pulling at the edge. The builder supplied [the assembly tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ) and screenshots showing both demolding stages. The video page could not be played during this review; visible screenshot captions and the builder's explanation establish the comparison. See [DEMOLDING.md](DEMOLDING.md).
 
 ## Original 9DTact design
 

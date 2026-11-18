@@ -26,3 +26,9 @@ The builder confirms that both `finger_tip_tactile1_wrq.SLDPRT` and `finger_tip_
 The builder supplied `9DTact_BOM.docx` as a Taobao-oriented reference. The document is kept unchanged in the parent handover folder and not redistributed here. Factual specifications and cleaned product identifiers are cross-referenced in [bom/TAOBAO_REFERENCE.md](bom/TAOBAO_REFERENCE.md). No product screenshots or store images are copied into this repository.
 
 Camera ASIN B0C5W1QF65, Hazaiya as a window supplier, Shore 0 from Taobao, printed molds, and reused LED/shell are builder-reported facts. Online candidates are labeled separately. No upstream author or supplier endorsement is implied.
+
+## Demolding comparison
+
+Assembly tutorial supplied by the builder: https://www.youtube.com/watch?v=VxMceWVz7QQ.
+
+The composite `assets/process/demolding-comparison.png` uses two builder-supplied tutorial frames to identify finger-pressure release at the translucent and black demolding stages. The lab uses utility-knife release at the mold–silicone interface instead. Right-hand panels are generated schematics, not photographs of a performed operation. Comparison marks refer specifically to the lab's chosen procedure; they are not an endorsement or general rejection of the source tutorial. Underlying video stills retain their creators' rights. See [demolding instructions and figure provenance](docs/DEMOLDING.md).

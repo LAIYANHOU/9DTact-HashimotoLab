@@ -28,6 +28,6 @@ This is a status list, not a claim that the build has passed verification.
 - [ ] Add assembly photos, no-contact/contact images, and a completed build record.
 - [ ] Recalibrate after mechanical/material changes; separately validate any learned force model.
 - [ ] Archive the license bundled with the original LEAP CAD download. The builder confirms both fingertip files derive from official CAD. On 2026-11-18, the current CAD access page says **CC BY-SA 4.0**, while the official API README says **CC BY-NC-SA**, without a version. Resolve which grant covers the source before public redistribution; do not blanket-license the fingertips as MIT.
-- [ ] Publish the prepared Git repository using a working GitHub connection and authentication. No remote repository has been created by this draft.
+- [x] Initial repository created and pushed by the builder: [LAIYANHOU/9DTact-HashimotoLab](https://github.com/LAIYANHOU/9DTact-HashimotoLab). Continue updating this existing remote; license provenance above still needs to be archived.
 
 ★ LED and ★ white shell procurement are intentionally deferred; completing a fresh fabrication workflow for them is outside this handover revision.
