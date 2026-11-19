@@ -1,6 +1,6 @@
 # Acrylic camera window / アクリル窓の外注
 
-[Handover](HANDOVER.md) · [引き継ぎガイド](HANDOVER.ja.md)
+[README](../README.md)
 
 The builder recommends **[Hazaiya / はざいや](https://www.hazaiya.co.jp/)** for the clear acrylic optical window. Only the window is outsourced in acrylic; **casting molds are 3D printed**.
 

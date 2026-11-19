@@ -1,6 +1,6 @@
 # シリコーン材料
 
-[English](MATERIALS.md) · **日本語** · [引き継ぎガイド](HANDOVER.ja.md) · [部品表](../bom/BOM_JP.md)
+[English](MATERIALS.md) · [README](../README.md)
 
 ## この実装で使う材料
 

@@ -1,6 +1,6 @@
 # Silicone materials
 
-**English** · [日本語](MATERIALS.ja.md) · [Handover](HANDOVER.md) · [BOM](../bom/BOM_JP.md)
+[日本語](MATERIALS.ja.md) · [README](../README.md)
 
 ## Materials used in this build
 
