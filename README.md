@@ -36,7 +36,7 @@ flowchart LR
 | --- | --- |
 | **Camera** | Amazon JP **B0C5W1QF65**, with the existing CSI–USB board |
 | **Layer 1 — transparent / 第1層・透明** | Clear 9345 silicone; Huizhou/QR-code bottles / 恵州ラベル・QRコードの容器 |
-| **Layer 2 — translucent / 第2層・半透明** | Taobao **Shore A 0**, replacing 5A; bottles marked “0” / 「0」ラベルの容器 |
+| **Layer 2 — translucent / 第2層・半透明** | Taobao **Shore 0A**, replacing 5A; bottles marked “0” / 「0」ラベルの容器 |
 | **Layer 3 — black / 第3層・黒色** | Yellow/blue silicone jars + black pigment; links in the BOM / 黄色・青色の容器＋黒色顔料 |
 | **Acrylic window / アクリル窓** | Outsource to **はざいや / Hazaiya** |
 | **Casting molds / 注型モールド** | **3D print / 3D プリント** |
@@ -48,7 +48,7 @@ flowchart LR
 2. **Check camera and lighting.** Connect the reused boards, set exposure, gain and focus, and keep cables clear of clamping surfaces.<br>再利用する基板を接続し、露光・ゲイン・焦点を設定します。配線を挟まないように通します。
 3. **Install the acrylic window.** Clean the optical faces and check the adhesive seal, bonding and fogging.<br>光学面を清掃し、窓の密封・接着・曇りを確認します。
 4. **Cast layer 1.** Use the transparent silicone.<br>透明シリコーンで第1層を注型します。
-5. **Cast and demold layer 2.** Use [Shore A 0](docs/MATERIALS.md). Release the mold–silicone interface with a utility knife instead of pressing or pulling the edge by hand.<br>[Shore A 0](docs/MATERIALS.ja.md) で第2層を注型します。指で端を押したり引いたりせず、カッターナイフでモールドとの界面を分離します。
+5. **Cast and demold layer 2.** Use [Shore 0A](docs/MATERIALS.md). Release the mold–silicone interface with a utility knife instead of pressing or pulling the edge by hand.<br>[Shore 0A](docs/MATERIALS.ja.md) で第2層を注型します。指で端を押したり引いたりせず、カッターナイフでモールドとの界面を分離します。
 6. **Cast and demold layer 3.** Add the specified black pigment to the third-layer silicone. Cover the contact surface and required sides; use the same knife-assisted release.<br>第3層のシリコーンに指定の黒色顔料を加え、接触面と必要な側面を遮光します。同じナイフ操作で脱型します。
 7. **Mount to LEAP Hand.** Check screw engagement, joint travel, interference and cable slack.<br>LEAP Hand に取り付け、ねじの締結・可動域・干渉・ケーブルの余裕を確認します。
 

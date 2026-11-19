@@ -135,9 +135,9 @@
     {
       "id": "JP-05",
       "section": "components",
-      "name": "第二層半透明矽膠：Shore 0",
+      "name": "第二層半透明矽膠：Shore 0A",
       "quantity_basis": "依批次量測耗用量",
-      "specification": "淘寶 item 649539121020 選 Shore A 0，取代原 5A。",
+      "specification": "淘寶 item 649539121020 選 Shore 0A，取代原 5A。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -158,7 +158,7 @@
           "label_en": "SAC Ecoflex 00-50 candidate"
         },
         {
-          "label": "日本 Shore A 0 試作／材料詢問",
+          "label": "日本 Shore 0A 試作／材料詢問",
           "url": "https://ytc-eng.com/silicon_syurui",
           "kind": "vendor",
           "label_en": "Japan A0 prototyping/material inquiry"
@@ -173,9 +173,9 @@
       "status": "candidate",
       "validation_note": "日本替代候選與小樣測試見材料指南。",
       "legacy_reference": "Translucent silicone",
-      "name_en": "Layer 2: translucent silicone, Shore 0",
+      "name_en": "Layer 2: translucent silicone, Shore 0A",
       "quantity_basis_en": "Measure consumption per batch",
-      "specification_en": "Taobao item 649539121020, Shore A 0 option; replaces 5A.",
+      "specification_en": "Taobao item 649539121020, Shore 0A option; replaces 5A.",
       "validation_note_en": "Japan alternatives: see material notes for sample testing.",
       "photo": {
         "path": "../assets/photos/materials/layer-2-shore-0.jpg",

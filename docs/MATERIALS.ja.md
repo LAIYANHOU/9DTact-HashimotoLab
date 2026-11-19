@@ -7,7 +7,7 @@
 | 層 | 材料 | 容器の見分け方 |
 | --- | --- | --- |
 | **第1層：透明な光学媒体** | 元の部品表の透明 9345 シリコーン | 恵州ラベルとQRコードのある白い2本 |
-| **第2層：半透明の感圧層** | [Taobao シリコーン](https://item.taobao.com/item.htm?id=649539121020) の **Shore A 0**。元の 5A から変更 | **「SHORE A 0」** と表示された透明容器2本 |
+| **第2層：半透明の感圧層** | [Taobao シリコーン](https://item.taobao.com/item.htm?id=649539121020) の **Shore 0A**。元の 5A から変更 | **「SHORE A 0」** と表示された透明容器2本 |
 | **第3層：黒色の遮光表皮** | [シリコーン](https://amzn.asia/d/08yFspH2) ＋ [黒色顔料](https://ja.aliexpress.com/item/1005012698616201.html) | 黄色・青色のシリコーン容器。顔料は別途購入 |
 
 [容器の実物写真 →](../assets/photos/README.md)
@@ -20,7 +20,7 @@
 
 ## 第2層の国内調達
 
-現在は Taobao の **Shore A 0** を使用しています。国内代替材料は、元材料との比較試験が必要です。
+現在は Taobao の **Shore 0A** を使用しています。国内代替材料は、元材料との比較試験が必要です。
 
 <details>
 <summary>代替材料の候補・問い合わせ先</summary>
@@ -29,7 +29,7 @@
 | --- | --- |
 | **Smooth-On Ecoflex 00-30** | 半透明、Shore **00-30**。[国内代理店](https://sac-corp.myshopify.com/products/ecoflex-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD-00-30-%EF%BE%84%EF%BE%97%EF%BD%B2%EF%BD%B1%EF%BE%99%EF%BD%B7%EF%BD%AF%EF%BE%84) · [メーカー](https://www.smooth-on.com/products/ecoflex-00-30/) |
 | **Smooth-On Ecoflex 00-50** | 半透明、Shore **00-50**。[国内代理店](https://sac-corp.myshopify.com/products/ecoflex-00-50-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD) · [メーカー](https://www.smooth-on.com/products/ecoflex-00-50/) |
-| **株式会社ワイテック** | [乳白色 Shore A 0 材料](https://ytc-eng.com/silicon_syurui)。A/B 原料の小売、試片、光学特性を問い合わせ |
+| **株式会社ワイテック** | [乳白色 Shore 0A 材料](https://ytc-eng.com/silicon_syurui)。A/B 原料の小売、試片、光学特性を問い合わせ |
 | **Amazon Japan** | [Shore 0A シリコーン検索](https://www.amazon.co.jp/s?k=Shore+0A+silicone) |
 
 **Shore 00 と Shore A は異なる硬度スケールです。** 同じモールド、厚さ、カメラ、照明、露光で既存 A0 材料と比較します。
