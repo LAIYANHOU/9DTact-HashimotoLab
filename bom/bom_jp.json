@@ -409,12 +409,6 @@
           "url": "https://www.amazon.co.jp/s?k=%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%95+%E7%B2%BE%E5%AF%86",
           "kind": "search",
           "label_en": "Amazon JP search"
-        },
-        {
-          "label": "脫模對照與說明",
-          "label_en": "Demolding comparison and instructions",
-          "url": "../docs/DEMOLDING.md",
-          "kind": "local"
         }
       ],
       "status": "builder_confirmed",

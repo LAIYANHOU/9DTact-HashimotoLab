@@ -31,4 +31,4 @@ Camera ASIN B0C5W1QF65, Hazaiya as a window supplier, Shore 0 from Taobao, print
 
 Assembly tutorial supplied by the builder: https://www.youtube.com/watch?v=VxMceWVz7QQ.
 
-The composite `assets/process/demolding-comparison.png` includes two builder-supplied tutorial frames and generated knife illustrations. Tutorial imagery retains its creators' rights. [Demolding guide](docs/DEMOLDING.md).
+The composite `assets/process/demolding-comparison.png` includes two builder-supplied tutorial frames and generated knife illustrations. Tutorial imagery retains its creators' rights.

@@ -14,7 +14,7 @@ Online references reviewed on 2026-11-18; builder updates added on 2026-11-19.
 - On 2026-11-19, the builder specified [layer-3 silicone](https://amzn.asia/d/08yFspH2) and [black pigment](https://ja.aliexpress.com/item/1005012698616201.html) and confirmed shared tools.
 - Builder-supplied isolation-ring SolidWorks source was added on 2026-11-19; its exact bytes are in the hardware manifest.
 - Both local LEAP fingertip files derive from official LEAP CAD.
-- Demolding layers 2 and 3: builder specifies careful utility-knife release along the mold–silicone interface, replacing hand pressure/pulling at the edge. The builder supplied [the assembly tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ) and screenshots showing both demolding stages. See [DEMOLDING.md](DEMOLDING.md).
+- Demolding layers 2 and 3: builder specifies careful utility-knife release along the mold–silicone interface, replacing hand pressure/pulling at the edge. The builder supplied [the assembly tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ) and screenshots showing both demolding stages. See the [comparison figure](../assets/process/demolding-comparison.png).
 
 ## Original 9DTact design
 

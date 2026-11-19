@@ -20,4 +20,4 @@
 
 Record the part revision and process settings with each photo. / 各写真に部品の版と作業条件を記録します。
 
-[Build record / 製作記録](../../docs/BUILD_RECORD_TEMPLATE.md) · [Demolding guide / 脱型手順](../../docs/DEMOLDING.md)
+[Build record / 製作記録](../../docs/BUILD_RECORD_TEMPLATE.md)

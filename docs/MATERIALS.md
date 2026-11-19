@@ -16,7 +16,7 @@
 
 - Follow each silicone's mixing and curing instructions. Record A/B weights, degassing, temperature, cure time and layer thickness in the [build record](BUILD_RECORD_TEMPLATE.md).
 - For layer 3, record pigment loading and check light blocking, adhesion and recovery after pressing.
-- Demold layers 2 and 3 by carefully releasing the **mold–silicone interface with a utility knife**. [Illustrated procedure](DEMOLDING.md).
+- Demold layers 2 and 3 by carefully releasing the **mold–silicone interface with a utility knife**.
 
 ## Sourcing layer 2 in Japan
 

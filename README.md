@@ -52,7 +52,7 @@ For **layer 2 (translucent)** and **layer 3 (black)**, use a utility knife to ca
 
 ![Layer 2 and layer 3 demolding: tutorial finger pressure on the left, knife-assisted interface release on the right](assets/process/demolding-comparison.png)
 
-**Follow the mold–silicone seam; keep the sensing surface and black skin intact.** Remove hot-melt adhesive strips separately before release. [Detailed procedure](docs/DEMOLDING.md).<br>
+**Follow the mold–silicone seam; keep the sensing surface and black skin intact.** Remove hot-melt adhesive strips separately before release.<br>
 **モールドとの接合面に沿って分離し、感圧面や黒色表皮を切らないようにします。** ホットメルト接着剤は先に別の工程として除去します。
 
 ## Calibration and verification / 校正・動作確認
