@@ -2,7 +2,7 @@
 
 [English](HANDOVER.md) · [BOM](../bom/BOM_JP.md)
 
-[9DTact](https://github.com/linchangyi1/9DTact) の厚いカメラ基板への対応と LEAP Hand への取り付けを変更しています。校正、形状復元、力推定には元のソフトウェアを使用します。
+元の [9DTact](https://github.com/linchangyi1/9DTact) ベースと遮光リングの寸法を微調整し、LEAP Hand 用の連結アダプターを追加しています。校正、形状復元、力推定には元のソフトウェアを使用します。
 
 ## まず元の製作動画を見る
 

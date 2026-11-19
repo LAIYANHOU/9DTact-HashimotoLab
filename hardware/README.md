@@ -4,11 +4,11 @@ Three STL parts and three SolidWorks files. [Checksums and mesh dimensions](mani
 
 | File | Purpose | Format / readiness |
 | --- | --- | --- |
-| [sensor_base_adapt_for_thick_PCB.STL](mesh/sensor_base_adapt_for_thick_PCB.STL) | **01 ·** Base for thicker camera PCB | Print mesh |
+| [sensor_base_adapt_for_thick_PCB.STL](mesh/sensor_base_adapt_for_thick_PCB.STL) | **01 ·** Original 9DTact base, dimensions adjusted for thicker PCB | Print mesh |
 | [sensor_base_adapt_for_thick_PCB.SLDPRT](cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | Editable base | SolidWorks |
-| [isolation_ring_out_11.4_in_10.3.STL](mesh/isolation_ring_out_11.4_in_10.3.STL) | **02 ·** Camera isolation ring | Print mesh |
+| [isolation_ring_out_11.4_in_10.3.STL](mesh/isolation_ring_out_11.4_in_10.3.STL) | **02 ·** Original 9DTact isolation ring, dimensions slightly adjusted | Print mesh |
 | [isolation_ring_out_11.4_in_10.3.SLDPRT](cad/isolation_ring_out_11.4_in_10.3.SLDPRT) | Editable ring | SolidWorks |
-| [finger_tip_tactile_with_chip_holder.STL](mesh/finger_tip_tactile_with_chip_holder.STL) | **03 ·** LEAP fingertip with chip holder | Print mesh |
+| [finger_tip_tactile_with_chip_holder.STL](mesh/finger_tip_tactile_with_chip_holder.STL) | **03 ·** 9DTact-to-LEAP Hand adapter with chip holder | Print mesh |
 | [finger_tip_tactile1_wrq.SLDPRT](cad/finger_tip_tactile1_wrq.SLDPRT) | Editable LEAP fingertip variant | SolidWorks |
 
 ![Supplied STL meshes](../assets/mesh-preview.png)

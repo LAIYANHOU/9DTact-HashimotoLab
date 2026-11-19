@@ -2,7 +2,7 @@
 
 [日本語](HANDOVER.ja.md) · [BOM](../bom/BOM_JP.md)
 
-This build adapts [9DTact](https://github.com/linchangyi1/9DTact) for a thicker camera PCB and LEAP Hand mounting. Use upstream software for calibration, reconstruction and force estimation.
+This build makes small dimensional adjustments to the original [9DTact](https://github.com/linchangyi1/9DTact) base and isolation ring, and adds a LEAP Hand mounting adapter. Use upstream software for calibration, reconstruction and force estimation.
 
 ## Start with the original video
 

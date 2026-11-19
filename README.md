@@ -1,11 +1,11 @@
 # 9DTact-HashimotoLab
 
-**A visual hardware handover for 9DTact + LEAP Hand, fabricated in Japan.**<br>
-9DTact の機構変更、LEAP Hand 取り付け部品、日本での製作と引き継ぎ。
+**9DTact dimensional adjustments, robot mounts and fabrication handover.**<br>
+9DTact 部品の寸法調整、ロボット用取り付け部品、製作と引き継ぎ。
 
 **[Build guide / 製作ガイド](docs/HANDOVER.md)** · **[BOM](bom/BOM_JP.md)**
 
-This build adapts [9DTact](https://github.com/linchangyi1/9DTact) for the lab's camera PCB and LEAP Hand mounting. This companion repository collects the modified parts, fabrication choices and Japan sourcing notes; software and calibration remain upstream.
+This repository collects small dimensional adjustments to the original [9DTact](https://github.com/linchangyi1/9DTact) parts, robot-specific mounting adapters and Japan fabrication notes. Software and calibration remain upstream.
 
 ## Watch first / はじめに見る動画
 
@@ -15,40 +15,45 @@ Watch the original video, then follow the **[Build guide](docs/HANDOVER.md)**. /
 
 ## Three parts to know first / 重要な3つの部品
 
+**01–02:** original 9DTact parts with small dimensional adjustments. **03:** an adapter for mounting 9DTact on LEAP Hand.<br>
+**01・02：** 元の 9DTact 部品の寸法を微調整。**03：** 9DTact を LEAP Hand に取り付けるアダプター。
+
 ![Three key parts: modified sensor base, isolation ring and LEAP fingertip mount](assets/mesh-preview.png)
 
 | Part | What changed / 用途・変更点 | Files |
 | --- | --- | --- |
-| **01 · Sensor base** | Adapted for a **thicker camera PCB** / 厚い基板に対応 | [STL](hardware/mesh/sensor_base_adapt_for_thick_PCB.STL) · [SolidWorks](hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) |
-| **02 · Isolation ring** | Revised **camera light isolation** geometry / カメラ遮光リング | [STL](hardware/mesh/isolation_ring_out_11.4_in_10.3.STL) · [SolidWorks](hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT) |
-| **03 · LEAP fingertip mount** | Connects the tactile sensor to **LEAP Hand**, with a chip holder / チップホルダー付き | [STL](hardware/mesh/finger_tip_tactile_with_chip_holder.STL) · [SolidWorks variant](hardware/cad/finger_tip_tactile1_wrq.SLDPRT) |
+| **01 · 9DTact sensor base** | Original part; dimensions adjusted for the thicker PCB / 元部品の寸法を基板厚に合わせて調整 | [STL](hardware/mesh/sensor_base_adapt_for_thick_PCB.STL) · [SolidWorks](hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) |
+| **02 · 9DTact isolation ring** | Original part; dimensions slightly adjusted / 元部品の寸法を微調整 | [STL](hardware/mesh/isolation_ring_out_11.4_in_10.3.STL) · [SolidWorks](hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT) |
+| **03 · LEAP Hand adapter** | Robot-specific mount with chip holder / LEAP Hand 用の連結部品、チップホルダー付き | [STL](hardware/mesh/finger_tip_tactile_with_chip_holder.STL) · [SolidWorks variant](hardware/cad/finger_tip_tactile1_wrq.SLDPRT) |
 
-### 01 · Sensor base / 厚い基板用のベース
+### 01 · 9DTact sensor base / ベースの寸法調整
 
-The replacement base accommodates the builder's thicker camera PCB. Inspect the camera seat, fastener access and lens clearance before printing or assembling.
+The original 9DTact base with small dimensional adjustments to accommodate the lab's thicker camera PCB.
 
 [![Sensor base: perspective, opposite side, face view and edge view](assets/parts/sensor-base.png)](hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)
 
 **Use:** [sensor_base_adapt_for_thick_PCB.STL](hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)<br>
 **Edit:** [SolidWorks source](hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT).
 
-### 02 · Camera isolation ring / カメラ遮光リング
+### 02 · 9DTact isolation ring / 遮光リングの寸法調整
 
-The revised ring is the light-isolation part around the camera optical path. Check its installed fit and the image near the sensing-area edges.
+The original 9DTact camera isolation ring with small dimensional adjustments for this build.
 
 [![Camera isolation ring: perspective, opposite side, face view and edge view](assets/parts/isolation-ring.png)](hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)
 
 **Use:** [isolation_ring_out_11.4_in_10.3.STL](hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)<br>
 **Edit:** [SolidWorks source](hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT).
 
-### 03 · LEAP fingertip mount / LEAP Hand 取り付け部品
+### 03 · LEAP Hand adapter / LEAP Hand 用連結部品
 
-Modified from official LEAP Hand fingertip CAD to hold the tactile sensor. The supplied STL includes a chip holder. Check joint travel, cable clearance and the mounting screws on the actual hand.
+An adapter that connects 9DTact to LEAP Hand, modified from official LEAP Hand fingertip CAD. The supplied STL includes a chip holder.
 
 [![LEAP fingertip with chip holder: perspective, opposite side, face view and edge view](assets/parts/leap-fingertip.png)](hardware/mesh/finger_tip_tactile_with_chip_holder.STL)
 
 **Use:** [finger_tip_tactile_with_chip_holder.STL](hardware/mesh/finger_tip_tactile_with_chip_holder.STL)<br>
 **Related editable variant:** [finger_tip_tactile1_wrq.SLDPRT](hardware/cad/finger_tip_tactile1_wrq.SLDPRT).
+
+**Planned:** a Robotiq mounting adapter. / **今後追加予定：** Robotiq 用の連結部品。
 
 <details>
 <summary><strong>360° rotating preview / 3つの部品を回転表示</strong></summary>
