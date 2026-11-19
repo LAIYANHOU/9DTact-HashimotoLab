@@ -1,6 +1,6 @@
 # Fabrication handover
 
-**English** · [日本語](HANDOVER.ja.md) · [BOM](../bom/BOM_JP.md) · [Materials](MATERIALS.md)
+[日本語](HANDOVER.ja.md) · [BOM](../bom/BOM_JP.md)
 
 This build adapts [9DTact](https://github.com/linchangyi1/9DTact) for a thicker camera PCB and LEAP Hand mounting. Use upstream software for calibration, reconstruction and force estimation.
 
@@ -40,7 +40,7 @@ Material and LED identification photos are in the [BOM](../bom/BOM_JP.md).
 2. **Check camera and lighting.** Connect the existing CSI–USB board and LED assembly. Set exposure, gain and focus; route cables clear of clamping surfaces.
 3. **Install the acrylic window.** Clean the optical faces and check the adhesive seal, bonding and fogging.
 4. **Cast layer 1.** Use the transparent silicone.
-5. **Cast and demold layer 2.** Use Shore A 0. **Release the mold–silicone interface with a utility knife instead of pressing or pulling the edge by hand.** [Illustrated procedure](DEMOLDING.md).
+5. **Cast and demold layer 2.** Use [Shore A 0](MATERIALS.md). **Release the mold–silicone interface with a utility knife instead of pressing or pulling the edge by hand.** [Illustrated procedure](DEMOLDING.md).
 6. **Cast and demold layer 3.** Add black pigment to the specified silicone, covering the contact surface and required sides. Use the same knife-assisted release; **keep the sensing surface and black skin intact**.
 7. **Mount to LEAP Hand.** Check screws, joint travel, interference and cable slack.
 8. **Capture a new reference and recalibrate.** Follow [upstream calibration](https://github.com/linchangyi1/9DTact#3d-shape-reconstruction); evaluate force-estimation accuracy after the changes.

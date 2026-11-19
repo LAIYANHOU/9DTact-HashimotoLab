@@ -3,7 +3,7 @@
 **A visual hardware handover for 9DTact + LEAP Hand, fabricated in Japan.**<br>
 9DTact の機構変更、LEAP Hand 取り付け部品、日本での製作と引き継ぎ。
 
-[Handover · English](docs/HANDOVER.md) · [引き継ぎ · 日本語](docs/HANDOVER.ja.md) · [BOM](bom/BOM_JP.md) · [Materials · English](docs/MATERIALS.md) · [材料 · 日本語](docs/MATERIALS.ja.md) · [Hardware](hardware/README.md)
+**[Build guide / 製作ガイド](docs/HANDOVER.md)** · **[BOM](bom/BOM_JP.md)**
 
 This build adapts [9DTact](https://github.com/linchangyi1/9DTact) for the lab's camera PCB and LEAP Hand mounting. This companion repository collects the modified parts, fabrication choices and Japan sourcing notes; software and calibration remain upstream.
 
@@ -11,7 +11,7 @@ This build adapts [9DTact](https://github.com/linchangyi1/9DTact) for the lab's 
 
 [![▶ 9DTact Fabrication Tutorial](https://i.ytimg.com/vi/VxMceWVz7QQ/hqdefault.jpg)](https://www.youtube.com/watch?v=VxMceWVz7QQ)
 
-**[▶ 9DTact Fabrication Tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ)** → [Hashimoto Lab steps · English](docs/HANDOVER.md) / [日本語](docs/HANDOVER.ja.md) → [BOM](bom/BOM_JP.md)
+Watch the original video, then follow the **[Build guide](docs/HANDOVER.md)**. / 元の動画を見てから、製作ガイドに進みます。
 
 ## Three parts to know first / 重要な3つの部品
 
@@ -70,19 +70,14 @@ flowchart LR
     E --> F[Mount to LEAP and recalibrate]
 ```
 
-| Item | Lab decision / 研究室での方針 | Go to |
-| --- | --- | --- |
-| **Camera** | **Amazon JP B0C5W1QF65**, with the existing CSI–USB board | [Camera product](https://www.amazon.co.jp/dp/B0C5W1QF65) |
-| **Second silicone layer** | Taobao **Shore A 0**, replacing 5A | [English material notes](docs/MATERIALS.md) · [日本語](docs/MATERIALS.ja.md) |
-| **Third-layer silicone** | Silicone for the black skin | [Amazon product](https://amzn.asia/d/08yFspH2) |
-| **Third-layer pigment** | Black silicone pigment | [AliExpress product](https://ja.aliexpress.com/item/1005012698616201.html) |
-| **Acrylic window** | Outsource **only the optical window** to **はざいや / Hazaiya** | [Vendor](https://www.hazaiya.co.jp/) · [Drawing / quotation guide](docs/WINDOW_OUTSOURCING.md) |
-| **Casting molds** | **3D print the molds**; do not order the original acrylic mold plates | [Mold files / settings to add](docs/KNOWN_GAPS.md) |
-| **★ CSI–USB converter** | **Reuse the existing board** | [BOM](bom/BOM_JP.md) |
-| **★ LED board** | **Reuse existing assembly** | [BOM](bom/BOM_JP.md) |
-| **★ White shell** | **Reuse existing shell — do not print in PLA** | [Handover](docs/HANDOVER.md) |
-
-[Full BOM →](bom/BOM_JP.md)
+| Item | Hashimoto Lab build / この実装 |
+| --- | --- |
+| **Camera** | Amazon JP **B0C5W1QF65**, with the existing CSI–USB board |
+| **Second silicone layer** | Taobao **Shore A 0**, replacing 5A |
+| **Third layer** | Specified silicone + black pigment; purchase links in the BOM |
+| **Acrylic window** | Outsource the optical window to **はざいや / Hazaiya** |
+| **Casting molds** | **3D print** |
+| **★ CSI–USB / LED / white shell** | **Reuse existing parts. Do not print the white shell in PLA.** |
 
 ## Demolding: a lab-specific change / 脱型方法の変更
 
@@ -93,19 +88,6 @@ After **layer 2 (translucent)** and **layer 3 (black)**, we use a **utility knif
 **Follow the mold–silicone seam; keep the sensing surface intact.** [English / 日本語の手順 →](docs/DEMOLDING.md)
 
 第2層と第3層では、指でシリコーンの端を押したり引いたりせず、カッターナイフでモールドとの界面を慎重に分離します。ホットメルト接着剤の除去は別の工程です。
-
-## Material photographs / 材料の実物写真
-
-The [BOM](bom/BOM_JP.md) includes photos of all three silicone pairs and the reused LED board. [Photo inventory / 写真一覧 →](assets/photos/README.md)
-
-## Build and hand over / 引き継ぎの手順
-
-1. Read the [English handover](docs/HANDOVER.md) or [日本語ガイド](docs/HANDOVER.ja.md); identify the reused CSI–USB board, LED board and white shell.
-2. Download the **three STL parts**, confirm scale and dry-fit the camera. Obtain the lab's printed-mold files and settings.
-3. Check the [Japan BOM](bom/BOM_JP.md), prepare the window drawing and test any replacement silicone in small samples.
-4. Assemble, record the fabrication settings, test the LEAP mount through its intended motion, then recalibrate with [upstream 9DTact](https://github.com/linchangyi1/9DTact#3d-shape-reconstruction).
-
-[Remaining handover items / 未完了項目 →](docs/KNOWN_GAPS.md)
 
 ## Credit and file licenses
 
@@ -136,6 +118,6 @@ python3 scripts/render_bom.py --check
 python3 scripts/render_mesh_preview.py --animate
 ```
 
-[Repository updates](docs/PUBLISHING.md)
+[Repository updates](docs/PUBLISHING.md) · [Remaining handover items](docs/KNOWN_GAPS.md)
 
 </details>

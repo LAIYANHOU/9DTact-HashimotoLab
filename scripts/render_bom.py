@@ -66,9 +66,8 @@ def render_zh(data):
 def render_en(data):
     lines = [
         '# Japan BOM and fabrication list', '',
-        '**English** · [繁體中文](BOM_JP.zh-TW.md)', '',
+        '[Build guide](../docs/HANDOVER.md)', '',
         'Parts, materials and shared tools for the Hashimoto Lab build. **★ Reuse existing lab parts.**', '',
-        '[Material notes · English](../docs/MATERIALS.md) · [材料 · 日本語](../docs/MATERIALS.ja.md)', '',
     ]
     for section in data['sections']:
         lines += [f'## {section["title_en"]}', '',
