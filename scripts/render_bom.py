@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render the Japanese procurement table from its JSON source (stdlib only)."""
 import argparse
+from html import escape
 import json
 from pathlib import Path
 
@@ -9,6 +10,16 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def cell(value):
     return str(value).replace('|', '\\|').replace('\n', '<br>')
+
+
+def photo_cell(item):
+    photo = item.get('photo')
+    if not photo:
+        return '—'
+    path = escape(photo['path'], quote=True)
+    alt = escape(photo['alt_en'], quote=True)
+    return (f'<a href="{path}"><img src="{path}" width="90" alt="{alt}"></a>'
+            f'<br>{escape(photo["caption_en"])}<br>{escape(photo["caption_ja"])}')
 
 
 def render_zh(data):
@@ -26,13 +37,13 @@ def render_zh(data):
     ]
     for section in data['sections']:
         lines += [f'## {section["title"]}', '',
-                  '| ID | 項目／用途 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |',
-                  '| --- | --- | --- | --- | --- | --- |']
+                  '| ID | 項目／用途 | Photo / 写真 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |',
+                  '| --- | --- | --- | --- | --- | --- | --- |']
         for item in data['items']:
             if item['section'] != section['id']:
                 continue
             links = '<br>'.join(f'[{cell(link["label"])}]({link["url"]})' for link in item['links']) or '待補'
-            row = [item['id'], item['name'], item['quantity_basis'], item['specification'], links,
+            row = [item['id'], item['name'], photo_cell(item), item['quantity_basis'], item['specification'], links,
                    f'`{item["status"]}`<br>{item["validation_note"]}']
             lines.append('| ' + ' | '.join(cell(v) for v in row) + ' |')
         lines.append('')
@@ -68,16 +79,17 @@ def render_en(data):
         '- **Layer 3:** use the builder-specified [silicone](https://amzn.asia/d/08yFspH2) and [black pigment](https://ja.aliexpress.com/item/1005012698616201.html).',
         '- **Reusable parts:** keep the existing ★ CSI–USB converter, ★ LED board and ★ white shell. A matching CSI–USB replacement has not been found. **Do not print the white shell in PLA.**',
         '- **Layer-2 alternatives:** earlier SAC Ecoflex pages displayed sold-out text. Confirm stock when considering those alternatives; layer 3 uses the builder-specified Amazon link.', '',
+        '**Photo / 写真:** builder-supplied lab photos identify the three silicone pairs and reused LED board. Click a thumbnail for the original photo. 小画像をクリックすると元の写真を表示します。', '',
     ]
     for section in data['sections']:
         lines += [f'## {section["title_en"]}', '',
-                  '| ID / item | Quantity basis | Specification / candidate | Japan source / file | Status and checks |',
-                  '| --- | --- | --- | --- | --- |']
+                  '| ID / item | Photo / 写真 | Quantity basis | Specification / candidate | Japan source / file | Status and checks |',
+                  '| --- | --- | --- | --- | --- | --- |']
         for item in data['items']:
             if item['section'] != section['id']:
                 continue
             links = '<br>'.join(f'[{cell(link["label_en"])}]({link["url"]})' for link in item['links']) or 'Reuse existing assembly'
-            row = [f'**{item["id"]}**<br>{item["name_en"]}', item['quantity_basis_en'],
+            row = [f'**{item["id"]}**<br>{item["name_en"]}', photo_cell(item), item['quantity_basis_en'],
                    item['specification_en'], links,
                    f'`{item["status"]}`<br>{item["validation_note_en"]}']
             lines.append('| ' + ' | '.join(cell(value) for value in row) + ' |')

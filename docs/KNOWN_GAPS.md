@@ -17,7 +17,8 @@ This is a status list, not a claim that the build has passed verification.
 
 ## Materials and procurement
 
-- [ ] Archive the Taobao Shore 0 packaging, selected SKU and datasheet; record the actual mixing ratio, curing and degassing procedure.
+- [x] Add builder-identified photographs of all three silicone pairs and the reused LED board to the BOM.
+- [ ] Record readable material model/variant details and datasheets; record the actual mixing ratio, curing and degassing procedure. Packaging identification photographs are included.
 - [ ] Validate a Japan-sourced second-layer silicone against the existing Taobao material.
 - [ ] Record the purchased camera variant for Amazon JP ASIN B0C5W1QF65 and markings/pinout of the reused CSI–USB board; matching replacement not found.
 - [ ] Replace Amazon **search-only** routes with exact checked product listings where possible; record shipping to Japan and variant.

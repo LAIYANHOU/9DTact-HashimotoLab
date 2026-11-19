@@ -17,54 +17,54 @@
 
 ## 感測器零件與材料
 
-| ID | 項目／用途 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |
-| --- | --- | --- | --- | --- | --- |
-| JP-01 | 相機 | 1／sensor | 製作者曾購買 ASIN B0C5W1QF65；不從原 BOM 推定本商品的感光元件或鏡頭規格。 | [Amazon JP 商品：B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65) | `builder_purchased`<br>製作者提供的購買連結；本次頁面無法讀取，型號、變體、FOV、PCB 厚度與介面待補。 |
-| JP-03 | 透明壓克力 camera window | 1／sensor，備品另計 | 原版板厚 2 mm 僅作參考；最終厚度、外形、公差待量測出圖。 | [はざいや](https://www.hazaiya.co.jp/)<br>[圖面詢價](https://www.hazaiya.co.jp/index.php/estimate-drawing)<br>[發包說明](../docs/WINDOW_OUTSOURCING.md) | `fabrication_required`<br>製作者指定可找此店發包；未提供已下單規格。只有 window 發包壓克力，其餘模具列印。 |
-| JP-04 | 第一層透明矽膠 | 依批次量測耗用量 | 原 BOM 指透明 9345；日本同等材料未核實。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=9345+%E9%80%8F%E6%98%8E+%E3%82%B7%E3%83%AA%E3%82%B3%E3%83%BC%E3%83%B3+%E4%BB%98%E5%8A%A0%E5%9E%8B)<br>[日本代理商材料目錄](https://sac-corp.co.jp/categories/additive_silicone.php) | `search_only`<br>需確認透明度、硬化系統、硬度及層間相容性；不是任意透明型取り材皆可替代。 |
-| JP-05 | 第二層半透明矽膠：Shore 0 | 依批次量測耗用量 | 已知實作：原淘寶 item 649539121020 選 Shore 0 號（製作者描述為 Shore A 0）；日本替代未驗證。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=Shore+0A+silicone+translucent)<br>[SAC Ecoflex 00-30 候選](https://sac-corp.myshopify.com/products/ecoflex-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD-00-30-%EF%BE%84%EF%BE%97%EF%BD%B2%EF%BD%B1%EF%BE%99%EF%BD%B7%EF%BD%AF%EF%BE%84)<br>[SAC Ecoflex 00-50 候選](https://sac-corp.myshopify.com/products/ecoflex-00-50-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD)<br>[日本 Shore A 0 試作／材料詢問](https://ytc-eng.com/silicon_syurui)<br>[材料研究](../docs/MATERIALS.md) | `candidate`<br>00-30／00-50 不等於 A0；日方頁面有售罄文字。先小樣比較光學、回復及黏合；不可按已驗證替代品下單。 ワイテック列有乳白色 A0 材料／試作，但原料零售與光學適用性未確認。 |
-| JP-06 | 第三層黑色表皮用矽膠 | 依批次量測耗用量 | 製作者指定的第三層矽膠，使用提供的 Amazon 商品連結。 | [第三層矽膠：Amazon](https://amzn.asia/d/08yFspH2) | `builder_specified`<br>由選購包裝記錄品牌、型號、混合比例與固化條件；不將此配方當作第二層材料。 |
-| JP-07 | 黑色矽膠顏料 | 批次耗材 | 製作者指定的第三層黑色矽膠顏料，使用提供的 AliExpress 商品連結。 | [第三層顏料：AliExpress](https://ja.aliexpress.com/item/1005012698616201.html) | `builder_specified`<br>記錄實際選購顏色與添加量，以及搭配第三層矽膠的固化和遮光結果。 |
-| JP-08 | M2 熱熔嵌件 | 原版參考 8；修改版待核對 | 原 BOM 標為 M2-5-3；長度／外徑的標示順序未核實。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=M2+%E3%82%A4%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%88%E3%83%8A%E3%83%83%E3%83%88+%E7%9C%9F%E9%8D%AE+5+3) | `search_only`<br>先依尺寸圖及 CAD 確認螺紋、長度、外徑、孔徑與埋深；嵌件不一定是 3.2 mm 外徑通用品。 |
-| JP-09 | 底座／外殼 M2 螺絲 | 原版參考 4；修改版待核對 | 原 BOM M2 × 6 mm；頭型、材質與有效牙長需配合實物。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=M2+6mm+%E5%B0%8F%E3%81%AD%E3%81%98+%E3%82%B9%E3%83%86%E3%83%B3%E3%83%AC%E3%82%B9) | `search_only`<br>購買機械牙，不是自攻螺絲；檢查頭高、PCB 間隙與是否頂底。 |
-| JP-10 | 模具 M3 螺帽 | 原版參考 8／套；列印模具待核對 | M3；依實際 3D 列印模具的夾持設計確認是否沿用。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=M3+%E5%85%AD%E8%A7%92%E3%83%8A%E3%83%83%E3%83%88+%E3%82%B9%E3%83%86%E3%83%B3%E3%83%AC%E3%82%B9) | `search_only`<br>不可把原壓克力模具用量直接視為列印模具用量。 |
-| JP-11 | 模具 M3 螺絲 | 原版參考 8／套；列印模具待核對 | 原 BOM M3 × 30 mm；依列印模具堆疊厚度與夾持方式確認。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=M3+30mm+%E5%B0%8F%E3%81%AD%E3%81%98+%E3%83%8A%E3%83%83%E3%83%88) | `search_only`<br>先核對夾緊長度與孔位；不是已驗證列印模具五金。 |
+| ID | 項目／用途 | Photo / 写真 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |
+| --- | --- | --- | --- | --- | --- | --- |
+| JP-01 | 相機 | — | 1／sensor | 製作者曾購買 ASIN B0C5W1QF65；不從原 BOM 推定本商品的感光元件或鏡頭規格。 | [Amazon JP 商品：B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65) | `builder_purchased`<br>製作者提供的購買連結；本次頁面無法讀取，型號、變體、FOV、PCB 厚度與介面待補。 |
+| JP-03 | 透明壓克力 camera window | — | 1／sensor，備品另計 | 原版板厚 2 mm 僅作參考；最終厚度、外形、公差待量測出圖。 | [はざいや](https://www.hazaiya.co.jp/)<br>[圖面詢價](https://www.hazaiya.co.jp/index.php/estimate-drawing)<br>[發包說明](../docs/WINDOW_OUTSOURCING.md) | `fabrication_required`<br>製作者指定可找此店發包；未提供已下單規格。只有 window 發包壓克力，其餘模具列印。 |
+| JP-04 | 第一層透明矽膠 | <a href="../assets/photos/materials/layer-1-transparent.jpg"><img src="../assets/photos/materials/layer-1-transparent.jpg" width="90" alt="Layer 1: two white Huizhou-labelled bottles with QR codes"></a><br>Huizhou labels + QR codes<br>恵州ラベル・QRコード | 依批次量測耗用量 | 原 BOM 指透明 9345；日本同等材料未核實。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=9345+%E9%80%8F%E6%98%8E+%E3%82%B7%E3%83%AA%E3%82%B3%E3%83%BC%E3%83%B3+%E4%BB%98%E5%8A%A0%E5%9E%8B)<br>[日本代理商材料目錄](https://sac-corp.co.jp/categories/additive_silicone.php) | `search_only`<br>需確認透明度、硬化系統、硬度及層間相容性；不是任意透明型取り材皆可替代。 |
+| JP-05 | 第二層半透明矽膠：Shore 0 | <a href="../assets/photos/materials/layer-2-shore-0.jpg"><img src="../assets/photos/materials/layer-2-shore-0.jpg" width="90" alt="Layer 2: two bottles with blue SHORE A 0 stickers"></a><br>SHORE A 0 stickers<br>「SHORE A 0」ラベル | 依批次量測耗用量 | 已知實作：原淘寶 item 649539121020 選 Shore 0 號（製作者描述為 Shore A 0）；日本替代未驗證。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=Shore+0A+silicone+translucent)<br>[SAC Ecoflex 00-30 候選](https://sac-corp.myshopify.com/products/ecoflex-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD-00-30-%EF%BE%84%EF%BE%97%EF%BD%B2%EF%BD%B1%EF%BE%99%EF%BD%B7%EF%BD%AF%EF%BE%84)<br>[SAC Ecoflex 00-50 候選](https://sac-corp.myshopify.com/products/ecoflex-00-50-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD)<br>[日本 Shore A 0 試作／材料詢問](https://ytc-eng.com/silicon_syurui)<br>[材料研究](../docs/MATERIALS.md) | `candidate`<br>00-30／00-50 不等於 A0；日方頁面有售罄文字。先小樣比較光學、回復及黏合；不可按已驗證替代品下單。 ワイテック列有乳白色 A0 材料／試作，但原料零售與光學適用性未確認。 |
+| JP-06 | 第三層黑色表皮用矽膠 | <a href="../assets/photos/materials/layer-3-yellow-blue.jpg"><img src="../assets/photos/materials/layer-3-yellow-blue.jpg" width="90" alt="Layer 3: yellow and blue silicone jars"></a><br>Yellow + blue jars<br>黄色・青色の2容器 | 依批次量測耗用量 | 製作者指定的第三層矽膠，使用提供的 Amazon 商品連結。 | [第三層矽膠：Amazon](https://amzn.asia/d/08yFspH2) | `builder_specified`<br>由選購包裝記錄品牌、型號、混合比例與固化條件；不將此配方當作第二層材料。 |
+| JP-07 | 黑色矽膠顏料 | — | 批次耗材 | 製作者指定的第三層黑色矽膠顏料，使用提供的 AliExpress 商品連結。 | [第三層顏料：AliExpress](https://ja.aliexpress.com/item/1005012698616201.html) | `builder_specified`<br>記錄實際選購顏色與添加量，以及搭配第三層矽膠的固化和遮光結果。 |
+| JP-08 | M2 熱熔嵌件 | — | 原版參考 8；修改版待核對 | 原 BOM 標為 M2-5-3；長度／外徑的標示順序未核實。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=M2+%E3%82%A4%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%88%E3%83%8A%E3%83%83%E3%83%88+%E7%9C%9F%E9%8D%AE+5+3) | `search_only`<br>先依尺寸圖及 CAD 確認螺紋、長度、外徑、孔徑與埋深；嵌件不一定是 3.2 mm 外徑通用品。 |
+| JP-09 | 底座／外殼 M2 螺絲 | — | 原版參考 4；修改版待核對 | 原 BOM M2 × 6 mm；頭型、材質與有效牙長需配合實物。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=M2+6mm+%E5%B0%8F%E3%81%AD%E3%81%98+%E3%82%B9%E3%83%86%E3%83%B3%E3%83%AC%E3%82%B9) | `search_only`<br>購買機械牙，不是自攻螺絲；檢查頭高、PCB 間隙與是否頂底。 |
+| JP-10 | 模具 M3 螺帽 | — | 原版參考 8／套；列印模具待核對 | M3；依實際 3D 列印模具的夾持設計確認是否沿用。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=M3+%E5%85%AD%E8%A7%92%E3%83%8A%E3%83%83%E3%83%88+%E3%82%B9%E3%83%86%E3%83%B3%E3%83%AC%E3%82%B9) | `search_only`<br>不可把原壓克力模具用量直接視為列印模具用量。 |
+| JP-11 | 模具 M3 螺絲 | — | 原版參考 8／套；列印模具待核對 | 原 BOM M3 × 30 mm；依列印模具堆疊厚度與夾持方式確認。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=M3+30mm+%E5%B0%8F%E3%81%AD%E3%81%98+%E3%83%8A%E3%83%83%E3%83%88) | `search_only`<br>先核對夾緊長度與孔位；不是已驗證列印模具五金。 |
 
 ## ★ 沿用，跳過採購
 
-| ID | 項目／用途 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |
-| --- | --- | --- | --- | --- | --- |
-| JP-02 | ★ 既有 CSI → USB 轉接板 | 1／sensor，沿用現有零件 | 沿用現有、與相機配合的 CSI–USB 板；目前找不到相同替代品。 | 待補 | `reuse_skip`<br>本版跳過採購；記錄板卡標示、排線腳位與方向、接線及供電。 |
-| JP-24 | ★ LED 板／既有線路 | 1／sensor，來自既有零件 | Reuse existing LED assembly. 日本發包暫跳過。 | 待補 | `reuse_skip`<br>不提供一般 LED 環作等效替代；接手需記錄既有零件 ID、接線、方向與供電。 |
-| JP-25 | ★ 白色 sensor shell | 1／sensor，來自既有零件 | Reuse existing white shell. **不能用 PLA 列印。** 日本發包暫跳過。 | 待補 | `reuse_skip`<br>材質／製程涉及光學透光與散射；本次未驗證替代品。 |
+| ID | 項目／用途 | Photo / 写真 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |
+| --- | --- | --- | --- | --- | --- | --- |
+| JP-02 | ★ 既有 CSI → USB 轉接板 | — | 1／sensor，沿用現有零件 | 沿用現有、與相機配合的 CSI–USB 板；目前找不到相同替代品。 | 待補 | `reuse_skip`<br>本版跳過採購；記錄板卡標示、排線腳位與方向、接線及供電。 |
+| JP-24 | ★ LED 板／既有線路 | <a href="../assets/photos/led-board.jpg"><img src="../assets/photos/led-board.jpg" width="90" alt="Reused green LED board, showing panel and two separate boards"></a><br>Existing green LED board<br>再利用する緑色LED基板 | 1／sensor，來自既有零件 | Reuse existing LED assembly. 日本發包暫跳過。 | 待補 | `reuse_skip`<br>不提供一般 LED 環作等效替代；接手需記錄既有零件 ID、接線、方向與供電。 |
+| JP-25 | ★ 白色 sensor shell | — | 1／sensor，來自既有零件 | Reuse existing white shell. **不能用 PLA 列印。** 日本發包暫跳過。 | 待補 | `reuse_skip`<br>材質／製程涉及光學透光與散射；本次未驗證替代品。 |
 
 ## 自行製作／加工件
 
-| ID | 項目／用途 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |
-| --- | --- | --- | --- | --- | --- |
-| JP-26 | 修改版底座 | 1／sensor | sensor_base_adapt_for_thick_PCB.STL；另附同名 SolidWorks source。 | [STL](../hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)<br>[SolidWorks source](../hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | `fabrication_required`<br>STL 已由製作者補齊；STEP、列印材質、切片參數與 PCB 配合尺寸待補。 |
-| JP-27 | 修改版 camera isolation ring | 1／sensor | isolation_ring_out_11.4_in_10.3.STL；另附同名 SolidWorks source。 | [STL](../hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)<br>[SolidWorks source](../hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT) | `fabrication_required`<br>檔名不是尺寸驗證；確認 mm 比例、列印設定與實物遮光效果。 |
-| JP-28 | LEAP fingertip 固定件 | 依裝設手指數量 | STL chip-holder 版及 SolidWorks 版均保留，不假設兩檔同版。 | [STL](../hardware/mesh/finger_tip_tactile_with_chip_holder.STL)<br>[SolidWorks](../hardware/cad/finger_tip_tactile1_wrq.SLDPRT) | `fabrication_required`<br>由 LEAP 官方 CAD 修改；原授權條款待核對。固定螺絲、材質及手部行程待量測。 |
-| JP-29 | 3D 列印 casting molds | 1 套／製作工位 | 使用 3D 列印模具，取消原版壓克力 mold 板採購。 | [製作缺口](../docs/KNOWN_GAPS.md) | `fabrication_required`<br>本版列印檔尚未提供；原上游 DXF 僅幾何參考，需建成實體並確認厚度、密封與脫模。 |
-| JP-30 | Calibration board | 校正時使用／共用 | 使用上游 calibration_board 檔案。 | [上游 fabrication](https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication) | `conditional`<br>此 repo 未複製上游檔；新材料或機構變動後應重新校正。 |
+| ID | 項目／用途 | Photo / 写真 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |
+| --- | --- | --- | --- | --- | --- | --- |
+| JP-26 | 修改版底座 | — | 1／sensor | sensor_base_adapt_for_thick_PCB.STL；另附同名 SolidWorks source。 | [STL](../hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)<br>[SolidWorks source](../hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | `fabrication_required`<br>STL 已由製作者補齊；STEP、列印材質、切片參數與 PCB 配合尺寸待補。 |
+| JP-27 | 修改版 camera isolation ring | — | 1／sensor | isolation_ring_out_11.4_in_10.3.STL；另附同名 SolidWorks source。 | [STL](../hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)<br>[SolidWorks source](../hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT) | `fabrication_required`<br>檔名不是尺寸驗證；確認 mm 比例、列印設定與實物遮光效果。 |
+| JP-28 | LEAP fingertip 固定件 | — | 依裝設手指數量 | STL chip-holder 版及 SolidWorks 版均保留，不假設兩檔同版。 | [STL](../hardware/mesh/finger_tip_tactile_with_chip_holder.STL)<br>[SolidWorks](../hardware/cad/finger_tip_tactile1_wrq.SLDPRT) | `fabrication_required`<br>由 LEAP 官方 CAD 修改；原授權條款待核對。固定螺絲、材質及手部行程待量測。 |
+| JP-29 | 3D 列印 casting molds | — | 1 套／製作工位 | 使用 3D 列印模具，取消原版壓克力 mold 板採購。 | [製作缺口](../docs/KNOWN_GAPS.md) | `fabrication_required`<br>本版列印檔尚未提供；原上游 DXF 僅幾何參考，需建成實體並確認厚度、密封與脫模。 |
+| JP-30 | Calibration board | — | 校正時使用／共用 | 使用上游 calibration_board 檔案。 | [上游 fabrication](https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication) | `conditional`<br>此 repo 未複製上游檔；新材料或機構變動後應重新校正。 |
 
 ## 共用工具、耗材與選配
 
-| ID | 項目／用途 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |
-| --- | --- | --- | --- | --- | --- |
-| JP-12 | 電子秤 | 實驗室共用 1 台 | 依最小 A/B 加料量與顏料量選解析度；0.01g 等級可作選型起點，須確認量程與校驗。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB+0.01g+%E6%A0%A1%E6%AD%A3) | `builder_confirmed`<br>顯示解析度不等於量測精度。 |
-| JP-13 | 熱熔膠槍 | 有需求才使用／共用 | 接線或非光學處暫固定工具；不是 window 或矽膠的指定接著劑。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=goot+%E3%82%B0%E3%83%AB%E3%83%BC%E3%82%AC%E3%83%B3+AC100V) | `builder_confirmed`<br>依實際固定位置、耐熱與拆修需求確認是否需要；不把熱熔膠放進光路。 |
-| JP-14 | 溫控烙鐵／工具 | 實驗室共用 | HAKKO FX600-02（日本 100V）；嵌件工具頭與焊接工具需依用途分開選。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=HAKKO+FX600-02)<br>[HAKKO 原廠](https://www.hakko.com/japan/products/hakko_fx600.html) | `builder_confirmed`<br>LED 沿用，是否需焊接由現有線路狀態決定。 |
-| JP-15 | 美工刀：脫模界面分離／修邊 | 實驗室共用 | 第二層半透明與第三層黑色矽膠脫模時，沿模具—矽膠交界小心分離；實際刀具型號待補。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%95+%E7%B2%BE%E5%AF%86)<br>[脫模對照與說明](../docs/DEMOLDING.md) | `builder_confirmed`<br>此為製作者確認的脫模方式修改；不用手指壓／拉開邊緣，不切進感測接觸面、黑色表皮或 window。 |
-| JP-16 | 混合杯 | 每批耗材 | PP 等可相容的乾淨容器，容量需預留脫泡膨脹空間。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=PP+%E8%A8%88%E9%87%8F%E3%82%AB%E3%83%83%E3%83%97+%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6+%E6%A8%B9%E8%84%82) | `builder_confirmed`<br>材質與矽膠的硬化相容性先小樣確認。 |
-| JP-17 | 攪拌棒 | 每批耗材 | 乾淨塑膠攪拌棒，避免未驗證表面處理物污染。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%83%97%E3%83%A9%E3%82%B9%E3%83%81%E3%83%83%E3%82%AF+%E6%94%AA%E6%8B%8C%E6%A3%92+%E3%82%B7%E3%83%AA%E3%82%B3%E3%83%B3) | `builder_confirmed`<br>依原廠指示充分混合；每種材料工具保持分開。 |
-| JP-18 | 除塵／低掉屑清潔耗材 | 批次耗材 | 原 BOM 為 Dust removal paper；低掉屑拭紙、除塵貼等功能不同，要依使用位置選。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%83%AC%E3%83%B3%E3%82%BA+%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%9A%E3%83%BC%E3%83%91%E3%83%BC+%E3%83%80%E3%82%B9%E3%83%88%E9%99%A4%E5%8E%BB+%E3%82%B7%E3%83%BC%E3%83%AB) | `builder_confirmed`<br>確認不留膠、不刮傷、不帶入硬化抑制物；不把帶膠除塵貼當光學擦拭紙。 |
-| JP-19 | 塑膠針筒 | 每批耗材 | 無針、容量依實際注入量；需確認密封件與矽膠相容性。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E6%A8%B9%E8%84%82+%E6%B3%A8%E5%85%A5+%E3%82%B7%E3%83%AA%E3%83%B3%E3%82%B8+%E9%87%9D%E3%81%AA%E3%81%97) | `builder_confirmed`<br>只作施膠／注料用途；確認實際接液材料。 |
-| JP-20 | Window 接著劑 | 批次耗材 | 透明、適用 PMMA 與現有白色外殼並提供所需密封；選用項目已由製作者確認。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%82%A2%E3%82%AF%E3%83%AA%E3%83%AB+%E3%83%8A%E3%82%A4%E3%83%AD%E3%83%B3+%E6%8E%A5%E7%9D%80%E5%89%A4+%E9%80%8F%E6%98%8E) | `builder_confirmed`<br>記錄實際使用接著劑，避免多餘膠材進入光學面。 |
-| JP-21 | 黑色層黏合／修補膠 | 有需要才使用 | Smooth-On Sil-Poxy，限實際需要矽膠接著或修補的位置。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=Smooth-On+Sil-Poxy)<br>[SAC Sil-Poxy](https://sac-corp.myshopify.com/products/sil-poxy)<br>[日本代理商技術資料](https://sac-corp.co.jp/products/Sil-Poxy_TI.pdf) | `builder_confirmed`<br>不是原黑色層整面塗膠的已驗證配方；避免用較硬膠層改變接觸層力學。 |
-| JP-22 | 真空脫泡設備 | 實驗室共用 | 真空泵＋耐真空腔體＋接頭；日本 100V、容積、壓力與混合料膨脹餘量需選型。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E7%9C%9F%E7%A9%BA+%E8%84%B1%E6%B3%A1+%E3%83%81%E3%83%A3%E3%83%B3%E3%83%90%E3%83%BC+%E3%83%9D%E3%83%B3%E3%83%97+100V+%E3%82%B7%E3%83%AA%E3%82%B3%E3%83%B3) | `builder_confirmed`<br>原淘寶容量選項不是必須照買；記錄實際使用的真空泵、腔體與接頭配置。 |
-| JP-23 | 固化加熱設備 | 選配／共用 | 僅在選用材料允許的硬化／後固化條件下使用；本版實作溫度與時間尚未記錄。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E6%81%92%E6%B8%A9%E5%99%A8+%E4%B9%BE%E7%87%A5%E5%99%A8+%E5%AE%9F%E9%A8%93%E7%94%A8+%E4%BD%8E%E6%B8%A9) | `optional`<br>不沿用不同材料的加熱配方；原 BOM 亦列為 optional。 |
-| JP-31 | 線材固定與拉力釋放 | 依 LEAP 布線 | 小型束帶／適當線材固定件；不是原 BOM 指定品。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89+%E5%B0%8F%E5%9E%8B+%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB+%E5%9B%BA%E5%AE%9A) | `optional`<br>依實際線徑與關節活動量確認，不夾壓 FPC 或限制關節。 |
+| ID | 項目／用途 | Photo / 写真 | 數量基準 | 規格／候選 | 日本採購／檔案 | 狀態與驗證事項 |
+| --- | --- | --- | --- | --- | --- | --- |
+| JP-12 | 電子秤 | — | 實驗室共用 1 台 | 依最小 A/B 加料量與顏料量選解析度；0.01g 等級可作選型起點，須確認量程與校驗。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB+0.01g+%E6%A0%A1%E6%AD%A3) | `builder_confirmed`<br>顯示解析度不等於量測精度。 |
+| JP-13 | 熱熔膠槍 | — | 有需求才使用／共用 | 接線或非光學處暫固定工具；不是 window 或矽膠的指定接著劑。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=goot+%E3%82%B0%E3%83%AB%E3%83%BC%E3%82%AC%E3%83%B3+AC100V) | `builder_confirmed`<br>依實際固定位置、耐熱與拆修需求確認是否需要；不把熱熔膠放進光路。 |
+| JP-14 | 溫控烙鐵／工具 | — | 實驗室共用 | HAKKO FX600-02（日本 100V）；嵌件工具頭與焊接工具需依用途分開選。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=HAKKO+FX600-02)<br>[HAKKO 原廠](https://www.hakko.com/japan/products/hakko_fx600.html) | `builder_confirmed`<br>LED 沿用，是否需焊接由現有線路狀態決定。 |
+| JP-15 | 美工刀：脫模界面分離／修邊 | — | 實驗室共用 | 第二層半透明與第三層黑色矽膠脫模時，沿模具—矽膠交界小心分離；實際刀具型號待補。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%95+%E7%B2%BE%E5%AF%86)<br>[脫模對照與說明](../docs/DEMOLDING.md) | `builder_confirmed`<br>此為製作者確認的脫模方式修改；不用手指壓／拉開邊緣，不切進感測接觸面、黑色表皮或 window。 |
+| JP-16 | 混合杯 | — | 每批耗材 | PP 等可相容的乾淨容器，容量需預留脫泡膨脹空間。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=PP+%E8%A8%88%E9%87%8F%E3%82%AB%E3%83%83%E3%83%97+%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6+%E6%A8%B9%E8%84%82) | `builder_confirmed`<br>材質與矽膠的硬化相容性先小樣確認。 |
+| JP-17 | 攪拌棒 | — | 每批耗材 | 乾淨塑膠攪拌棒，避免未驗證表面處理物污染。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%83%97%E3%83%A9%E3%82%B9%E3%83%81%E3%83%83%E3%82%AF+%E6%94%AA%E6%8B%8C%E6%A3%92+%E3%82%B7%E3%83%AA%E3%82%B3%E3%83%B3) | `builder_confirmed`<br>依原廠指示充分混合；每種材料工具保持分開。 |
+| JP-18 | 除塵／低掉屑清潔耗材 | — | 批次耗材 | 原 BOM 為 Dust removal paper；低掉屑拭紙、除塵貼等功能不同，要依使用位置選。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%83%AC%E3%83%B3%E3%82%BA+%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%9A%E3%83%BC%E3%83%91%E3%83%BC+%E3%83%80%E3%82%B9%E3%83%88%E9%99%A4%E5%8E%BB+%E3%82%B7%E3%83%BC%E3%83%AB) | `builder_confirmed`<br>確認不留膠、不刮傷、不帶入硬化抑制物；不把帶膠除塵貼當光學擦拭紙。 |
+| JP-19 | 塑膠針筒 | — | 每批耗材 | 無針、容量依實際注入量；需確認密封件與矽膠相容性。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E6%A8%B9%E8%84%82+%E6%B3%A8%E5%85%A5+%E3%82%B7%E3%83%AA%E3%83%B3%E3%82%B8+%E9%87%9D%E3%81%AA%E3%81%97) | `builder_confirmed`<br>只作施膠／注料用途；確認實際接液材料。 |
+| JP-20 | Window 接著劑 | — | 批次耗材 | 透明、適用 PMMA 與現有白色外殼並提供所需密封；選用項目已由製作者確認。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E3%82%A2%E3%82%AF%E3%83%AA%E3%83%AB+%E3%83%8A%E3%82%A4%E3%83%AD%E3%83%B3+%E6%8E%A5%E7%9D%80%E5%89%A4+%E9%80%8F%E6%98%8E) | `builder_confirmed`<br>記錄實際使用接著劑，避免多餘膠材進入光學面。 |
+| JP-21 | 黑色層黏合／修補膠 | — | 有需要才使用 | Smooth-On Sil-Poxy，限實際需要矽膠接著或修補的位置。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=Smooth-On+Sil-Poxy)<br>[SAC Sil-Poxy](https://sac-corp.myshopify.com/products/sil-poxy)<br>[日本代理商技術資料](https://sac-corp.co.jp/products/Sil-Poxy_TI.pdf) | `builder_confirmed`<br>不是原黑色層整面塗膠的已驗證配方；避免用較硬膠層改變接觸層力學。 |
+| JP-22 | 真空脫泡設備 | — | 實驗室共用 | 真空泵＋耐真空腔體＋接頭；日本 100V、容積、壓力與混合料膨脹餘量需選型。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E7%9C%9F%E7%A9%BA+%E8%84%B1%E6%B3%A1+%E3%83%81%E3%83%A3%E3%83%B3%E3%83%90%E3%83%BC+%E3%83%9D%E3%83%B3%E3%83%97+100V+%E3%82%B7%E3%83%AA%E3%82%B3%E3%83%B3) | `builder_confirmed`<br>原淘寶容量選項不是必須照買；記錄實際使用的真空泵、腔體與接頭配置。 |
+| JP-23 | 固化加熱設備 | — | 選配／共用 | 僅在選用材料允許的硬化／後固化條件下使用；本版實作溫度與時間尚未記錄。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E6%81%92%E6%B8%A9%E5%99%A8+%E4%B9%BE%E7%87%A5%E5%99%A8+%E5%AE%9F%E9%A8%93%E7%94%A8+%E4%BD%8E%E6%B8%A9) | `optional`<br>不沿用不同材料的加熱配方；原 BOM 亦列為 optional。 |
+| JP-31 | 線材固定與拉力釋放 | — | 依 LEAP 布線 | 小型束帶／適當線材固定件；不是原 BOM 指定品。 | [Amazon JP 搜尋](https://www.amazon.co.jp/s?k=%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89+%E5%B0%8F%E5%9E%8B+%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB+%E5%9B%BA%E5%AE%9A) | `optional`<br>依實際線徑與關節活動量確認，不夾壓 FPC 或限制關節。 |
 
 ## 使用與維護
 

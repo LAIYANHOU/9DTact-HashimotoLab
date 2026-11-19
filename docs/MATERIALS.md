@@ -14,6 +14,8 @@ Builder-specified products updated: 2026-11-19. Japanese alternative-material re
 
 The third-layer links above replace the earlier generic sourcing suggestions in the active BOM. Product pages could not be fully retrieved during this update, so the brand/model, selected variant and recipe are not inferred from the URLs. Record them from the actual packages in the [build record](BUILD_RECORD_TEMPLATE.md).
 
+**Identify the actual containers:** the builder confirmed that **layer 1** is the pair of white bottles with Huizhou labels and QR codes, **layer 2** is the pair marked **SHORE A 0**, and **layer 3** is the yellow/blue pair of jars. See the clickable photos in [BOM entries JP-04, JP-05 and JP-06](../bom/BOM_JP.md), or the [photo inventory](../assets/photos/README.md). Black pigment remains the separate JP-07 item; the third-layer jars are the silicone itself.
+
 ## Layer 2: recorded implementation
 
 The builder selected the **Shore 0 option of the same Taobao listing** and has not purchased an equivalent second-layer silicone in Japan. The original Word BOM describes that listing as Shore 5A; that old annotation is not the selection for this build.

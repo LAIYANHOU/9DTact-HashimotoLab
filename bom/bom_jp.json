@@ -125,7 +125,14 @@
       "name_en": "Layer 1: transparent silicone",
       "quantity_basis_en": "Measure consumption per batch",
       "specification_en": "Original BOM specifies clear 9345 silicone. A Japan-sourced equivalent has not been confirmed.",
-      "validation_note_en": "Verify clarity, cure chemistry, hardness and interlayer compatibility. A generic clear mold-making silicone is not an approved substitute."
+      "validation_note_en": "Verify clarity, cure chemistry, hardness and interlayer compatibility. A generic clear mold-making silicone is not an approved substitute.",
+      "photo": {
+        "path": "../assets/photos/materials/layer-1-transparent.jpg",
+        "alt_en": "Layer 1: two white Huizhou-labelled bottles with QR codes",
+        "caption_en": "Huizhou labels + QR codes",
+        "caption_ja": "恵州ラベル・QRコード",
+        "builder_identified_date": "2026-11-19"
+      }
     },
     {
       "id": "JP-05",
@@ -171,7 +178,14 @@
       "name_en": "Layer 2: translucent silicone, Shore 0",
       "quantity_basis_en": "Measure consumption per batch",
       "specification_en": "Current build uses the Shore 0 option of Taobao item 649539121020, described by the builder as Shore A 0. Japan replacements are unvalidated.",
-      "validation_note_en": "Ecoflex 00-30/00-50 are not equivalent hardness designations to A0; Japanese pages displayed sold-out text. Test optical response, recovery and bonding. Ytech lists milky-white A0 materials/prototyping; raw-material retail and sensor suitability remain unconfirmed."
+      "validation_note_en": "Ecoflex 00-30/00-50 are not equivalent hardness designations to A0; Japanese pages displayed sold-out text. Test optical response, recovery and bonding. Ytech lists milky-white A0 materials/prototyping; raw-material retail and sensor suitability remain unconfirmed.",
+      "photo": {
+        "path": "../assets/photos/materials/layer-2-shore-0.jpg",
+        "alt_en": "Layer 2: two bottles with blue SHORE A 0 stickers",
+        "caption_en": "SHORE A 0 stickers",
+        "caption_ja": "「SHORE A 0」ラベル",
+        "builder_identified_date": "2026-11-19"
+      }
     },
     {
       "id": "JP-06",
@@ -194,7 +208,14 @@
       "quantity_basis_en": "Measure consumption per batch",
       "specification_en": "Builder-specified silicone for layer 3, using the supplied Amazon product link.",
       "validation_note_en": "Record brand/model, mixing ratio and curing conditions from the selected package. This is the third-layer material, not the second-layer silicone.",
-      "builder_specified_date": "2026-11-19"
+      "builder_specified_date": "2026-11-19",
+      "photo": {
+        "path": "../assets/photos/materials/layer-3-yellow-blue.jpg",
+        "alt_en": "Layer 3: yellow and blue silicone jars",
+        "caption_en": "Yellow + blue jars",
+        "caption_ja": "黄色・青色の2容器",
+        "builder_identified_date": "2026-11-19"
+      }
     },
     {
       "id": "JP-07",
@@ -620,7 +641,14 @@
       "name_en": "★ Existing LED board and wiring",
       "quantity_basis_en": "1 reused assembly per sensor",
       "specification_en": "Reuse existing LED assembly. New fabrication/procurement in Japan is deferred.",
-      "validation_note_en": "Do not substitute a generic LED ring. Record assembly ID, wiring, orientation and supply."
+      "validation_note_en": "Do not substitute a generic LED ring. Record assembly ID, wiring, orientation and supply.",
+      "photo": {
+        "path": "../assets/photos/led-board.jpg",
+        "alt_en": "Reused green LED board, showing panel and two separate boards",
+        "caption_en": "Existing green LED board",
+        "caption_ja": "再利用する緑色LED基板",
+        "builder_identified_date": "2026-11-19"
+      }
     },
     {
       "id": "JP-25",

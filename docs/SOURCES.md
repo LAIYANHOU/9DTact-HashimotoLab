@@ -7,6 +7,7 @@ Reviewed on 2026-11-18. The distinction between builder reports, source document
 - Six local hardware files, preserved byte-for-byte; [checksums and inventory](../hardware/manifest.json).
 - Original `9DTact_BOM.docx`, retained in the parent folder; [24 cleaned source product references](../bom/TAOBAO_REFERENCE.md).
 - Second-layer material: original Taobao translucent-silicone product, selected Shore 0 option; builder describes it as Shore A 0. No Japanese purchase of this material.
+- Four original lab photographs supplied and identified by the builder on 2026-11-19: layer-1 Huizhou/QR-code bottles (JP-04), layer-2 “SHORE A 0” bottles (JP-05), layer-3 yellow/blue jars (JP-06), and reused LED board (JP-24). See the [photo inventory](../assets/photos/README.md). The mapping is builder-confirmed; photographs do not establish a mixing recipe or replacement-material equivalence.
 - Camera previously purchased: [Amazon Japan ASIN B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65).
 - Acrylic camera window can be outsourced to [Hazaiya](https://www.hazaiya.co.jp/); other molds are 3D printed.
 - Existing CSI–USB board, LED board and white shell are reused. A matching CSI–USB replacement was not found. White shell must not be PLA.

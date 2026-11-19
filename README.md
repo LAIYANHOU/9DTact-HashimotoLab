@@ -9,7 +9,7 @@
 
 This build adapts [9DTact](https://github.com/linchangyi1/9DTact) for the lab's camera PCB and LEAP Hand mounting. This companion repository collects the modified parts, fabrication choices and Japan sourcing notes; software and calibration remain upstream.
 
-> **Handover in progress / 引き継ぎ資料を整備中** — All three important STL parts are included. Silicone, assembly and practical know-how photographs will be added by the builder. Japanese replacement materials and print settings still need physical validation.
+> **Handover in progress / 引き継ぎ資料を整備中** — All three important STL parts are included. Photos of all three silicone pairs and the reused LED board are included in the BOM. Assembly and casting photographs are still to come. Japanese replacement materials and print settings still need physical validation.
 
 ## Three parts to know first / 重要な3つの部品
 
@@ -93,15 +93,17 @@ After **layer 2 (translucent)** and **layer 3 (black)**, we use a **utility knif
 
 第2層と第3層では、指でシリコーンの端を押したり引いたりせず、カッターナイフでモールドとの界面を慎重に分離します。ホットメルト接着剤の除去は別の工程です。
 
-## Practical photographs / 実作業の写真を追加予定
+## Practical photographs / 実物・実作業の写真
 
-The builder will add real silicone and fabrication photographs. The CAD renders above cover the supplied geometry; they do not stand in for assembly photographs.
+The [BOM photo column](bom/BOM_JP.md) now shows the builder's actual **layer-1 Huizhou/QR-code bottles, layer-2 Shore A 0 bottles, layer-3 yellow/blue jars and reused LED board**. Click each thumbnail to inspect the original photo. Assembly and casting photographs are still planned.
+
+[部品表の写真欄](bom/BOM_JP.md) に、第1層の恵州ラベル・QRコード付き容器、第2層の「SHORE A 0」容器、第3層の黄色・青色容器、再利用する LED 基板の実物写真を追加しました。小画像から元の写真を開けます。
 
 | Photo set | What the next builder should be able to see |
 | --- | --- |
 | **Assembled sensor & LEAP mount** | Final orientation, fastening and cable routing |
 | **Camera / PCB fit** | PCB thickness, seating, screw access and lens clearance |
-| **Three silicone layers** | Actual material packaging, Shore 0 selection and layer sequence |
+| **Three silicone pairs & LED board — included** | Actual containers and board in the [BOM](bom/BOM_JP.md); layer mapping confirmed by the builder |
 | **Printed molds & casting** | Mold shape, surface preparation, sealing, demolding and common failures |
 | **Finished contact surface** | Black coating and sides, good/failed examples, no-contact and contact images |
 
@@ -114,7 +116,7 @@ Photo filenames and caption guidance: [assets/photos/README.md](assets/photos/RE
 3. Check the [Japan BOM](bom/BOM_JP.md), prepare the window drawing and test any replacement silicone in small samples.
 4. Assemble, record the fabrication settings, test the LEAP mount through its intended motion, then recalibrate with [upstream 9DTact](https://github.com/linchangyi1/9DTact#3d-shape-reconstruction).
 
-**Still to add:** mold files, STEP exports, the final window drawing, print/casting parameters and the builder's photographs. [Complete gap list →](docs/KNOWN_GAPS.md)
+**Still to add:** mold files, STEP exports, the final window drawing, print/casting parameters and assembly/casting photographs. [Complete gap list →](docs/KNOWN_GAPS.md)
 
 ## Credit and file licenses
 

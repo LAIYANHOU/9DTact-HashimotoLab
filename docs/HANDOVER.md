@@ -10,7 +10,7 @@ This hardware companion to [9DTact](https://github.com/linchangyi1/9DTact) recor
 
 | Item | Hashimoto Lab decision | Handover detail |
 | --- | --- | --- |
-| Layer 2: translucent silicone | Same Taobao product, **Shore 0 option**, described by the builder as **Shore A 0**, replacing the original 5A selection | Actual package, mixing ratio and cure record still needed; a Japanese equivalent is not validated |
+| Layer 2: translucent silicone | Same Taobao product, **Shore 0 option**, described by the builder as **Shore A 0**, replacing the original 5A selection | Actual bottles shown in the BOM; mixing ratio and cure record still needed; a Japanese equivalent is not validated |
 | Layer 3: silicone | [Builder-specified Amazon product](https://amzn.asia/d/08yFspH2) | Record exact package/model, mixing ratio and cure conditions |
 | Layer 3: black pigment | [Builder-specified AliExpress product](https://ja.aliexpress.com/item/1005012698616201.html) | Record selected color, loading and resulting light blocking |
 | Sensor base | `sensor_base_adapt_for_thick_PCB.STL` and `.SLDPRT` | Adapted for thicker camera PCB; STEP export and measured fit still needed |
@@ -60,6 +60,8 @@ Use the [build-record template](BUILD_RECORD_TEMPLATE.md). Blank results are not
 
 ## Next information to add
 
-Priorities: printed-mold files, STEP exports, the final window drawing, Shore 0 packaging/recipe, layer-3 package details and pigment loading, print settings, camera variant, reused-board markings and LEAP fastening. See [known gaps](KNOWN_GAPS.md).
+The [BOM photo column](../bom/BOM_JP.md) identifies the actual containers: layer 1 has Huizhou labels and QR codes; layer 2 has “SHORE A 0” stickers; layer 3 has yellow/blue jars. JP-24 shows the reused LED board.
+
+Priorities: printed-mold files, STEP exports, the final window drawing, readable material model/recipe details, pigment loading, print settings, camera variant, reused-board connections and LEAP fastening. See [known gaps](KNOWN_GAPS.md).
 
 Six CAD/STL inputs are preserved byte-for-byte in this repository. The original files and source `9DTact_BOM.docx` remain unchanged in the parent handover folder.
