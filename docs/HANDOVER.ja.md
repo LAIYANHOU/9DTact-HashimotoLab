@@ -4,6 +4,12 @@
 
 [9DTact](https://github.com/linchangyi1/9DTact) の厚いカメラ基板への対応と LEAP Hand への取り付けを変更しています。校正、形状復元、力推定には元のソフトウェアを使用します。
 
+## まず元の製作動画を見る
+
+[![▶ 9DTact Fabrication Tutorial](https://i.ytimg.com/vi/VxMceWVz7QQ/hqdefault.jpg)](https://www.youtube.com/watch?v=VxMceWVz7QQ)
+
+[▶ 9DTact Fabrication Tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ) を見てから、以下の構成と組み立て手順に沿って Hashimoto Lab 版を製作します。
+
 ## 構成
 
 | 項目 | Hashimoto Lab の実装 |

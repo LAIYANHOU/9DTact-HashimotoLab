@@ -4,6 +4,12 @@
 
 This build adapts [9DTact](https://github.com/linchangyi1/9DTact) for a thicker camera PCB and LEAP Hand mounting. Use upstream software for calibration, reconstruction and force estimation.
 
+## Start with the original video
+
+[![▶ 9DTact Fabrication Tutorial](https://i.ytimg.com/vi/VxMceWVz7QQ/hqdefault.jpg)](https://www.youtube.com/watch?v=VxMceWVz7QQ)
+
+[▶ Watch the 9DTact Fabrication Tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ), then follow the build configuration and assembly steps below for the Hashimoto Lab version.
+
 ## Build configuration
 
 | Item | Hashimoto Lab build |

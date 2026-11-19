@@ -5,11 +5,17 @@
 
 [Handover · English](docs/HANDOVER.md) · [引き継ぎ · 日本語](docs/HANDOVER.ja.md) · [BOM](bom/BOM_JP.md) · [Materials · English](docs/MATERIALS.md) · [材料 · 日本語](docs/MATERIALS.ja.md) · [Hardware](hardware/README.md)
 
-![Three key parts: modified sensor base, isolation ring and LEAP fingertip mount](assets/mesh-preview.png)
-
 This build adapts [9DTact](https://github.com/linchangyi1/9DTact) for the lab's camera PCB and LEAP Hand mounting. This companion repository collects the modified parts, fabrication choices and Japan sourcing notes; software and calibration remain upstream.
 
+## Watch first / はじめに見る動画
+
+[![▶ 9DTact Fabrication Tutorial](https://i.ytimg.com/vi/VxMceWVz7QQ/hqdefault.jpg)](https://www.youtube.com/watch?v=VxMceWVz7QQ)
+
+**[▶ 9DTact Fabrication Tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ)** → [Hashimoto Lab steps · English](docs/HANDOVER.md) / [日本語](docs/HANDOVER.ja.md) → [BOM](bom/BOM_JP.md)
+
 ## Three parts to know first / 重要な3つの部品
+
+![Three key parts: modified sensor base, isolation ring and LEAP fingertip mount](assets/mesh-preview.png)
 
 | Part | What changed / 用途・変更点 | Files |
 | --- | --- | --- |
