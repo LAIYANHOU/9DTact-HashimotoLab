@@ -1,4 +1,4 @@
-# Demolding layers 2 and 3 / 第二、三層脫模
+# Demolding layers 2 and 3 / 第2層・第3層の脱型
 
 **Hashimoto Lab method: carefully separate the mold–silicone interface with a utility knife.**
 
@@ -25,16 +25,18 @@ The tutorial's removal of **hot-melt adhesive strips** is a separate operation. 
 
 Record the knife used, mold version and any edge/surface damage in the [build record](BUILD_RECORD_TEMPLATE.md). See **JP-15** in the [English BOM](../bom/BOM_JP.md) for the tool entry. The actual knife model and detailed mold geometry have not yet been supplied.
 
-## 繁體中文說明
+## 日本語の手順
 
-第二層半透明矽膠完成後脫模，以及第三層黑色矽膠完成後脫模，都採用同一個修改：**不用手指把矽膠邊緣壓開或拉開，改用美工刀沿模具與矽膠的交界小心分離。**
+第2層の半透明シリコーンと第3層の黒色シリコーンは、どちらも同じ方法で脱型します。**指でシリコーンの端を押したり引いたりせず、カッターナイフでモールドとシリコーンの界面を慎重に分離します。**
 
-- 先依實際配方完成固化，並處理該模具需要移除的螺絲／固定膠條。
-- 固定住模具，刀尖沿外圍的「模具—矽膠界面」逐段分離黏著處。
-- **不是把矽膠本體切開，也不是在感測接觸面或黑色表皮上劃一刀。** 實驗室尚未提供固定刀深或刀角，不在示意圖中虛構數值。
-- 確認周邊已釋放後再取下模具；若仍黏住，回到該處分離，不用手硬拉矽膠。
+1. 実際の材料の指示に従って硬化を完了し、モールドの固定ねじや接着剤を必要に応じて除去します。
+2. モールドを支え、外周の「モールドとシリコーンの界面」に沿って刃先を進め、接着部分を少しずつ分離します。
+3. **シリコーン本体、感圧面、黒色表皮を切らないでください。** この実装では固定の刃の深さや角度は記録されていません。
+4. 周囲の界面が離れてからモールドを取り外します。まだ接着している箇所があれば、その場所を分離し、手で無理に引っ張らないでください。
 
-第三張參考截圖中的「移除熱熔膠條」是另一個步驟；此處紅叉只針對用手壓開矽膠邊緣的做法。
+参考動画の「ホットメルト接着剤を取り除く」操作は別の工程です。比較図の赤い X は、指でシリコーンの端を押して離す方法を、この研究室では採用しないことを示します。
+
+使用したナイフ、モールドの版、端や表面の損傷を [製作記録](BUILD_RECORD_TEMPLATE.md) に残してください。ナイフは部品表の **JP-15** です。
 
 ## Figure provenance
 

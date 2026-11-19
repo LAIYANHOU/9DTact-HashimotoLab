@@ -4,12 +4,14 @@ Reviewed on 2026-11-18. The distinction between builder reports, source document
 
 ## Builder-provided evidence
 
-- Five local hardware files, preserved byte-for-byte; [checksums and inventory](../hardware/manifest.json).
+- Six local hardware files, preserved byte-for-byte; [checksums and inventory](../hardware/manifest.json).
 - Original `9DTact_BOM.docx`, retained in the parent folder; [24 cleaned source product references](../bom/TAOBAO_REFERENCE.md).
 - Second-layer material: original Taobao translucent-silicone product, selected Shore 0 option; builder describes it as Shore A 0. No Japanese purchase of this material.
 - Camera previously purchased: [Amazon Japan ASIN B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65).
 - Acrylic camera window can be outsourced to [Hazaiya](https://www.hazaiya.co.jp/); other molds are 3D printed.
-- Existing LED board and white shell are reused. White shell must not be PLA.
+- Existing CSI–USB board, LED board and white shell are reused. A matching CSI–USB replacement was not found. White shell must not be PLA.
+- On 2026-11-19, the builder specified [layer-3 silicone](https://amzn.asia/d/08yFspH2) and [black pigment](https://ja.aliexpress.com/item/1005012698616201.html) and confirmed shared tools. Product pages could not be fully retrieved; no model or recipe is inferred from those links.
+- Builder-supplied isolation-ring SolidWorks source was added on 2026-11-19; its exact bytes are in the hardware manifest.
 - Both local LEAP fingertip files derive from official LEAP CAD.
 - Demolding layers 2 and 3: builder specifies careful utility-knife release along the mold–silicone interface, replacing hand pressure/pulling at the edge. The builder supplied [the assembly tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ) and screenshots showing both demolding stages. The video page could not be played during this review; visible screenshot captions and the builder's explanation establish the comparison. See [DEMOLDING.md](DEMOLDING.md).
 
@@ -34,7 +36,7 @@ The upstream repository was viewed at `main`; a specific commit hash could not b
 - [SAC Sil-Poxy](https://sac-corp.myshopify.com/products/sil-poxy): a possible silicone-repair adhesive, not a validated replacement for every legacy adhesive.
 - [HAKKO FX600](https://www.hakko.com/japan/products/hakko_fx600.html): primary reference for a Japanese temperature-controlled soldering-iron candidate.
 
-Amazon Japan product pages could not be fully retrieved in this review. Only the camera link has builder-reported purchase evidence. All `/s?k=…` links are explicitly labeled **search routes**; seller, SKU, selected variant, price, stock and compatibility are not verified. General tool selection notes are proposed engineering guidance, not reports of successful lab use.
+Amazon Japan product pages could not be fully retrieved in this review. The camera link has builder-reported purchase evidence; the layer-3 links are builder-specified, and shared tools are builder-confirmed. All `/s?k=…` links are explicitly labeled **search routes**; seller, SKU, selected variant, price, stock and compatibility are not verified. General tool selection notes are proposed engineering guidance, not reports of successful lab use.
 
 ## LEAP CAD attribution and conflicting license descriptions
 

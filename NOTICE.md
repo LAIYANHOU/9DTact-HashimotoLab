@@ -25,7 +25,7 @@ The builder confirms that both `finger_tip_tactile1_wrq.SLDPRT` and `finger_tip_
 
 The builder supplied `9DTact_BOM.docx` as a Taobao-oriented reference. The document is kept unchanged in the parent handover folder and not redistributed here. Factual specifications and cleaned product identifiers are cross-referenced in [bom/TAOBAO_REFERENCE.md](bom/TAOBAO_REFERENCE.md). No product screenshots or store images are copied into this repository.
 
-Camera ASIN B0C5W1QF65, Hazaiya as a window supplier, Shore 0 from Taobao, printed molds, and reused LED/shell are builder-reported facts. Online candidates are labeled separately. No upstream author or supplier endorsement is implied.
+Camera ASIN B0C5W1QF65, Hazaiya as a window supplier, Shore 0 from Taobao, printed molds, and reused CSI–USB/LED/shell are builder-reported facts. The builder later specified third-layer [silicone](https://amzn.asia/d/08yFspH2) and [pigment](https://ja.aliexpress.com/item/1005012698616201.html), confirmed shared tools, and supplied the isolation-ring SolidWorks source. Online candidates are labeled separately. No upstream author or supplier endorsement is implied.
 
 ## Demolding comparison
 

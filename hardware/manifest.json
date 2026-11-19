@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_date": "2026-11-18",
+  "recorded_date": "2026-11-19",
   "upstream_repository": "https://github.com/linchangyi1/9DTact",
   "upstream_revision": "main viewed 2026-11-18; commit not pinned",
   "coordinate_units": "STL has no units; mm assumed provisionally, slicer verification required",
@@ -69,6 +69,15 @@
         ],
         "binary_stl_size_valid": true
       }
+    },
+    {
+      "path": "hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT",
+      "original_filename": "isolation_ring_out_11.4_in_10.3.SLDPRT",
+      "bytes": 126678,
+      "sha256": "3790a4452c3bb97c8380ed9cd85e992a2e4e891159d6888438f7297b31d28806",
+      "purpose": "Builder-supplied SolidWorks source for the revised camera isolation ring",
+      "license_note": "9DTact-derived; upstream MIT notice retained",
+      "readiness": "Same-name source and STL supplied; active source configuration and export correspondence not inspected"
     },
     {
       "path": "hardware/cad/finger_tip_tactile1_wrq.SLDPRT",

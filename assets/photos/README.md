@@ -1,25 +1,28 @@
-# Practical photographs / 實作照片
+# Practical photographs / 実作業の写真
 
-The builder will supply the actual silicone and know-how photographs. No fabricated process photographs are included.
+The builder will supply actual silicone and fabrication photographs. The [demolding comparison](../../docs/DEMOLDING.md) already combines supplied tutorial frames and explanatory knife schematics. Add real lab photographs alongside it later.
 
-The first documented procedure difference is illustrated in the [layer 2 / layer 3 demolding comparison](../../docs/DEMOLDING.md): user-supplied tutorial frames on the left, generated knife-interface schematics on the right. Actual lab demolding photographs can be added alongside that explanation later.
+実際の材料と製作工程の写真を製作者が追加する予定です。既存の [脱型比較図](../../docs/DEMOLDING.md) は、提供された参考動画の静止画とナイフ操作の模式図です。
 
-## Suggested photo sets
+## Suggested photo sets / 撮影する内容
 
-| Suggested filename | Capture / 拍攝內容 | Caption should record |
+| Suggested filename | Capture / 撮影対象 | Caption / 記録する内容 |
 | --- | --- | --- |
-| `01-assembled-sensor.jpg` | 完成的 sensor、外觀與接觸面 | 感測器 ID、製作日期 |
-| `02-leap-mount.jpg` | 安裝到 LEAP 的整體、固定方式及線路 | 手指位置、固定件版本、螺絲規格 |
-| `03-camera-pcb-fit.jpg` | 相機、PCB 厚度、底座配合與鏡頭間隙 | 相機型號、Amazon 變體、量測尺寸 |
-| `04-silicone-materials.jpg` | 各層包裝、料號、硬度及 A/B 標籤 | 第一層／第二層 Shore 0／第三層黑色的對應 |
-| `05-printed-molds.jpg` | 實際列印模具、接觸面、夾持／密封 | 模具 STL、材質、列印方向、層高及表面處理 |
-| `06-casting-and-demolding.jpg` | 調配、脫泡、灌注、固化與脫模中關鍵步驟 | 與照片對應的實際參數及操作提醒 |
-| `07-black-skin-and-edges.jpg` | 黑色表皮與側面遮光 | 矽膠、顏料與添加量，常見漏光位置 |
-| `08-good-and-failed-examples.jpg` | 成功／失敗樣本並列 | 氣泡、剝離、黏性或模具滲漏原因 |
-| `09-reference-and-contact.png` | 同一相機設定下的無接觸／接觸影像 | 曝光、增益、解析度、測試物 |
+| `01-assembled-sensor.jpg` | Finished sensor and contact surface / 完成したセンサと接触面 | Sensor ID and date / ID・日付 |
+| `02-leap-mount.jpg` | LEAP installation, screws and cable routing / 取り付け・ねじ・配線 | Finger, part revision, screw dimensions / 指・部品の版・ねじ寸法 |
+| `03-camera-pcb-fit.jpg` | Camera PCB and base clearance / 基板とベースの隙間 | Camera variant and measurements / カメラ仕様・実測値 |
+| `04-silicone-materials.jpg` | Packaging and A/B labels for all layers / 各層の包装・A/B 表記 | Layer mapping, Shore 0 selection, third-layer products / 各層との対応・Shore 0・第3層指定品 |
+| `05-printed-molds.jpg` | Actual printed mold, surface and sealing / 実際のモールド・表面・密封 | STL, material, print settings and finish / データ・材料・造形・表面処理 |
+| `06-casting-and-demolding.jpg` | Mixing, degassing, pouring, cure and knife interface release / 混合・脱泡・注型・硬化・ナイフによる界面分離 | Actual parameters and key actions / 実績条件・重要な操作 |
+| `07-black-skin-and-edges.jpg` | Black skin and side light blocking / 黒色表皮と側面遮光 | Material, pigment and loading / 材料・顔料・添加量 |
+| `08-good-and-failed-examples.jpg` | Successful and failed samples / 成功例と失敗例 | Bubbles, peeling, tack or leaks / 気泡・剥離・粘着・漏れ |
+| `09-reference-and-contact.png` | Reference/contact images under the same settings / 同じ設定の非接触・接触画像 | Exposure, gain, resolution, test object / 露光・ゲイン・解像度・試験物 |
+| `10-reused-csi-usb.jpg` | Existing converter and cables / 再利用する変換基板とケーブル | Markings, pinout, orientation, supply / 表記・ピン配置・向き・電源 |
 
-Names are suggestions, not expected existing files. Split multi-step photographs into numbered frames if that makes the operation easier to explain.
+These names are suggestions, not existing files. Use numbered frames for multi-step operations, consistent lighting and angles, and a scale when useful. Remove private order details before sharing.
 
-Keep the relevant contact surface or assembly large in the frame. Use consistent angles and neutral lighting; include a scale when it helps understand dimensions. Show actual part labels, and remove order addresses or other unrelated personal details before public sharing.
+ファイル名は提案です。複数の操作は連番で分け、照明や角度をそろえてください。寸法を説明する場合はスケールを入れ、共有前に注文個人情報を除いてください。
 
-Once photos exist, add a short caption explaining **what to do, what to inspect and what can go wrong**, then link to the associated [build record](../../docs/BUILD_RECORD_TEMPLATE.md). The README's practical-photograph table can then be replaced by illustrated steps.
+For each photo, explain **what to do, what to inspect and what can go wrong**, and link the [build record](../../docs/BUILD_RECORD_TEMPLATE.md). Replace the README's planned-photo table with illustrated steps as the images become available.
+
+各写真には「操作」「確認点」「失敗しやすい点」を添え、[製作記録](../../docs/BUILD_RECORD_TEMPLATE.md) と関連付けてください。

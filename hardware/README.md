@@ -1,12 +1,13 @@
-# Hardware inventory / 硬體檔案
+# Hardware inventory / ハードウェア一覧
 
-All five files are byte-for-byte copies of the supplied handover inputs: three important STL parts and two SolidWorks source files. See [manifest.json](manifest.json) for SHA-256 values, provenance, and mesh measurements.
+All six files are byte-for-byte copies of the supplied handover inputs: three important STL parts and three SolidWorks source files. See [manifest.json](manifest.json) for SHA-256 values, provenance, and mesh measurements.
 
 | File | Purpose | Format / readiness |
 | --- | --- | --- |
 | [sensor_base_adapt_for_thick_PCB.STL](mesh/sensor_base_adapt_for_thick_PCB.STL) | **01 ·** Revised 9DTact base for thicker camera PCB | Supplied printable mesh; confirm scale, print settings and fit |
 | [sensor_base_adapt_for_thick_PCB.SLDPRT](cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | Editable source for the base design | SolidWorks source; **STEP still needed**; source configuration/export correspondence not inspected |
 | [isolation_ring_out_11.4_in_10.3.STL](mesh/isolation_ring_out_11.4_in_10.3.STL) | Revised camera isolation ring | Supplied mesh; slicer scale, print settings and fit need confirmation |
+| [isolation_ring_out_11.4_in_10.3.SLDPRT](cad/isolation_ring_out_11.4_in_10.3.SLDPRT) | Editable source for the revised isolation ring | Builder-supplied source; active configuration/export correspondence not inspected |
 | [finger_tip_tactile_with_chip_holder.STL](mesh/finger_tip_tactile_with_chip_holder.STL) | LEAP fingertip attachment with chip holder | Supplied mesh, derived from official LEAP CAD |
 | [finger_tip_tactile1_wrq.SLDPRT](cad/finger_tip_tactile1_wrq.SLDPRT) | LEAP fingertip attachment source variant | Editable SolidWorks source, derived from official LEAP CAD; **not verified as the source of the chip-holder STL** |
 
@@ -33,8 +34,8 @@ Base, ring and mount print materials, layer heights, supports and orientation ar
 ## Molds and acrylic window
 
 - **Molds:** 3D printed in this build; actual files are missing from this handover. Upstream acrylic DXF profiles may help recover geometry but are not ready-to-print mold volumes.
-- **Window:** transparent acrylic, outsourced to Hazaiya; final production drawing is still needed. See [window outsourcing](../docs/WINDOW_OUTSOURCING.zh-TW.md).
-- **★ LED board / ★ white shell:** reuse existing assemblies; sourcing and new fabrication are deliberately deferred.
+- **Window:** transparent acrylic, outsourced to Hazaiya; final production drawing is still needed. See [window outsourcing](../docs/WINDOW_OUTSOURCING.md).
+- **★ CSI–USB converter / ★ LED board / ★ white shell:** reuse existing assemblies; sourcing and new fabrication are deliberately deferred.
 - **Calibration board:** obtain the original file from [upstream fabrication](https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication) if recalibration is required.
 
 ## Upstream mapping

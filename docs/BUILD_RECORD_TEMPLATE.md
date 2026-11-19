@@ -1,53 +1,56 @@
-# 製作／驗證紀錄
+# Build and validation record / 製作・検証記録
 
-Copy this file to a new dated record for each build. Leave unknowns explicitly marked `TBC`.
+Copy this file for each build. Leave unknowns marked `TBC`.<br>
+製作ごとにコピーし、不明な値は `TBC` のまま残してください。
 
-## Build identity
+## Build identity / 製作情報
 
-| 欄位 | 紀錄 |
+| Field / 項目 | Record / 記録 |
 | --- | --- |
-| 日期／製作者 | TBC |
-| 感測器 ID／LEAP finger／hand version | TBC |
-| Repository commit／CAD revision | TBC |
-| 組裝照片與測試資料路徑 | TBC |
+| Date and builder / 日付・製作者 | TBC |
+| Sensor ID, LEAP finger and hand version / センサ ID・指・ハンドの版 | TBC |
+| Repository commit and CAD revision / ソース・CAD の版 | TBC |
+| Assembly photos and test-data paths / 組立写真・試験データ | TBC |
 
-## 機構與加工
+## Mechanics and fabrication / 機構・加工
 
-| 零件 | 檔案與 checksum | 材質／加工參數 | 量測／結果 |
+| Part / 部品 | File and checksum / データ | Material and process / 材料・条件 | Measurements and result / 寸法・結果 |
 | --- | --- | --- | --- |
-| 底座 | TBC | TBC | PCB 厚度、孔位、間隙：TBC |
-| 隔光環 | TBC | TBC | 實際配合：TBC |
-| LEAP 固定件 | TBC | TBC | 螺絲、行程與線路：TBC |
-| 列印模具 | TBC | 層高、方向、表面處理、密封、脫模：TBC | TBC |
-| Acrylic window | TBC | Hazaiya 規格、板厚、公差：TBC | TBC |
-| ★ LED board | 既有零件 ID：TBC | 接線與供電：TBC | TBC |
-| ★ White shell | 既有零件 ID：TBC | 沿用；禁止 PLA | TBC |
+| Sensor base / ベース | TBC | TBC | PCB thickness, holes, clearance / 基板厚・穴・隙間: TBC |
+| Isolation ring / 遮光リング | TBC | TBC | Installed fit / 取り付け状態: TBC |
+| LEAP mount / 取り付け部品 | TBC | TBC | Screws, travel, cable clearance / ねじ・可動域・配線: TBC |
+| Printed molds / 造形モールド | TBC | Orientation, layer height, finish, sealing, release / 造形方向・層厚・表面・密封・脱型: TBC | TBC |
+| Acrylic window / アクリル窓 | TBC | Hazaiya specification, thickness, tolerances / 外注仕様・板厚・公差: TBC | TBC |
+| ★ CSI–USB board / 変換基板 | Existing board ID / 既存基板 ID: TBC | Markings, pinout, wiring / 表記・ピン配置・配線: TBC | Reuse; matching replacement not found / 再利用、同一代替品なし |
+| ★ LED board / LED 基板 | Existing assembly ID / 既存品 ID: TBC | Wiring and supply / 配線・電源: TBC | TBC |
+| ★ White shell / 白色シェル | Existing part ID / 既存品 ID: TBC | Reuse; no PLA / 再利用、PLA 不可 | TBC |
 
-## 矽膠與黏接
+## Silicone and bonding / シリコーン・接着
 
-| 欄位 | 第一層透明 | 第二層半透明 | 第三層黑色 |
+| Field / 項目 | Layer 1: transparent / 第1層：透明 | Layer 2: translucent / 第2層：半透明 | Layer 3: black / 第3層：黒色 |
 | --- | --- | --- | --- |
-| 廠牌／料號／SKU／購買連結 | TBC | TBC | TBC |
-| 批號／開封日 | TBC | TBC | TBC |
-| 硬度數值及量表 A/00 | TBC | 本版目標：淘寶 Shore 0 號 | TBC |
-| A/B 重量與比例基準 | TBC | TBC | TBC |
-| 顏料型號／添加量 | N/A 或 TBC | N/A 或 TBC | TBC |
-| 脫泡條件／時間 | TBC | TBC | TBC |
-| 厚度／模具版本 | TBC | TBC | TBC |
-| 環境／硬化溫度與時間 | TBC | TBC | TBC |
-| 接著劑／離型劑／相容性小樣 | TBC | TBC | TBC |
-| Demolding method / 脫模方式及結果 | TBC | 美工刀沿模具—矽膠界面分離；刀具／結果：TBC | 美工刀沿模具—矽膠界面分離；黑色表皮狀態：TBC |
-| 氣泡、黏性、層間黏合 | TBC | TBC | TBC |
+| Brand, model, variant and purchase link / 製品・仕様・購入先 | TBC | TBC | [Silicone](https://amzn.asia/d/08yFspH2); package/model / 包装・型番: TBC |
+| Batch and opening date / ロット・開封日 | TBC | TBC | TBC |
+| Hardness and scale A/00 / 硬度とスケール | TBC | Recorded build: Taobao Shore 0 / 実装：Taobao の Shore 0 | TBC |
+| A/B weights and ratio basis / A/B 重量・比率基準 | TBC | TBC | TBC |
+| Pigment and loading / 顔料・添加量 | N/A or TBC | N/A or TBC | [Pigment](https://ja.aliexpress.com/item/1005012698616201.html); amount / 添加量: TBC |
+| Degassing conditions / 脱泡条件 | TBC | TBC | TBC |
+| Thickness and mold version / 厚さ・モールドの版 | TBC | TBC | TBC |
+| Ambient/cure temperature and time / 室温・硬化温度・時間 | TBC | TBC | TBC |
+| Adhesive, release agent and compatibility test / 接着剤・離型剤・適合試験 | TBC | TBC | TBC |
+| Demolding and result / 脱型・結果 | TBC | Knife release at mold–silicone interface / ナイフで界面を分離; result: TBC | Same interface release; inspect skin / 同じ方法で分離し表皮を確認; result: TBC |
+| Bubbles, tack and adhesion / 気泡・粘着性・層間接着 | TBC | TBC | TBC |
 
-## 感測與運動結果
+## Sensing and motion / センシング・動作
 
-- 相機 ASIN、完整型號、變體、PCB 尺寸、介面／轉接板：TBC
-- 解析度、影格率、曝光、增益、對焦、裝置 ID：TBC
-- 無接觸影像／中央及邊緣接觸／環境光變化結果：TBC
-- 按壓物、載荷、重複次數、恢復時間、表皮損傷：TBC
-- LEAP 固定、行程、線材拉力釋放與干涉測試：TBC
-- 校正程式 commit、校正資料路徑、驗證方式／誤差：TBC
-- Force model 是否重新驗證／訓練，資料及模型版本：TBC
-- 本次驗收門檻、通過項目、失敗原因及下次修改：TBC
+- Camera model/variant, PCB dimensions and reused converter / カメラ仕様・基板寸法・再利用変換基板: TBC
+- Resolution, frame rate, exposure, gain, focus, device ID / 撮影設定: TBC
+- Reference/contact images, central/edge response, ambient-light change / 基準・接触・周辺・外光試験: TBC
+- Test object, load, cycles, recovery time and skin damage / 試験物・荷重・回数・回復・表皮: TBC
+- LEAP mounting, travel, interference and strain relief / 固定・可動域・干渉・配線保護: TBC
+- Calibration code revision, data and measured error / 校正の版・データ・誤差: TBC
+- Force-model validation/training and data/model versions / 力推定の検証・学習・版: TBC
+- Acceptance criteria, passed/failed checks and next changes / 合格基準・結果・次の変更: TBC
 
-公開紀錄請只放製作相關資料，移除訂單個資。
+Keep public records focused on fabrication and remove private order details.<br>
+公開記録には製作に必要な情報を残し、住所などの注文個人情報は除いてください。
