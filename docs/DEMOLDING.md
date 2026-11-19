@@ -6,7 +6,7 @@ This applies after casting the **second, translucent silicone layer** and again 
 
 ![Two demolding stages: tutorial finger-pressure release crossed out on the left, utility-knife interface release on the right](../assets/process/demolding-comparison.png)
 
-The red X identifies the method **not used in this lab build**; it is not a general assessment of the original tutorial. Right-hand panels are explanatory schematics, not photographs or exact drawings of the lab's printed molds. The seam is enlarged to show where the blade goes.
+Left: tutorial finger-pressure release. Right: knife-assisted interface release.
 
 ## English instructions
 
@@ -18,12 +18,12 @@ The red X identifies the method **not used in this lab build**; it is not a gene
 1. Finish curing according to the actual silicone recipe. Complete the required mold-fastener or adhesive-strip removal for that mold assembly.
 2. **Do not press or pull the silicone edge by hand to initiate separation.**
 3. Support the mold and carefully guide the utility-knife blade along the **outer mold–silicone interface**, working around the perimeter to release the adhesion.
-4. Keep the blade at that interface. **Do not cut through the silicone pad, across the sensing surface, or into the black skin.** No specific blade depth or angle has been documented for this build.
+4. Keep the blade at that interface. **Do not cut through the silicone pad, across the sensing surface, or into the black skin.**
 5. Lift away the mold once the interface has released. If an edge is still attached, release that location rather than pulling the silicone by hand.
 
-The tutorial's removal of **hot-melt adhesive strips** is a separate operation. The crossed-out comparison refers to finger-pressure release of the silicone from the mold, not to the adhesive-strip removal step.
+Remove **hot-melt adhesive strips** separately before releasing the silicone.
 
-Record the knife used, mold version and any edge/surface damage in the [build record](BUILD_RECORD_TEMPLATE.md). See **JP-15** in the [English BOM](../bom/BOM_JP.md) for the tool entry. The actual knife model and detailed mold geometry have not yet been supplied.
+Tool: **JP-15** in the [BOM](../bom/BOM_JP.md). Record the mold version and demolding result in the [build record](BUILD_RECORD_TEMPLATE.md).
 
 ## 日本語の手順
 
@@ -31,15 +31,13 @@ Record the knife used, mold version and any edge/surface damage in the [build re
 
 1. 実際の材料の指示に従って硬化を完了し、モールドの固定ねじや接着剤を必要に応じて除去します。
 2. モールドを支え、外周の「モールドとシリコーンの界面」に沿って刃先を進め、接着部分を少しずつ分離します。
-3. **シリコーン本体、感圧面、黒色表皮を切らないでください。** この実装では固定の刃の深さや角度は記録されていません。
+3. **シリコーン本体、感圧面、黒色表皮を切らないでください。**
 4. 周囲の界面が離れてからモールドを取り外します。まだ接着している箇所があれば、その場所を分離し、手で無理に引っ張らないでください。
 
-参考動画の「ホットメルト接着剤を取り除く」操作は別の工程です。比較図の赤い X は、指でシリコーンの端を押して離す方法を、この研究室では採用しないことを示します。
+ホットメルト接着剤は、シリコーンを分離する前に別の工程として取り除きます。
 
 使用したナイフ、モールドの版、端や表面の損傷を [製作記録](BUILD_RECORD_TEMPLATE.md) に残してください。ナイフは部品表の **JP-15** です。
 
-## Figure provenance
+## Figure source
 
-The left panels use the builder-supplied tutorial screenshots for the translucent and black demolding stages, with comparison marks. The original [YouTube tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ) remains the assembly reference. Direct video playback was unavailable during preparation; this note is grounded in the supplied frames, their visible captions, and the builder's explicit procedure description. No video timestamps are claimed.
-
-The right-hand knife diagrams were generated with the built-in image-generation tool and reviewed to distinguish interface release from cutting the sensing surface. The [generation prompt](../assets/process/demolding-comparison.prompt.txt) is retained for revision. Real process photographs can be added later.
+Tutorial frames: [9DTact assembly video](https://www.youtube.com/watch?v=VxMceWVz7QQ). Knife panels: explanatory illustrations. [Illustration prompt](../assets/process/demolding-comparison.prompt.txt).

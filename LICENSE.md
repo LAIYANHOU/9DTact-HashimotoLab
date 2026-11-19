@@ -1,7 +1,5 @@
 # License scope
 
-This repository is a hardware handover with mixed provenance. A license for one component does not relicense the other components.
-
 | Files | Applicable terms |
 | --- | --- |
 | Original Markdown documentation, JSON procurement/inventory data, scripts and issue templates | MIT, [LICENSES/MIT.txt](LICENSES/MIT.txt) |
@@ -18,6 +16,6 @@ This repository is a hardware handover with mixed provenance. A license for one 
 
 On 2026-11-18 the [official LEAP v1 CAD access page](https://v1.leaphand.com/cad_request) states **CC BY-SA 4.0** and links to [that license](https://creativecommons.org/licenses/by-sa/4.0/). The [official API README](https://github.com/leap-hand/LEAP_Hand_API) still describes CAD as **CC BY-NC-SA**, without identifying the version. Neither page identifies the exact source revision used to make the supplied fingertip files.
 
-Archive the terms accompanying the builder's original CAD download, or obtain clarification that the current CC BY-SA 4.0 grant covers that source. Retain attribution and describe the modifications. The builder has published the initial repository; this notice does not declare that LEAP-derived CAD is MIT, commercially unrestricted, or fully cleared for redistribution.
+Archive the terms accompanying the builder's original CAD download, or obtain clarification that the current CC BY-SA 4.0 grant covers that source. Retain attribution and describe the modifications.
 
 9DTact's original MIT text is retained verbatim in `LICENSES/9DTact-MIT.txt`. The two local 9DTact hardware adaptations remain identifiable separately from LEAP-derived designs.

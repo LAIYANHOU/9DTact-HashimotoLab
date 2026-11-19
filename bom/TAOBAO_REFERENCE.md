@@ -2,7 +2,7 @@
 
 Source: builder-supplied `9DTact_BOM.docx`, SHA-256 `d317036f378e364810e694dd7d54bc09adf9a878556ee6e7c6a72537ca8c008c`. The original remains in the parent handover folder and is not redistributed here.
 
-These are legacy source links, **not Japanese purchase recommendations**. Tracking parameters are removed; item IDs and existing SKU IDs are retained. Source annotations are not a certification of current variants or stock.
+Original purchasing links with tracking parameters removed. Current selections: [Japan BOM](BOM_JP.md).
 
 | Legacy item | Canonical source link | Original short annotation |
 | --- | --- | --- |

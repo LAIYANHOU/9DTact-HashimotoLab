@@ -1,57 +1,39 @@
-# シリコーン各層と材料選定
+# シリコーン材料
 
-[English](MATERIALS.md) · **日本語** · [引き継ぎガイド](HANDOVER.ja.md) · [部品表（英語）](../bom/BOM_JP.md)
+[English](MATERIALS.md) · **日本語** · [引き継ぎガイド](HANDOVER.ja.md) · [部品表](../bom/BOM_JP.md)
 
-製作者指定リンクの更新：2026-11-19。下記の国内代替材料調査は 2026-11-18 時点の記録です。
+## この実装で使う材料
 
-## 3つの層を区別する
-
-| 層 | 役割 | この実装の材料・指定品 |
+| 層 | 材料 | 容器の見分け方 |
 | --- | --- | --- |
-| **第1層：透明** | 透明な光学媒体 | 元の部品表では透明 9345 シリコーン。国内代替品は未検証 |
-| **第2層：半透明** | 変形する半透明の感圧層 | 元と同じ [Taobao 商品](https://item.taobao.com/item.htm?id=649539121020) の **Shore 0** を選択。製作者による表記は **Shore A 0**。元の選択は 5A |
-| **第3層：黒色** | 接触面と必要な側面の遮光表皮 | [製作者指定の Amazon シリコーン](https://amzn.asia/d/08yFspH2) と [AliExpress の黒色顔料](https://ja.aliexpress.com/item/1005012698616201.html) |
+| **第1層：透明な光学媒体** | 元の部品表の透明 9345 シリコーン | 恵州ラベルとQRコードのある白い2本 |
+| **第2層：半透明の感圧層** | [Taobao シリコーン](https://item.taobao.com/item.htm?id=649539121020) の **Shore A 0**。元の 5A から変更 | **「SHORE A 0」** と表示された透明容器2本 |
+| **第3層：黒色の遮光表皮** | [シリコーン](https://amzn.asia/d/08yFspH2) ＋ [黒色顔料](https://ja.aliexpress.com/item/1005012698616201.html) | 黄色・青色のシリコーン容器。顔料は別途購入 |
 
-第3層の指定リンクは、部品表にあった一般的な調達候補を置き換えます。更新時に商品ページ全体を取得できなかったため、URL だけからブランド、型番、仕様や配合を推定していません。実際の包装から [製作記録](BUILD_RECORD_TEMPLATE.md) に転記してください。
+[容器の実物写真 →](../assets/photos/README.md)
 
-**実物容器の見分け方：** 製作者による対応は、**第1層**が恵州ラベルとQRコードのある白い2本、**第2層**が **「SHORE A 0」** の2本、**第3層**が黄色・青色の2容器です。[部品表の JP-04・JP-05・JP-06](../bom/BOM_JP.md) の小画像、または [写真一覧](../assets/photos/README.md) から元画像を確認できます。黒色顔料は別項目 JP-07 で、黄色・青色の容器はシリコーンです。
+## 注型の要点
 
-## 第2層：現在の実装
+- 各材料の混合・硬化条件に従い、A/B 重量、脱泡、温度、硬化時間、層厚を [製作記録](BUILD_RECORD_TEMPLATE.md) に残します。
+- 第3層は顔料添加量を記録し、遮光、接着、押圧後の回復を確認します。
+- 第2層と第3層は、**カッターナイフでモールドとシリコーンの界面を慎重に分離して脱型**します。[比較図と手順](DEMOLDING.md)。
 
-製作者は同じ Taobao 商品の **Shore 0** を選んでおり、日本で同等の第2層材料を購入した実績はありません。元の Word 部品表には Shore 5A とありますが、この実装の選択は 0 です。
+## 第2層の国内調達
 
-0 の正確な型番、硬化方式、配合比、光学データは未保存です。元の 5A のデータを、そのまま 0 のデータとして扱わないでください。
+現在は Taobao の **Shore A 0** を使用しています。国内代替材料は、元材料との比較試験が必要です。
 
-## 第2層：国内で検討する候補
+<details>
+<summary>代替材料の候補・問い合わせ先</summary>
 
-**既存の Taobao 材料と同等と確認できた国内調達品はまだありません。** 下記は少量試験や問い合わせの候補です。
+| 候補 | 仕様・問い合わせ内容 |
+| --- | --- |
+| **Smooth-On Ecoflex 00-30** | 半透明、Shore **00-30**。[国内代理店](https://sac-corp.myshopify.com/products/ecoflex-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD-00-30-%EF%BE%84%EF%BE%97%EF%BD%B2%EF%BD%B1%EF%BE%99%EF%BD%B7%EF%BD%AF%EF%BE%84) · [メーカー](https://www.smooth-on.com/products/ecoflex-00-30/) |
+| **Smooth-On Ecoflex 00-50** | 半透明、Shore **00-50**。[国内代理店](https://sac-corp.myshopify.com/products/ecoflex-00-50-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD) · [メーカー](https://www.smooth-on.com/products/ecoflex-00-50/) |
+| **株式会社ワイテック** | [乳白色 Shore A 0 材料](https://ytc-eng.com/silicon_syurui)。A/B 原料の小売、試片、光学特性を問い合わせ |
+| **Amazon Japan** | [Shore 0A シリコーン検索](https://www.amazon.co.jp/s?k=Shore+0A+silicone) |
 
-| 候補 | 確認できた情報 | 追加確認 |
-| --- | --- | --- |
-| **Smooth-On Ecoflex 00-30** | メーカーは半透明・**Shore 00-30** と表記。国内代理店に商品ページあり | **Shore 00-30 と Shore A 0 は同じ表記ではありません。** 光学応答、変形、回復、接着を比較します。[国内商品](https://sac-corp.myshopify.com/products/ecoflex-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD-00-30-%EF%BE%84%EF%BE%97%EF%BD%B2%EF%BD%B1%EF%BE%99%EF%BD%B7%EF%BD%AF%EF%BE%84) · [メーカー](https://www.smooth-on.com/products/ecoflex-00-30/) |
-| **Smooth-On Ecoflex 00-50** | メーカーは半透明・**Shore 00-50** と表記。国内代理店に商品ページあり | 国内ページの A スケール参考値だけでは、元材料との同等性を判断できません。[国内商品](https://sac-corp.myshopify.com/products/ecoflex-00-50-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD) · [メーカー](https://www.smooth-on.com/products/ecoflex-00-50/) |
-| **株式会社ワイテックの A0 材料・試作サービス** | [材料ページ](https://ytc-eng.com/silicon_syurui) に乳白色の **Shore A 0** を2種類掲載。うち1種類は粘着タイプ | 加工サービス用の材料です。A/B 原料の小売、試片供給、光学特性を問い合わせます |
-| **Amazon Japan の軟質シリコーン** | [Shore 0A 検索](https://www.amazon.co.jp/s?k=Shore+0A+silicone) · [SANAAA 検索](https://www.amazon.co.jp/s?k=SANAAA+%E3%82%B7%E3%83%AA%E3%82%B3%E3%83%B3+0A) | 「soft」「gel」などの商品名だけでは硬度、引裂強度、触覚センシングへの適合は分かりません |
+**Shore 00 と Shore A は異なる硬度スケールです。** 同じモールド、厚さ、カメラ、照明、露光で既存 A0 材料と比較します。
 
-2026-11-18 の調査では、SAC の個別 Ecoflex ページに売り切れ表記がありました。カタログ掲載は在庫の保証ではないため、包装単位と納期を確認してください。[国内代理店カタログ](https://sac-corp.co.jp/categories/additive_silicone.php)。
+硬化適合性、非接触・接触画像、変形、回復、層間接着を確認し、結果を記録します。材料変更後は再校正してください。
 
-A0 の明示が必要ならワイテックへの問い合わせが候補になります。仕様を追跡できる材料を少量注型したい場合は Ecoflex も試験候補ですが、硬度表記と配合は異なります。どちらも実験なしに同等品とは扱えません。
-
-## 第3層：指定品とバッチ記録
-
-- **シリコーン：** 製作者提供の [Amazon リンク](https://amzn.asia/d/08yFspH2) を使用します。部品表の **JP-06** です。
-- **黒色顔料：** 製作者提供の [AliExpress リンク](https://ja.aliexpress.com/item/1005012698616201.html) を使用します。**JP-07** です。
-- 包装、型番、ロット、色、A/B 比、顔料添加量、厚さ、硬化条件を記録し、遮光、接着、押圧後の回復を確認します。
-- 第2層と同様に、**カッターナイフでモールドとシリコーンの界面を分離して脱型**します。[比較図と手順](DEMOLDING.md)。
-
-元の 9DTact は黒色表皮に Ecoflex 00-30 を使用しています。この過去の選定から、今回のリンク先の商品や第2層材料を特定することはできません。
-
-## 代替材料の少量試験
-
-1. 既存の Taobao 材料を対照として残し、同じモールド形状と厚さで試片を作ります。
-2. 各材料のメーカー指示に従い、重量、混合、温度、脱泡、硬化を記録します。製品間で配合比を流用したり、独自の軟化剤配合を「A0 レシピ」と扱ったりしないでください。
-3. 実際のモールド材、表面処理、接着剤との硬化適合性を確認します。[Smooth-On の説明](https://www.smooth-on.com/products/ecoflex-00-30/) にも硬化阻害と少量試験の注意があります。
-4. カメラ、LED、露光、ゲインを固定し、非接触／接触画像、透過・散乱、残留変形、回復、粘着性、引裂き、層間接着を比較します。
-5. 製作記録、機構確認、センシング性能の検証を残してから `lab_validated` とします。再校正し、力推定も個別に評価します。
-
-用途に応じた合格基準は研究室で定めてください。空欄の記録は試験合格を意味しません。
+</details>

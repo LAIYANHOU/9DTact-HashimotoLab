@@ -33,7 +33,7 @@
       "section": "components",
       "name": "相機",
       "quantity_basis": "1／sensor",
-      "specification": "製作者曾購買 ASIN B0C5W1QF65；不從原 BOM 推定本商品的感光元件或鏡頭規格。",
+      "specification": "Amazon Japan B0C5W1QF65。",
       "links": [
         {
           "label": "Amazon JP 商品：B0C5W1QF65",
@@ -43,34 +43,34 @@
         }
       ],
       "status": "builder_purchased",
-      "validation_note": "製作者提供的購買連結；本次頁面無法讀取，型號、變體、FOV、PCB 厚度與介面待補。",
+      "validation_note": "記錄相機變體、基板尺寸、鏡頭與介面。",
       "legacy_reference": "Camera",
       "name_en": "Camera",
       "quantity_basis_en": "1 per sensor",
-      "specification_en": "Previously purchased Amazon Japan ASIN B0C5W1QF65. Do not infer this product's image sensor or lens from the original BOM.",
-      "validation_note_en": "Builder-provided purchase link; page could not be retrieved during review. Record exact model, selected variant, FOV, PCB thickness and interface."
+      "specification_en": "Amazon Japan B0C5W1QF65.",
+      "validation_note_en": "Record the camera variant, PCB dimensions, lens and interface."
     },
     {
       "id": "JP-02",
       "section": "reused",
       "name": "★ 既有 CSI → USB 轉接板",
       "quantity_basis": "1／sensor，沿用現有零件",
-      "specification": "沿用現有、與相機配合的 CSI–USB 板；目前找不到相同替代品。",
+      "specification": "既有相機用 CSI–USB 轉接板。",
       "links": [],
       "status": "reuse_skip",
-      "validation_note": "本版跳過採購；記錄板卡標示、排線腳位與方向、接線及供電。",
+      "validation_note": "保留線材，記錄腳位與供電。",
       "legacy_reference": "CSI to USB adapter",
       "name_en": "★ Existing CSI-to-USB converter",
       "quantity_basis_en": "1 reused board per sensor",
-      "specification_en": "Reuse the existing camera-compatible CSI-to-USB board. A matching replacement has not been found.",
-      "validation_note_en": "Skip procurement in this revision. Record the board markings, cable pinout/orientation, wiring and supply."
+      "specification_en": "Existing camera-compatible CSI–USB board.",
+      "validation_note_en": "Keep its cables; record pinout and supply."
     },
     {
       "id": "JP-03",
       "section": "components",
       "name": "透明壓克力 camera window",
       "quantity_basis": "1／sensor，備品另計",
-      "specification": "原版板厚 2 mm 僅作參考；最終厚度、外形、公差待量測出圖。",
+      "specification": "透明壓克力 window，送 Hazaiya 加工；原版厚度 2 mm。",
       "links": [
         {
           "label": "はざいや",
@@ -92,19 +92,19 @@
         }
       ],
       "status": "fabrication_required",
-      "validation_note": "製作者指定可找此店發包；未提供已下單規格。只有 window 發包壓克力，其餘模具列印。",
+      "validation_note": "依既有外殼確定厚度、外形與公差。",
       "legacy_reference": "Acrylic board",
       "name_en": "Clear acrylic camera window",
       "quantity_basis_en": "1 per sensor; spares as needed",
-      "specification_en": "Original design used 2 mm acrylic as a reference. Confirm final thickness, outline and tolerances from the actual shell.",
-      "validation_note_en": "Builder-recommended outsourcing vendor; no completed order specification is recorded. Only this window is acrylic; casting molds are 3D printed."
+      "specification_en": "Clear acrylic window, outsourced to Hazaiya. Original-design thickness: 2 mm.",
+      "validation_note_en": "Set final thickness, outline and tolerances from the existing shell."
     },
     {
       "id": "JP-04",
       "section": "components",
       "name": "第一層透明矽膠",
       "quantity_basis": "依批次量測耗用量",
-      "specification": "原 BOM 指透明 9345；日本同等材料未核實。",
+      "specification": "原 BOM 的透明 9345 矽膠。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -120,17 +120,15 @@
         }
       ],
       "status": "search_only",
-      "validation_note": "需確認透明度、硬化系統、硬度及層間相容性；不是任意透明型取り材皆可替代。",
+      "validation_note": "替換材料時比較透明度、固化與層間黏合。",
       "legacy_reference": "Transparent silicone",
       "name_en": "Layer 1: transparent silicone",
       "quantity_basis_en": "Measure consumption per batch",
-      "specification_en": "Original BOM specifies clear 9345 silicone. A Japan-sourced equivalent has not been confirmed.",
-      "validation_note_en": "Verify clarity, cure chemistry, hardness and interlayer compatibility. A generic clear mold-making silicone is not an approved substitute.",
+      "specification_en": "Clear 9345 silicone from the original BOM.",
+      "validation_note_en": "Compare clarity, curing and interlayer adhesion when changing material.",
       "photo": {
         "path": "../assets/photos/materials/layer-1-transparent.jpg",
         "alt_en": "Layer 1: two white Huizhou-labelled bottles with QR codes",
-        "caption_en": "Huizhou labels + QR codes",
-        "caption_ja": "恵州ラベル・QRコード",
         "builder_identified_date": "2026-11-19"
       }
     },
@@ -139,7 +137,7 @@
       "section": "components",
       "name": "第二層半透明矽膠：Shore 0",
       "quantity_basis": "依批次量測耗用量",
-      "specification": "已知實作：原淘寶 item 649539121020 選 Shore 0 號（製作者描述為 Shore A 0）；日本替代未驗證。",
+      "specification": "淘寶 item 649539121020 選 Shore A 0，取代原 5A。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -173,17 +171,15 @@
         }
       ],
       "status": "candidate",
-      "validation_note": "00-30／00-50 不等於 A0；日方頁面有售罄文字。先小樣比較光學、回復及黏合；不可按已驗證替代品下單。 ワイテック列有乳白色 A0 材料／試作，但原料零售與光學適用性未確認。",
+      "validation_note": "日本替代候選與小樣測試見材料指南。",
       "legacy_reference": "Translucent silicone",
       "name_en": "Layer 2: translucent silicone, Shore 0",
       "quantity_basis_en": "Measure consumption per batch",
-      "specification_en": "Current build uses the Shore 0 option of Taobao item 649539121020, described by the builder as Shore A 0. Japan replacements are unvalidated.",
-      "validation_note_en": "Ecoflex 00-30/00-50 are not equivalent hardness designations to A0; Japanese pages displayed sold-out text. Test optical response, recovery and bonding. Ytech lists milky-white A0 materials/prototyping; raw-material retail and sensor suitability remain unconfirmed.",
+      "specification_en": "Taobao item 649539121020, Shore A 0 option; replaces 5A.",
+      "validation_note_en": "Japan alternatives: see material notes for sample testing.",
       "photo": {
         "path": "../assets/photos/materials/layer-2-shore-0.jpg",
         "alt_en": "Layer 2: two bottles with blue SHORE A 0 stickers",
-        "caption_en": "SHORE A 0 stickers",
-        "caption_ja": "「SHORE A 0」ラベル",
         "builder_identified_date": "2026-11-19"
       }
     },
@@ -192,7 +188,7 @@
       "section": "components",
       "name": "第三層黑色表皮用矽膠",
       "quantity_basis": "依批次量測耗用量",
-      "specification": "製作者指定的第三層矽膠，使用提供的 Amazon 商品連結。",
+      "specification": "黑色表皮用矽膠，黃藍兩罐。",
       "links": [
         {
           "label": "第三層矽膠：Amazon",
@@ -202,18 +198,16 @@
         }
       ],
       "status": "builder_specified",
-      "validation_note": "由選購包裝記錄品牌、型號、混合比例與固化條件；不將此配方當作第二層材料。",
+      "validation_note": "記錄 A/B 配比與固化條件。",
       "legacy_reference": "Silicone to make the black gel layer",
       "name_en": "Layer 3: black-skin silicone",
       "quantity_basis_en": "Measure consumption per batch",
-      "specification_en": "Builder-specified silicone for layer 3, using the supplied Amazon product link.",
-      "validation_note_en": "Record brand/model, mixing ratio and curing conditions from the selected package. This is the third-layer material, not the second-layer silicone.",
+      "specification_en": "Silicone for the black skin; yellow/blue jars.",
+      "validation_note_en": "Record A/B ratio and curing conditions.",
       "builder_specified_date": "2026-11-19",
       "photo": {
         "path": "../assets/photos/materials/layer-3-yellow-blue.jpg",
         "alt_en": "Layer 3: yellow and blue silicone jars",
-        "caption_en": "Yellow + blue jars",
-        "caption_ja": "黄色・青色の2容器",
         "builder_identified_date": "2026-11-19"
       }
     },
@@ -222,7 +216,7 @@
       "section": "components",
       "name": "黑色矽膠顏料",
       "quantity_basis": "批次耗材",
-      "specification": "製作者指定的第三層黑色矽膠顏料，使用提供的 AliExpress 商品連結。",
+      "specification": "第三層黑色顏料。",
       "links": [
         {
           "label": "第三層顏料：AliExpress",
@@ -232,12 +226,12 @@
         }
       ],
       "status": "builder_specified",
-      "validation_note": "記錄實際選購顏色與添加量，以及搭配第三層矽膠的固化和遮光結果。",
+      "validation_note": "記錄添加量，固化後檢查遮光。",
       "legacy_reference": "Black silicone pigment",
       "name_en": "Black silicone pigment",
       "quantity_basis_en": "Batch consumable",
-      "specification_en": "Builder-specified black pigment for layer 3, using the supplied AliExpress product link.",
-      "validation_note_en": "Record the selected color and pigment loading, then document cure and light-blocking results with the third-layer silicone.",
+      "specification_en": "Black pigment for layer 3.",
+      "validation_note_en": "Record pigment loading and check light blocking after curing.",
       "builder_specified_date": "2026-11-19"
     },
     {
@@ -245,7 +239,7 @@
       "section": "components",
       "name": "M2 熱熔嵌件",
       "quantity_basis": "原版參考 8；修改版待核對",
-      "specification": "原 BOM 標為 M2-5-3；長度／外徑的標示順序未核實。",
+      "specification": "M2 熱熔銅螺母；原規格 M2-5-3。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -255,19 +249,19 @@
         }
       ],
       "status": "search_only",
-      "validation_note": "先依尺寸圖及 CAD 確認螺紋、長度、外徑、孔徑與埋深；嵌件不一定是 3.2 mm 外徑通用品。",
+      "validation_note": "依 CAD 核對長度、外徑與埋入深度。",
       "legacy_reference": "M2 heat-set threaded inserts",
       "name_en": "M2 heat-set inserts",
       "quantity_basis_en": "Original reference: 8; modified build TBC",
-      "specification_en": "Legacy BOM notation: M2-5-3. The order of body-length/outside-diameter dimensions is unverified.",
-      "validation_note_en": "Check thread, body length, OD, hole diameter and insertion depth against the drawing/CAD. Do not assume a generic 3.2 mm OD insert fits."
+      "specification_en": "M2 heat-set inserts; legacy designation M2-5-3.",
+      "validation_note_en": "Match body length, outside diameter and insertion depth to CAD."
     },
     {
       "id": "JP-09",
       "section": "components",
       "name": "底座／外殼 M2 螺絲",
       "quantity_basis": "原版參考 4；修改版待核對",
-      "specification": "原 BOM M2 × 6 mm；頭型、材質與有效牙長需配合實物。",
+      "specification": "M2 × 6 mm 機械螺絲。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -277,19 +271,19 @@
         }
       ],
       "status": "search_only",
-      "validation_note": "購買機械牙，不是自攻螺絲；檢查頭高、PCB 間隙與是否頂底。",
+      "validation_note": "確認頭部空間與鎖入長度。",
       "legacy_reference": "M2 screws for installing the sensor base",
       "name_en": "M2 base/shell screws",
       "quantity_basis_en": "Original reference: 4; modified build TBC",
-      "specification_en": "Legacy specification: M2 × 6 mm; head style, material and effective thread engagement need a fit check.",
-      "validation_note_en": "Use machine screws, not self-tapping screws. Check head clearance, PCB clearance and bottoming-out."
+      "specification_en": "M2 × 6 mm machine screws.",
+      "validation_note_en": "Check head clearance and thread engagement."
     },
     {
       "id": "JP-10",
       "section": "components",
       "name": "模具 M3 螺帽",
       "quantity_basis": "原版參考 8／套；列印模具待核對",
-      "specification": "M3；依實際 3D 列印模具的夾持設計確認是否沿用。",
+      "specification": "模具固定用 M3 螺帽。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -299,19 +293,19 @@
         }
       ],
       "status": "search_only",
-      "validation_note": "不可把原壓克力模具用量直接視為列印模具用量。",
+      "validation_note": "數量依列印模具調整。",
       "legacy_reference": "M3 nuts for installing the mold",
       "name_en": "M3 mold nuts",
       "quantity_basis_en": "Original reference: 8 per set; printed molds TBC",
-      "specification_en": "M3. Confirm whether the actual printed-mold clamping design reuses them.",
-      "validation_note_en": "The original acrylic mold quantity is not automatically the quantity for a printed mold."
+      "specification_en": "M3 nuts for mold clamping.",
+      "validation_note_en": "Adjust quantity to the printed mold."
     },
     {
       "id": "JP-11",
       "section": "components",
       "name": "模具 M3 螺絲",
       "quantity_basis": "原版參考 8／套；列印模具待核對",
-      "specification": "原 BOM M3 × 30 mm；依列印模具堆疊厚度與夾持方式確認。",
+      "specification": "原 BOM 的 M3 × 30 mm 模具螺絲。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -321,19 +315,19 @@
         }
       ],
       "status": "search_only",
-      "validation_note": "先核對夾緊長度與孔位；不是已驗證列印模具五金。",
+      "validation_note": "依列印模具核對夾持長度與孔位。",
       "legacy_reference": "M3 screws for installing the mold",
       "name_en": "M3 mold screws",
       "quantity_basis_en": "Original reference: 8 per set; printed molds TBC",
-      "specification_en": "Legacy specification: M3 × 30 mm. Check printed-mold stack thickness and clamping arrangement.",
-      "validation_note_en": "Verify clamping length and hole positions; this is not validated hardware for the missing printed-mold design."
+      "specification_en": "M3 × 30 mm mold screws from the original BOM.",
+      "validation_note_en": "Match clamping length and hole positions to the printed mold."
     },
     {
       "id": "JP-12",
       "section": "tools",
       "name": "電子秤",
       "quantity_basis": "實驗室共用 1 台",
-      "specification": "依最小 A/B 加料量與顏料量選解析度；0.01g 等級可作選型起點，須確認量程與校驗。",
+      "specification": "適合小批量矽膠與顏料的電子秤，顯示解析度 0.01 g。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -343,12 +337,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "顯示解析度不等於量測精度。",
+      "validation_note": "依批量選量程，使用前校正。",
       "legacy_reference": "Electronic scale",
       "name_en": "Electronic scale",
       "quantity_basis_en": "1 shared lab tool",
-      "specification_en": "Select resolution for the smallest A/B and pigment additions. 0.01 g display resolution is a starting point; verify capacity and calibration.",
-      "validation_note_en": "Display resolution is not measurement accuracy.",
+      "specification_en": "Scale suitable for small silicone and pigment batches; 0.01 g display resolution.",
+      "validation_note_en": "Choose capacity for the batch size and calibrate before use.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -356,7 +350,7 @@
       "section": "tools",
       "name": "熱熔膠槍",
       "quantity_basis": "有需求才使用／共用",
-      "specification": "接線或非光學處暫固定工具；不是 window 或矽膠的指定接著劑。",
+      "specification": "臨時固定與線材固定用。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -366,12 +360,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "依實際固定位置、耐熱與拆修需求確認是否需要；不把熱熔膠放進光路。",
+      "validation_note": "熱熔膠避開光路。",
       "legacy_reference": "Glue gun",
       "name_en": "Hot-glue gun",
       "quantity_basis_en": "Shared, only if needed",
-      "specification_en": "For temporary non-optical fastening or wiring, if needed. Not the specified adhesive for the window or silicone layers.",
-      "validation_note_en": "Confirm fastening location, temperature and serviceability. Keep hot glue out of the optical path.",
+      "specification_en": "Temporary fastening and wire retention.",
+      "validation_note_en": "Keep hot glue out of the optical path.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -379,7 +373,7 @@
       "section": "tools",
       "name": "溫控烙鐵／工具",
       "quantity_basis": "實驗室共用",
-      "specification": "HAKKO FX600-02（日本 100V）；嵌件工具頭與焊接工具需依用途分開選。",
+      "specification": "HAKKO FX600-02，日本 100 V 版本。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -395,12 +389,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "LED 沿用，是否需焊接由現有線路狀態決定。",
+      "validation_note": "焊接與熱熔螺母使用不同烙鐵頭。",
       "legacy_reference": "Soldering iron kit",
       "name_en": "Temperature-controlled soldering tools",
       "quantity_basis_en": "Shared lab tool",
-      "specification_en": "HAKKO FX600-02, Japanese 100 V version. Select separate tips/tools for soldering and insert installation as appropriate.",
-      "validation_note_en": "LED assembly is reused; soldering needs depend on its existing wiring.",
+      "specification_en": "HAKKO FX600-02, Japanese 100 V version.",
+      "validation_note_en": "Use separate tips for soldering and insert installation.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -408,7 +402,7 @@
       "section": "tools",
       "name": "美工刀：脫模界面分離／修邊",
       "quantity_basis": "實驗室共用",
-      "specification": "第二層半透明與第三層黑色矽膠脫模時，沿模具—矽膠交界小心分離；實際刀具型號待補。",
+      "specification": "第二、三層脫模時分離模具與矽膠界面。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -424,12 +418,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "此為製作者確認的脫模方式修改；不用手指壓／拉開邊緣，不切進感測接觸面、黑色表皮或 window。",
+      "validation_note": "沿接縫操作，避免切到感測面與黑色表皮。",
       "legacy_reference": "Knife",
       "name_en": "Utility knife: demolding interface release / trimming",
       "quantity_basis_en": "Shared lab tool",
-      "specification_en": "For demolding both layer 2 (translucent) and layer 3 (black): carefully release the mold–silicone interface. Exact knife model still to be recorded.",
-      "validation_note_en": "Builder-confirmed lab procedure: do not press/pull the silicone edge by hand; keep the blade at the interface, away from the sensing surface, black skin and window.",
+      "specification_en": "Release the mold–silicone interface after casting layers 2 and 3.",
+      "validation_note_en": "Follow the seam; keep the blade away from the sensing surface and black skin.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -437,7 +431,7 @@
       "section": "tools",
       "name": "混合杯",
       "quantity_basis": "每批耗材",
-      "specification": "PP 等可相容的乾淨容器，容量需預留脫泡膨脹空間。",
+      "specification": "乾淨且與矽膠相容的容器，例如 PP。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -447,12 +441,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "材質與矽膠的硬化相容性先小樣確認。",
+      "validation_note": "保留脫泡膨脹空間。",
       "legacy_reference": "Plastic cup",
       "name_en": "Mixing cups",
       "quantity_basis_en": "Batch consumable",
-      "specification_en": "Clean compatible cups, such as suitable PP containers; leave room for expansion during degassing.",
-      "validation_note_en": "Test material/cure compatibility with the selected silicone.",
+      "specification_en": "Clean silicone-compatible cups, such as PP.",
+      "validation_note_en": "Leave headroom for expansion during degassing.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -460,7 +454,7 @@
       "section": "tools",
       "name": "攪拌棒",
       "quantity_basis": "每批耗材",
-      "specification": "乾淨塑膠攪拌棒，避免未驗證表面處理物污染。",
+      "specification": "乾淨的塑膠攪拌棒。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -470,12 +464,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "依原廠指示充分混合；每種材料工具保持分開。",
+      "validation_note": "不同材料分開使用攪拌工具。",
       "legacy_reference": "Stick",
       "name_en": "Mixing sticks",
       "quantity_basis_en": "Batch consumable",
-      "specification_en": "Clean plastic mixing tools without unverified surface treatments.",
-      "validation_note_en": "Mix according to the material instructions. Keep tools for different materials separate.",
+      "specification_en": "Clean plastic mixing sticks.",
+      "validation_note_en": "Keep mixing tools separate for each material.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -483,7 +477,7 @@
       "section": "tools",
       "name": "除塵／低掉屑清潔耗材",
       "quantity_basis": "批次耗材",
-      "specification": "原 BOM 為 Dust removal paper；低掉屑拭紙、除塵貼等功能不同，要依使用位置選。",
+      "specification": "低棉絮擦拭紙與除塵貼。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -493,12 +487,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "確認不留膠、不刮傷、不帶入硬化抑制物；不把帶膠除塵貼當光學擦拭紙。",
+      "validation_note": "除塵貼黏取灰塵，光學擦拭紙清潔表面。",
       "legacy_reference": "Dust removal paper",
       "name_en": "Dust removal / low-lint cleaning supplies",
       "quantity_basis_en": "Batch consumable",
-      "specification_en": "Legacy BOM says dust removal paper. Low-lint wipes and adhesive dust-removal stickers serve different functions.",
-      "validation_note_en": "Check residue, scratching and cure contamination. Do not treat an adhesive sticker as an optical wiping sheet.",
+      "specification_en": "Low-lint wipes and adhesive dust-removal stickers.",
+      "validation_note_en": "Use stickers for dust pickup; use optical wipes for cleaning surfaces.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -506,7 +500,7 @@
       "section": "tools",
       "name": "塑膠針筒",
       "quantity_basis": "每批耗材",
-      "specification": "無針、容量依實際注入量；需確認密封件與矽膠相容性。",
+      "specification": "無針頭分裝針筒。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -516,12 +510,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "只作施膠／注料用途；確認實際接液材料。",
+      "validation_note": "容量與密封材質需適合使用的矽膠。",
       "legacy_reference": "Plastic syringe",
       "name_en": "Plastic dispensing syringes",
       "quantity_basis_en": "Batch consumable",
-      "specification_en": "Needle-free; select capacity for actual dispensing volume and confirm seal compatibility.",
-      "validation_note_en": "For resin/silicone dispensing only; check the actual wetted materials.",
+      "specification_en": "Needle-free dispensing syringes.",
+      "validation_note_en": "Choose capacity and seal material for the silicone used.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -529,7 +523,7 @@
       "section": "tools",
       "name": "Window 接著劑",
       "quantity_basis": "批次耗材",
-      "specification": "透明、適用 PMMA 與現有白色外殼並提供所需密封；選用項目已由製作者確認。",
+      "specification": "相容於 PMMA 與白色外殼的透明接著劑。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -539,12 +533,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "記錄實際使用接著劑，避免多餘膠材進入光學面。",
+      "validation_note": "避免溢膠沾到光學面。",
       "legacy_reference": "Glue (for the acrylic window)",
       "name_en": "Acrylic-window adhesive",
       "quantity_basis_en": "Batch consumable",
-      "specification_en": "Clear adhesive compatible with PMMA and the existing white shell, providing the required window seal. Selection reviewed by the builder.",
-      "validation_note_en": "Record the adhesive actually used and keep the optical surfaces clear of excess adhesive.",
+      "specification_en": "Clear adhesive compatible with PMMA and the white shell.",
+      "validation_note_en": "Keep excess adhesive off the optical surfaces.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -552,7 +546,7 @@
       "section": "tools",
       "name": "黑色層黏合／修補膠",
       "quantity_basis": "有需要才使用",
-      "specification": "Smooth-On Sil-Poxy，限實際需要矽膠接著或修補的位置。",
+      "specification": "Smooth-On Sil-Poxy，局部矽膠黏合與修補用。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -574,12 +568,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "不是原黑色層整面塗膠的已驗證配方；避免用較硬膠層改變接觸層力學。",
+      "validation_note": "僅用於需黏合或修補的位置。",
       "legacy_reference": "Glue (for the black gel layer)",
       "name_en": "Black-layer bonding / repair adhesive",
       "quantity_basis_en": "Only if required",
-      "specification_en": "Smooth-On Sil-Poxy, only where silicone bonding or repair is actually needed.",
-      "validation_note_en": "Not a validated recipe for coating the entire black layer. Avoid altering contact-layer mechanics with a harder adhesive layer.",
+      "specification_en": "Smooth-On Sil-Poxy for local silicone bonding or repair.",
+      "validation_note_en": "Apply only where bonding or repair is needed.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -587,7 +581,7 @@
       "section": "tools",
       "name": "真空脫泡設備",
       "quantity_basis": "實驗室共用",
-      "specification": "真空泵＋耐真空腔體＋接頭；日本 100V、容積、壓力與混合料膨脹餘量需選型。",
+      "specification": "真空幫浦、真空容器與接頭；日本 100 V 電源。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -597,12 +591,12 @@
         }
       ],
       "status": "builder_confirmed",
-      "validation_note": "原淘寶容量選項不是必須照買；記錄實際使用的真空泵、腔體與接頭配置。",
+      "validation_note": "依批量與脫泡膨脹空間選容器。",
       "legacy_reference": "Vacuum pump",
       "name_en": "Vacuum degassing equipment",
       "quantity_basis_en": "Shared lab equipment",
-      "specification_en": "Pump, vacuum-rated chamber and compatible fittings. Confirm Japanese 100 V supply, chamber volume, pressure and expansion headroom.",
-      "validation_note_en": "Legacy Taobao chamber options are not mandatory dimensions. Record the actual lab pump, chamber and fitting combination.",
+      "specification_en": "Pump, vacuum-rated chamber and fittings; Japanese 100 V supply.",
+      "validation_note_en": "Size the chamber for batch volume and expansion during degassing.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -610,7 +604,7 @@
       "section": "tools",
       "name": "固化加熱設備",
       "quantity_basis": "選配／共用",
-      "specification": "僅在選用材料允許的硬化／後固化條件下使用；本版實作溫度與時間尚未記錄。",
+      "specification": "依矽膠使用說明選用加熱設備。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -620,12 +614,12 @@
         }
       ],
       "status": "optional",
-      "validation_note": "不沿用不同材料的加熱配方；原 BOM 亦列為 optional。",
+      "validation_note": "使用該材料的固化溫度與時間。",
       "legacy_reference": "Electric heating oven",
       "name_en": "Curing / heating equipment",
       "quantity_basis_en": "Optional, shared",
-      "specification_en": "Use only when the chosen material permits the selected cure/post-cure conditions. Actual build temperature/time not recorded.",
-      "validation_note_en": "Do not transfer a heating recipe between different materials. The original BOM also lists this as optional.",
+      "specification_en": "Heating equipment, if required by the silicone instructions.",
+      "validation_note_en": "Use the material-specific cure temperature and time.",
       "builder_confirmed_date": "2026-11-19"
     },
     {
@@ -633,20 +627,18 @@
       "section": "reused",
       "name": "★ LED 板／既有線路",
       "quantity_basis": "1／sensor，來自既有零件",
-      "specification": "Reuse existing LED assembly. 日本發包暫跳過。",
+      "specification": "既有 LED 板與線路。",
       "links": [],
       "status": "reuse_skip",
-      "validation_note": "不提供一般 LED 環作等效替代；接手需記錄既有零件 ID、接線、方向與供電。",
+      "validation_note": "保留安裝方向與供電接線。",
       "legacy_reference": null,
       "name_en": "★ Existing LED board and wiring",
       "quantity_basis_en": "1 reused assembly per sensor",
-      "specification_en": "Reuse existing LED assembly. New fabrication/procurement in Japan is deferred.",
-      "validation_note_en": "Do not substitute a generic LED ring. Record assembly ID, wiring, orientation and supply.",
+      "specification_en": "Existing LED board and wiring.",
+      "validation_note_en": "Retain board orientation and supply connections.",
       "photo": {
         "path": "../assets/photos/led-board.jpg",
         "alt_en": "Reused green LED board, showing panel and two separate boards",
-        "caption_en": "Existing green LED board",
-        "caption_ja": "再利用する緑色LED基板",
         "builder_identified_date": "2026-11-19"
       }
     },
@@ -655,22 +647,22 @@
       "section": "reused",
       "name": "★ 白色 sensor shell",
       "quantity_basis": "1／sensor，來自既有零件",
-      "specification": "Reuse existing white shell. **不能用 PLA 列印。** 日本發包暫跳過。",
+      "specification": "既有白色外殼，**不可用 PLA 列印。**",
       "links": [],
       "status": "reuse_skip",
-      "validation_note": "材質／製程涉及光學透光與散射；本次未驗證替代品。",
+      "validation_note": "沿用現有光學外殼。",
       "legacy_reference": null,
       "name_en": "★ Existing white sensor shell",
       "quantity_basis_en": "1 reused shell per sensor",
-      "specification_en": "Reuse existing white shell. DO NOT PRINT IN PLA. New fabrication/procurement is deferred.",
-      "validation_note_en": "Transmission and diffusion depend on material/process. No replacement shell is qualified here."
+      "specification_en": "Existing white shell. **Do not print in PLA.**",
+      "validation_note_en": "Keep the existing optical shell."
     },
     {
       "id": "JP-26",
       "section": "fabrication",
       "name": "修改版底座",
       "quantity_basis": "1／sensor",
-      "specification": "sensor_base_adapt_for_thick_PCB.STL；另附同名 SolidWorks source。",
+      "specification": "厚基板用 sensor base；STL 與 SolidWorks。",
       "links": [
         {
           "label": "STL",
@@ -686,19 +678,19 @@
         }
       ],
       "status": "fabrication_required",
-      "validation_note": "STL 已由製作者補齊；STEP、列印材質、切片參數與 PCB 配合尺寸待補。",
+      "validation_note": "記錄列印參數與相機基板配合。",
       "legacy_reference": null,
       "name_en": "Modified sensor base",
       "quantity_basis_en": "1 per sensor",
-      "specification_en": "sensor_base_adapt_for_thick_PCB.STL, with same-name SolidWorks source supplied separately.",
-      "validation_note_en": "Builder has supplied the STL. STEP export, print material/settings and measured PCB fit still need recording."
+      "specification_en": "Thicker-PCB sensor base; STL and SolidWorks.",
+      "validation_note_en": "Record print settings and camera-PCB fit."
     },
     {
       "id": "JP-27",
       "section": "fabrication",
       "name": "修改版 camera isolation ring",
       "quantity_basis": "1／sensor",
-      "specification": "isolation_ring_out_11.4_in_10.3.STL；另附同名 SolidWorks source。",
+      "specification": "修改版相機遮光環；STL 與 SolidWorks。",
       "links": [
         {
           "label": "STL",
@@ -714,19 +706,19 @@
         }
       ],
       "status": "fabrication_required",
-      "validation_note": "檔名不是尺寸驗證；確認 mm 比例、列印設定與實物遮光效果。",
+      "validation_note": "確認切片比例與組裝後遮光。",
       "legacy_reference": null,
       "name_en": "Modified camera isolation ring",
       "quantity_basis_en": "1 per sensor",
-      "specification_en": "isolation_ring_out_11.4_in_10.3.STL, with same-name SolidWorks source supplied separately.",
-      "validation_note_en": "Filename is not dimensional certification. Check millimetre scale, printing settings and installed light isolation."
+      "specification_en": "Revised camera isolation ring; STL and SolidWorks.",
+      "validation_note_en": "Check slicer scale and light isolation after assembly."
     },
     {
       "id": "JP-28",
       "section": "fabrication",
       "name": "LEAP fingertip 固定件",
       "quantity_basis": "依裝設手指數量",
-      "specification": "STL chip-holder 版及 SolidWorks 版均保留，不假設兩檔同版。",
+      "specification": "帶晶片座 STL 與可編輯 SolidWorks 指尖變體。",
       "links": [
         {
           "label": "STL",
@@ -742,19 +734,19 @@
         }
       ],
       "status": "fabrication_required",
-      "validation_note": "由 LEAP 官方 CAD 修改；原授權條款待核對。固定螺絲、材質及手部行程待量測。",
+      "validation_note": "確認螺絲鎖入、配線空間與關節可動域。",
       "legacy_reference": null,
       "name_en": "LEAP fingertip attachment",
       "quantity_basis_en": "One per equipped finger",
-      "specification_en": "Both the chip-holder STL and the SolidWorks variant are preserved; they are not assumed to be matching revisions.",
-      "validation_note_en": "Derived from official LEAP CAD; reconcile source license. Check screws, material and hand-motion clearances."
+      "specification_en": "Chip-holder STL and editable SolidWorks fingertip variant.",
+      "validation_note_en": "Check screw engagement, cable clearance and joint travel."
     },
     {
       "id": "JP-29",
       "section": "fabrication",
       "name": "3D 列印 casting molds",
       "quantity_basis": "1 套／製作工位",
-      "specification": "使用 3D 列印模具，取消原版壓克力 mold 板採購。",
+      "specification": "3D 列印注型模具。",
       "links": [
         {
           "label": "製作缺口",
@@ -764,19 +756,19 @@
         }
       ],
       "status": "fabrication_required",
-      "validation_note": "本版列印檔尚未提供；原上游 DXF 僅幾何參考，需建成實體並確認厚度、密封與脫模。",
+      "validation_note": "待補模具檔案與列印參數。",
       "legacy_reference": null,
       "name_en": "3D printed casting molds",
       "quantity_basis_en": "1 set per fabrication station",
-      "specification_en": "Use 3D printed molds; remove the original acrylic mold plates from the purchasing list.",
-      "validation_note_en": "Actual mold files have not been supplied. Upstream DXF is a geometry reference, not a printable solid; confirm thickness, sealing and demolding."
+      "specification_en": "3D printed casting molds.",
+      "validation_note_en": "Mold files and print settings still to be added."
     },
     {
       "id": "JP-30",
       "section": "fabrication",
       "name": "Calibration board",
       "quantity_basis": "校正時使用／共用",
-      "specification": "使用上游 calibration_board 檔案。",
+      "specification": "上游 calibration_board 設計。",
       "links": [
         {
           "label": "上游 fabrication",
@@ -786,19 +778,19 @@
         }
       ],
       "status": "conditional",
-      "validation_note": "此 repo 未複製上游檔；新材料或機構變動後應重新校正。",
+      "validation_note": "材料或機構更改後重新校正。",
       "legacy_reference": null,
       "name_en": "Calibration board",
       "quantity_basis_en": "Shared; when calibrating",
-      "specification_en": "Use the upstream calibration_board design.",
-      "validation_note_en": "Original file is not bundled. Recalibrate after changing materials or mechanics."
+      "specification_en": "Upstream calibration_board design.",
+      "validation_note_en": "Recalibrate after material or mechanical changes."
     },
     {
       "id": "JP-31",
       "section": "tools",
       "name": "線材固定與拉力釋放",
       "quantity_basis": "依 LEAP 布線",
-      "specification": "小型束帶／適當線材固定件；不是原 BOM 指定品。",
+      "specification": "小型束帶或合適的固定件。",
       "links": [
         {
           "label": "Amazon JP 搜尋",
@@ -808,12 +800,12 @@
         }
       ],
       "status": "optional",
-      "validation_note": "依實際線徑與關節活動量確認，不夾壓 FPC 或限制關節。",
+      "validation_note": "保留關節全可動域所需的線材餘量。",
       "legacy_reference": null,
       "name_en": "Cable retention and strain relief",
       "quantity_basis_en": "As required by actual LEAP routing",
-      "specification_en": "Small cable ties / suitable retainers; an addition to the legacy BOM.",
-      "validation_note_en": "Check cable diameter and full intended joint travel. Do not compress FPC cables or restrict joints.",
+      "specification_en": "Small cable ties or suitable retainers.",
+      "validation_note_en": "Leave cable slack through the full joint travel.",
       "builder_confirmed_date": "2026-11-19"
     }
   ]

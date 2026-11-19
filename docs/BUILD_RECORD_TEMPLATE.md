@@ -51,6 +51,3 @@ Copy this file for each build. Leave unknowns marked `TBC`.<br>
 - Calibration code revision, data and measured error / 校正の版・データ・誤差: TBC
 - Force-model validation/training and data/model versions / 力推定の検証・学習・版: TBC
 - Acceptance criteria, passed/failed checks and next changes / 合格基準・結果・次の変更: TBC
-
-Keep public records focused on fabrication and remove private order details.<br>
-公開記録には製作に必要な情報を残し、住所などの注文個人情報は除いてください。
