@@ -11,7 +11,8 @@ This repository collects small dimensional adjustments to the original [9DTact](
 
 [![▶ 9DTact Fabrication Tutorial](https://i.ytimg.com/vi/VxMceWVz7QQ/hqdefault.jpg)](https://www.youtube.com/watch?v=VxMceWVz7QQ)
 
-Watch the original video, then follow the preparation and assembly steps below. / 元の動画を見てから、以下の準備・組み立て手順に進みます。
+Follow the original video for assembly. Our method for demolding layers 2 and 3 is shown below.<br>
+組み立ては元の動画に沿って進めます。第2層・第3層の脱型には、以下の本研究室の方法を使います。
 
 **Our CAD/STL parts:** download the lab's modified base, isolation ring and LEAP Hand adapter from the [BOM](bom/BOM_JP.md).<br>
 **本研究室の CAD／STL：** 寸法調整したベース・遮光リングと LEAP Hand 用アダプターは、BOM からダウンロードしてください。
@@ -42,17 +43,10 @@ flowchart LR
 | **Casting molds / 注型モールド** | **3D print / 3D プリント** |
 | **★ CSI–USB / LED / white shell** | **Reuse. Do not print the white shell in PLA. / 再利用。白色シェルは PLA 不可。** |
 
-## Assembly / 組み立て
+## Demolding layers 2 and 3 / 第2層・第3層の脱型
 
-1. **Dry-fit the mechanics.** Check PCB seating, lens clearance, LED board, isolation ring, shell and screw engagement.<br>基板・レンズ・LED・遮光リング・シェルを仮組みし、隙間とねじの締結を確認します。
-2. **Check camera and lighting.** Connect the reused boards, set exposure, gain and focus, and keep cables clear of clamping surfaces.<br>再利用する基板を接続し、露光・ゲイン・焦点を設定します。配線を挟まないように通します。
-3. **Install the acrylic window.** Clean the optical faces and check the adhesive seal, bonding and fogging.<br>光学面を清掃し、窓の密封・接着・曇りを確認します。
-4. **Cast layer 1.** Use the transparent silicone.<br>透明シリコーンで第1層を注型します。
-5. **Cast and demold layer 2.** Use [Shore 0A](docs/MATERIALS.md). Release the mold–silicone interface with a utility knife instead of pressing or pulling the edge by hand.<br>[Shore 0A](docs/MATERIALS.ja.md) で第2層を注型します。指で端を押したり引いたりせず、カッターナイフでモールドとの界面を分離します。
-6. **Cast and demold layer 3.** Add the specified black pigment to the third-layer silicone. Cover the contact surface and required sides; use the same knife-assisted release.<br>第3層のシリコーンに指定の黒色顔料を加え、接触面と必要な側面を遮光します。同じナイフ操作で脱型します。
-7. **Mount to LEAP Hand.** Check screw engagement, joint travel, interference and cable slack.<br>LEAP Hand に取り付け、ねじの締結・可動域・干渉・ケーブルの余裕を確認します。
-
-### Demolding layers 2 and 3 / 第2層・第3層の脱型
+For **layer 2 (translucent)** and **layer 3 (black)**, use a utility knife to carefully release the **mold–silicone interface**, instead of pressing or pulling the silicone edge by hand as shown in the video.<br>
+**第2層（半透明）・第3層（黒色）** は、動画のように指で端を押したり引いたりせず、カッターナイフで **モールドとシリコーンの界面** を慎重に分離します。
 
 ![Layer 2 and layer 3 demolding: tutorial finger pressure on the left, knife-assisted interface release on the right](assets/process/demolding-comparison.png)
 
