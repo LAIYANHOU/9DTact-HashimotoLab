@@ -51,7 +51,6 @@ flowchart LR
 5. **Cast and demold layer 2.** Use [Shore A 0](docs/MATERIALS.md). Release the mold–silicone interface with a utility knife instead of pressing or pulling the edge by hand.<br>[Shore A 0](docs/MATERIALS.ja.md) で第2層を注型します。指で端を押したり引いたりせず、カッターナイフでモールドとの界面を分離します。
 6. **Cast and demold layer 3.** Add the specified black pigment to the third-layer silicone. Cover the contact surface and required sides; use the same knife-assisted release.<br>第3層のシリコーンに指定の黒色顔料を加え、接触面と必要な側面を遮光します。同じナイフ操作で脱型します。
 7. **Mount to LEAP Hand.** Check screw engagement, joint travel, interference and cable slack.<br>LEAP Hand に取り付け、ねじの締結・可動域・干渉・ケーブルの余裕を確認します。
-8. **Capture a new reference and recalibrate.** Follow [upstream calibration](https://github.com/linchangyi1/9DTact#3d-shape-reconstruction) and evaluate force-estimation accuracy after the changes.<br>基準画像を取得して再校正し、変更後の力推定精度も評価します。
 
 ### Demolding layers 2 and 3 / 第2層・第3層の脱型
 
@@ -60,10 +59,10 @@ flowchart LR
 **Follow the mold–silicone seam; keep the sensing surface and black skin intact.** Remove hot-melt adhesive strips separately before release. [Detailed procedure](docs/DEMOLDING.md).<br>
 **モールドとの接合面に沿って分離し、感圧面や黒色表皮を切らないようにします。** ホットメルト接着剤は先に別の工程として除去します。
 
-## Finish and record / 最終確認・記録
+## Calibration and verification / 校正・動作確認
 
-Check contact response at the centre and edges, recovery, skin adhesion and LEAP motion. Save reference/contact images, calibration results, mixing, degassing, curing and print settings in the [build record](docs/BUILD_RECORD_TEMPLATE.md).<br>
-中央・周辺の接触応答、回復、表皮の接着、LEAP の動作を確認します。画像・校正結果と配合・脱泡・硬化・造形条件を製作記録に残します。
+Continue in the **[original 9DTact repository](https://github.com/linchangyi1/9DTact)** for calibration and verification. Follow its setup instructions and use its calibration, shape-reconstruction and force-estimation scripts.<br>
+校正・動作確認は **元の 9DTact リポジトリ** の手順に従い、同リポジトリの環境構築手順と校正・形状復元・力推定スクリプトを使用してください。
 
 ## Credit and file licenses
 
