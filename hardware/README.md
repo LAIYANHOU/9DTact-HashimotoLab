@@ -11,6 +11,8 @@ Three STL parts and three SolidWorks files. [Checksums and mesh dimensions](mani
 | [finger_tip_tactile_with_chip_holder.STL](mesh/finger_tip_tactile_with_chip_holder.STL) | **03 ·** 9DTact-to-LEAP Hand adapter with chip holder | Print mesh |
 | [finger_tip_tactile1_wrq.SLDPRT](cad/finger_tip_tactile1_wrq.SLDPRT) | Editable LEAP fingertip variant | SolidWorks |
 
+**Planned:** Robotiq mounting adapter. / **今後追加予定：** Robotiq 用連結部品。
+
 ![Supplied STL meshes](../assets/mesh-preview.png)
 
 ## Geometry inspection

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Render three actual STL files for the README; numpy and Pillow.
+"""Render STL geometry previews and BOM thumbnails; numpy and Pillow.
 
-Run with --animate to also build a rotating GIF. Independent display scales;
+Run with --bom-only for thumbnails or --animate to also build a rotating GIF. Independent display scales;
 source geometry is never edited. English figure labels avoid font dependencies.
 """
 import argparse, io, struct
@@ -98,6 +98,11 @@ def static_assets(parts):
   label(d,(68,793),f'Source XYZ bounds: {ext}  |  {part["triangles"]:,} triangles',19,MUTED)
   label(d,(68,829),'Coordinate units: mm assumed; verify in slicer. Display views do not specify the print orientation.',17,MUTED)
   sheet.save(OUT/'parts'/(part['slug']+'.png')); print('Rendered '+part['slug']+' detail sheet',flush=True)
+def bom_assets(parts):
+ (OUT/'bom').mkdir(parents=True,exist_ok=True)
+ for part,mesh in parts:
+  draw_mesh(mesh,part['color'],(480,360),38,-55).save(OUT/'bom'/(part['slug']+'.png'))
+  print('Rendered BOM image: '+part['slug'],flush=True)
 def animate(parts):
  frames=[]
  for frame in range(32):
@@ -112,7 +117,9 @@ def animate(parts):
  frames[0].save(OUT/'parts-turntable.gif',save_all=True,append_images=frames[1:],duration=110,loop=0,optimize=True,disposal=2)
  print('Rendered rotating GIF',flush=True)
 def main():
- parser=argparse.ArgumentParser(); parser.add_argument('--animate',action='store_true'); args=parser.parse_args()
- parts=[(part,read_mesh(part)) for part in PARTS]; static_assets(parts)
+ parser=argparse.ArgumentParser(); parser.add_argument('--animate',action='store_true'); parser.add_argument('--bom-only',action='store_true'); args=parser.parse_args()
+ parts=[(part,read_mesh(part)) for part in PARTS]; bom_assets(parts)
+ if args.bom_only: return
+ static_assets(parts)
  if args.animate: animate(parts)
 if __name__=='__main__': main()

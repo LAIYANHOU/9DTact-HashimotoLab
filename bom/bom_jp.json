@@ -683,7 +683,11 @@
       "name_en": "Modified sensor base",
       "quantity_basis_en": "1 per sensor",
       "specification_en": "Thicker-PCB sensor base; STL and SolidWorks.",
-      "validation_note_en": "Record print settings and camera-PCB fit."
+      "validation_note_en": "Record print settings and camera-PCB fit.",
+      "photo": {
+        "path": "../assets/bom/sensor-base.png",
+        "alt_en": "3D preview of the lab-specific sensor base for the thicker camera PCB"
+      }
     },
     {
       "id": "JP-27",
@@ -711,7 +715,11 @@
       "name_en": "Modified camera isolation ring",
       "quantity_basis_en": "1 per sensor",
       "specification_en": "Revised camera isolation ring; STL and SolidWorks.",
-      "validation_note_en": "Check slicer scale and light isolation after assembly."
+      "validation_note_en": "Check slicer scale and light isolation after assembly.",
+      "photo": {
+        "path": "../assets/bom/isolation-ring.png",
+        "alt_en": "3D preview of the lab-specific camera isolation ring"
+      }
     },
     {
       "id": "JP-28",
@@ -739,7 +747,11 @@
       "name_en": "LEAP fingertip attachment",
       "quantity_basis_en": "One per equipped finger",
       "specification_en": "Chip-holder STL and editable SolidWorks fingertip variant.",
-      "validation_note_en": "Check screw engagement, cable clearance and joint travel."
+      "validation_note_en": "Check screw engagement, cable clearance and joint travel.",
+      "photo": {
+        "path": "../assets/bom/leap-fingertip.png",
+        "alt_en": "3D preview of the LEAP Hand adapter with chip holder"
+      }
     },
     {
       "id": "JP-29",
