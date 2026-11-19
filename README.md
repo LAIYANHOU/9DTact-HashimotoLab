@@ -11,6 +11,8 @@ This repository collects small dimensional adjustments to the original [9DTact](
 
 [![▶ 9DTact Fabrication Tutorial](https://i.ytimg.com/vi/VxMceWVz7QQ/hqdefault.jpg)](https://www.youtube.com/watch?v=VxMceWVz7QQ)
 
+**[▶ Watch on YouTube / YouTubeで再生](https://www.youtube.com/watch?v=VxMceWVz7QQ)**
+
 Follow the original video for assembly. Our method for demolding layers 2 and 3 is shown below.<br>
 組み立ては元の動画に沿って進めます。第2層・第3層の脱型には、以下の本研究室の方法を使います。
 
