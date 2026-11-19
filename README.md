@@ -16,11 +16,21 @@ Watch the original video, then follow the preparation and assembly steps below. 
 **Our CAD/STL parts:** download the lab's modified base, isolation ring and LEAP Hand adapter from the [BOM](bom/BOM_JP.md).<br>
 **本研究室の CAD／STL：** 寸法調整したベース・遮光リングと LEAP Hand 用アダプターは、BOM からダウンロードしてください。
 
+## Fabrication flow / 製作の流れ
+
+```mermaid
+flowchart LR
+    A[Print custom parts and molds] --> C[Cast silicone layers]
+    B[Order acrylic window from Hazaiya] --> C
+    C --> D[Assemble with reused CSI-USB, LED and shell]
+    D --> E[Mount to LEAP and recalibrate]
+```
+
 ## Prepare / 製作前の準備
 
-1. Gather materials, tools and the reused **CSI–USB board, LED board and white shell** using the [BOM](bom/BOM_JP.md).<br>部品表の写真を見ながら、材料・工具と再利用する基板・シェルをそろえます。
-2. Print the three lab parts and casting molds. Check millimetre scale and dry-fit the camera PCB.<br>本研究室の3部品とモールドを造形し、mm 単位のスケールとカメラ基板の仮組みを確認します。
-3. Prepare the acrylic-window drawing and order from [Hazaiya](docs/WINDOW_OUTSOURCING.md).<br>アクリル窓の図面を準備し、はざいやへ発注します。
+1. **Print custom parts and molds.** Download the lab's STL files from the [BOM](bom/BOM_JP.md), check millimetre scale and dry-fit the camera PCB.<br>部品表の STL で本研究室の部品とモールドを造形し、mm 単位のスケールと基板の仮組みを確認します。
+2. Prepare the acrylic-window drawing and order from [Hazaiya](docs/WINDOW_OUTSOURCING.md).<br>アクリル窓の図面を準備し、はざいやへ発注します。
+3. Gather materials, tools and the reused **CSI–USB board, LED board and white shell** using the [BOM](bom/BOM_JP.md).<br>部品表の写真を見ながら、材料・工具と再利用する基板・シェルをそろえます。
 
 | Item | Hashimoto Lab build / この実装 |
 | --- | --- |

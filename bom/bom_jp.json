@@ -687,7 +687,8 @@
       "photo": {
         "path": "../assets/bom/sensor-base.png",
         "alt_en": "3D preview of the lab-specific sensor base for the thicker camera PCB"
-      }
+      },
+      "design_change": "modified"
     },
     {
       "id": "JP-27",
@@ -719,7 +720,8 @@
       "photo": {
         "path": "../assets/bom/isolation-ring.png",
         "alt_en": "3D preview of the lab-specific camera isolation ring"
-      }
+      },
+      "design_change": "modified"
     },
     {
       "id": "JP-28",
@@ -751,7 +753,8 @@
       "photo": {
         "path": "../assets/bom/leap-fingertip.png",
         "alt_en": "3D preview of the LEAP Hand adapter with chip holder"
-      }
+      },
+      "design_change": "added"
     },
     {
       "id": "JP-29",

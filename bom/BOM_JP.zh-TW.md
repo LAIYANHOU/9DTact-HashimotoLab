@@ -2,7 +2,9 @@
 
 [English BOM](BOM_JP.md) · **繁體中文**
 
-Hashimoto Lab 的零件、材料與共用工具。★ 代表沿用實驗室既有零件。
+Hashimoto Lab 的零件、材料與共用工具。
+
+**CAD：Δ 修改原版零件 · ＋ 本實驗室新增零件。★ 沿用既有零件。**
 
 [材料指南 · English](../docs/MATERIALS.md) · [材料 · 日本語](../docs/MATERIALS.ja.md)
 
@@ -33,9 +35,9 @@ Hashimoto Lab 的零件、材料與共用工具。★ 代表沿用實驗室既�
 
 | ID | 項目／用途 | Photo / 写真 | 數量 | 規格 | 採購／檔案 | 備註 |
 | --- | --- | --- | --- | --- | --- | --- |
-| JP-26 | 修改版底座 | <a href="../assets/bom/sensor-base.png"><img src="../assets/bom/sensor-base.png" width="90" alt="3D preview of the lab-specific sensor base for the thicker camera PCB"></a> | 1／sensor | 厚基板用 sensor base；STL 與 SolidWorks。 | [STL](../hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)<br>[SolidWorks source](../hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | **製作**<br>記錄列印參數與相機基板配合。 |
-| JP-27 | 修改版 camera isolation ring | <a href="../assets/bom/isolation-ring.png"><img src="../assets/bom/isolation-ring.png" width="90" alt="3D preview of the lab-specific camera isolation ring"></a> | 1／sensor | 修改版相機遮光環；STL 與 SolidWorks。 | [STL](../hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)<br>[SolidWorks source](../hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT) | **製作**<br>確認切片比例與組裝後遮光。 |
-| JP-28 | LEAP fingertip 固定件 | <a href="../assets/bom/leap-fingertip.png"><img src="../assets/bom/leap-fingertip.png" width="90" alt="3D preview of the LEAP Hand adapter with chip holder"></a> | 依裝設手指數量 | 帶晶片座 STL 與可編輯 SolidWorks 指尖變體。 | [STL](../hardware/mesh/finger_tip_tactile_with_chip_holder.STL)<br>[SolidWorks](../hardware/cad/finger_tip_tactile1_wrq.SLDPRT) | **製作**<br>確認螺絲鎖入、配線空間與關節可動域。 |
+| JP-26 | Δ 修改版底座 | <a href="../assets/bom/sensor-base.png"><img src="../assets/bom/sensor-base.png" width="90" alt="3D preview of the lab-specific sensor base for the thicker camera PCB"></a> | 1／sensor | 厚基板用 sensor base；STL 與 SolidWorks。 | [STL](../hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)<br>[SolidWorks source](../hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | **製作**<br>記錄列印參數與相機基板配合。 |
+| JP-27 | Δ 修改版 camera isolation ring | <a href="../assets/bom/isolation-ring.png"><img src="../assets/bom/isolation-ring.png" width="90" alt="3D preview of the lab-specific camera isolation ring"></a> | 1／sensor | 修改版相機遮光環；STL 與 SolidWorks。 | [STL](../hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)<br>[SolidWorks source](../hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT) | **製作**<br>確認切片比例與組裝後遮光。 |
+| JP-28 | ＋ LEAP fingertip 固定件 | <a href="../assets/bom/leap-fingertip.png"><img src="../assets/bom/leap-fingertip.png" width="90" alt="3D preview of the LEAP Hand adapter with chip holder"></a> | 依裝設手指數量 | 帶晶片座 STL 與可編輯 SolidWorks 指尖變體。 | [STL](../hardware/mesh/finger_tip_tactile_with_chip_holder.STL)<br>[SolidWorks](../hardware/cad/finger_tip_tactile1_wrq.SLDPRT) | **製作**<br>確認螺絲鎖入、配線空間與關節可動域。 |
 | JP-29 | 3D 列印 casting molds |  | 1 套／製作工位 | 3D 列印注型模具。 | [製作缺口](../docs/KNOWN_GAPS.md) | **製作**<br>待補模具檔案與列印參數。 |
 | JP-30 | Calibration board |  | 校正時使用／共用 | 上游 calibration_board 設計。 | [上游 fabrication](https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication) | **視需求**<br>材料或機構更改後重新校正。 |
 

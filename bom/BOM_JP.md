@@ -2,7 +2,9 @@
 
 [Build guide / 製作手順](../README.md)
 
-Parts, materials and shared tools for the Hashimoto Lab build. **★ Reuse existing lab parts.**
+Parts, materials and shared tools for the Hashimoto Lab build.
+
+**CAD: Δ Modified / 変更 · ＋ Lab-added / 本研究室で追加. ★ Reuse / 再利用.**
 
 ## Sensor components and materials
 
@@ -31,9 +33,9 @@ Parts, materials and shared tools for the Hashimoto Lab build. **★ Reuse exist
 
 | ID / item | Photo / 写真 | Quantity | Specification | Source / file | Notes |
 | --- | --- | --- | --- | --- | --- |
-| **JP-26**<br>Modified sensor base | <a href="../assets/bom/sensor-base.png"><img src="../assets/bom/sensor-base.png" width="90" alt="3D preview of the lab-specific sensor base for the thicker camera PCB"></a> | 1 per sensor | Thicker-PCB sensor base; STL and SolidWorks. | [STL](../hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)<br>[SolidWorks source](../hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | **Fabricate**<br>Record print settings and camera-PCB fit. |
-| **JP-27**<br>Modified camera isolation ring | <a href="../assets/bom/isolation-ring.png"><img src="../assets/bom/isolation-ring.png" width="90" alt="3D preview of the lab-specific camera isolation ring"></a> | 1 per sensor | Revised camera isolation ring; STL and SolidWorks. | [STL](../hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)<br>[SolidWorks source](../hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT) | **Fabricate**<br>Check slicer scale and light isolation after assembly. |
-| **JP-28**<br>LEAP fingertip attachment | <a href="../assets/bom/leap-fingertip.png"><img src="../assets/bom/leap-fingertip.png" width="90" alt="3D preview of the LEAP Hand adapter with chip holder"></a> | One per equipped finger | Chip-holder STL and editable SolidWorks fingertip variant. | [STL](../hardware/mesh/finger_tip_tactile_with_chip_holder.STL)<br>[SolidWorks](../hardware/cad/finger_tip_tactile1_wrq.SLDPRT) | **Fabricate**<br>Check screw engagement, cable clearance and joint travel. |
+| **JP-26**<br>Δ Modified sensor base | <a href="../assets/bom/sensor-base.png"><img src="../assets/bom/sensor-base.png" width="90" alt="3D preview of the lab-specific sensor base for the thicker camera PCB"></a> | 1 per sensor | Thicker-PCB sensor base; STL and SolidWorks. | [STL](../hardware/mesh/sensor_base_adapt_for_thick_PCB.STL)<br>[SolidWorks source](../hardware/cad/sensor_base_adapt_for_thick_PCB.SLDPRT) | **Fabricate**<br>Record print settings and camera-PCB fit. |
+| **JP-27**<br>Δ Modified camera isolation ring | <a href="../assets/bom/isolation-ring.png"><img src="../assets/bom/isolation-ring.png" width="90" alt="3D preview of the lab-specific camera isolation ring"></a> | 1 per sensor | Revised camera isolation ring; STL and SolidWorks. | [STL](../hardware/mesh/isolation_ring_out_11.4_in_10.3.STL)<br>[SolidWorks source](../hardware/cad/isolation_ring_out_11.4_in_10.3.SLDPRT) | **Fabricate**<br>Check slicer scale and light isolation after assembly. |
+| **JP-28**<br>＋ LEAP fingertip attachment | <a href="../assets/bom/leap-fingertip.png"><img src="../assets/bom/leap-fingertip.png" width="90" alt="3D preview of the LEAP Hand adapter with chip holder"></a> | One per equipped finger | Chip-holder STL and editable SolidWorks fingertip variant. | [STL](../hardware/mesh/finger_tip_tactile_with_chip_holder.STL)<br>[SolidWorks](../hardware/cad/finger_tip_tactile1_wrq.SLDPRT) | **Fabricate**<br>Check screw engagement, cable clearance and joint travel. |
 | **JP-29**<br>3D printed casting molds |  | 1 set per fabrication station | 3D printed casting molds. | [Missing fabrication information](../docs/KNOWN_GAPS.md) | **Fabricate**<br>Mold files and print settings still to be added. |
 | **JP-30**<br>Calibration board |  | Shared; when calibrating | Upstream calibration_board design. | [Upstream fabrication](https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication) | **If needed**<br>Recalibrate after material or mechanical changes. |
 

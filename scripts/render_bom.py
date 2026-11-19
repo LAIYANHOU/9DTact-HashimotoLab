@@ -21,6 +21,10 @@ def photo_cell(item):
     return f'<a href="{path}"><img src="{path}" width="90" alt="{alt}"></a>'
 
 
+def design_marker(item):
+    return {'modified': 'Δ ', 'added': '＋ '}.get(item.get('design_change'), '')
+
+
 def status_label(item, language):
     labels = {
         'builder_purchased': ('Purchased', '曾購買'),
@@ -42,7 +46,8 @@ def render_zh(data):
     lines = [
         '# 日本採購與製作表', '',
         '[English BOM](BOM_JP.md) · **繁體中文**', '',
-        'Hashimoto Lab 的零件、材料與共用工具。★ 代表沿用實驗室既有零件。', '',
+        'Hashimoto Lab 的零件、材料與共用工具。', '',
+        '**CAD：Δ 修改原版零件 · ＋ 本實驗室新增零件。★ 沿用既有零件。**', '',
         '[材料指南 · English](../docs/MATERIALS.md) · [材料 · 日本語](../docs/MATERIALS.ja.md)', '',
     ]
     for section in data['sections']:
@@ -53,7 +58,7 @@ def render_zh(data):
             if item['section'] != section['id']:
                 continue
             links = '<br>'.join(f'[{cell(link["label"])}]({link["url"]})' for link in item['links']) or '待補'
-            row = [item['id'], item['name'], photo_cell(item), item['quantity_basis'], item['specification'], links,
+            row = [item['id'], design_marker(item) + item['name'], photo_cell(item), item['quantity_basis'], item['specification'], links,
                    f'{status_label(item, "zh")}<br>{item["validation_note"]}']
             lines.append('| ' + ' | '.join(cell(v) for v in row) + ' |')
         lines.append('')
@@ -67,7 +72,8 @@ def render_en(data):
     lines = [
         '# Japan BOM and fabrication list', '',
         '[Build guide / 製作手順](../README.md)', '',
-        'Parts, materials and shared tools for the Hashimoto Lab build. **★ Reuse existing lab parts.**', '',
+        'Parts, materials and shared tools for the Hashimoto Lab build.', '',
+        '**CAD: Δ Modified / 変更 · ＋ Lab-added / 本研究室で追加. ★ Reuse / 再利用.**', '',
     ]
     for section in data['sections']:
         lines += [f'## {section["title_en"]}', '',
@@ -77,7 +83,7 @@ def render_en(data):
             if item['section'] != section['id']:
                 continue
             links = '<br>'.join(f'[{cell(link["label_en"])}]({link["url"]})' for link in item['links']) or 'Reuse existing assembly'
-            row = [f'**{item["id"]}**<br>{item["name_en"]}', photo_cell(item), item['quantity_basis_en'],
+            row = [f'**{item["id"]}**<br>{design_marker(item)}{item["name_en"]}', photo_cell(item), item['quantity_basis_en'],
                    item['specification_en'], links,
                    f'{status_label(item, "en")}<br>{item["validation_note_en"]}']
             lines.append('| ' + ' | '.join(cell(value) for value in row) + ' |')
