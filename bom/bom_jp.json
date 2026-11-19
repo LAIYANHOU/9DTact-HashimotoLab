@@ -759,24 +759,36 @@
     {
       "id": "JP-29",
       "section": "fabrication",
-      "name": "3D 列印 casting molds",
-      "quantity_basis": "1 套／製作工位",
-      "specification": "3D 列印注型模具。",
+      "name": "注型模具板（3D 列印）",
+      "quantity_basis": "1 套（3 片）",
+      "specification": "Mold 1：2.5 mm；Mold 2：2.8 mm；底板：3.0 mm。",
       "links": [
         {
-          "label": "製作缺口",
-          "url": "../docs/KNOWN_GAPS.md",
-          "kind": "local",
-          "label_en": "Missing fabrication information"
+          "label": "Mold 1 DXF",
+          "label_en": "Mold 1 DXF",
+          "url": "https://github.com/linchangyi1/9DTact/blob/main/9DTact_Design/fabrication/mold_1_thickness_2.5mm.DXF",
+          "kind": "reference"
+        },
+        {
+          "label": "Mold 2 DXF",
+          "label_en": "Mold 2 DXF",
+          "url": "https://github.com/linchangyi1/9DTact/blob/main/9DTact_Design/fabrication/mold_2_thickness_2.8mm.DXF",
+          "kind": "reference"
+        },
+        {
+          "label": "Base DXF",
+          "label_en": "Base DXF",
+          "url": "https://github.com/linchangyi1/9DTact/blob/main/9DTact_Design/fabrication/mold_base_thickness_3.0mm.DXF",
+          "kind": "reference"
         }
       ],
       "status": "fabrication_required",
-      "validation_note": "待補模具檔案與列印參數。",
+      "validation_note": "將 DXF 外形依上述厚度拉伸，匯出 STL 後列印。",
       "legacy_reference": null,
-      "name_en": "3D printed casting molds",
-      "quantity_basis_en": "1 set per fabrication station",
-      "specification_en": "3D printed casting molds.",
-      "validation_note_en": "Mold files and print settings still to be added."
+      "name_en": "Casting mold plates (3D print)",
+      "quantity_basis_en": "1 set (3 plates)",
+      "specification_en": "Mold 1: 2.5 mm; mold 2: 2.8 mm; base: 3.0 mm.",
+      "validation_note_en": "Extrude the DXF profiles to these thicknesses, export STL and print."
     },
     {
       "id": "JP-30",

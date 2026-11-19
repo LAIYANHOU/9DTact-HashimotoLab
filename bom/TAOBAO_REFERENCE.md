@@ -37,4 +37,4 @@ Original purchasing links with tracking parameters removed. Current selections: 
 - Translucent silicone: builder chooses the **Shore 0** option at the original translucent-silicone link; the source document annotation says Shore 5A. Do not treat that old annotation as the current selection.
 - Acrylic board: only the camera window is outsourced in acrylic, to Hazaiya. Casting molds are 3D printed; do not buy acrylic mold plates for this revision.
 - LED board and white shell: reuse existing parts, marked ★ in the Japan BOM. White shell must not be PLA.
-- Replacement base/ring and LEAP mount files are in `hardware/`; local manufacturing settings and mold files still need to be added.
+- Lab-specific base/ring and LEAP mount files are in `hardware/`. Original mold DXF profiles and plate thicknesses are linked in **JP-29** of the [BOM](BOM_JP.md).

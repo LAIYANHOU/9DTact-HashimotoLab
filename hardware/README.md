@@ -35,7 +35,7 @@ Record print material, layer height, supports and orientation in the [build reco
 
 ## Molds and acrylic window
 
-- **Molds:** 3D printed; mold STL files still to be added.
+- **Molds:** extrude the original 9DTact DXF profiles to 2.5 / 2.8 / 3.0 mm, export STL and print. Source links: **JP-29** in the [BOM](../bom/BOM_JP.md).
 - **Window:** transparent acrylic, outsourced to Hazaiya; final production drawing is still needed. See [window outsourcing](../docs/WINDOW_OUTSOURCING.md).
 - **★ CSI–USB converter / ★ LED board / ★ white shell:** reuse existing assemblies.
 - **Calibration board:** obtain the original file from [upstream fabrication](https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication) if recalibration is required.

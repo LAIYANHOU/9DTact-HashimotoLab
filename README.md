@@ -28,7 +28,7 @@ flowchart LR
 
 ## Prepare / 製作前の準備
 
-1. **Print custom parts and molds.** Download the lab's STL files from the [BOM](bom/BOM_JP.md), check millimetre scale and dry-fit the camera PCB.<br>部品表の STL で本研究室の部品とモールドを造形し、mm 単位のスケールと基板の仮組みを確認します。
+1. **Print custom parts and molds.** Use the lab's STL files and the mold profiles linked in the [BOM](bom/BOM_JP.md). Check millimetre scale and dry-fit the camera PCB.<br>部品表の専用 STL とモールド図面を使って造形し、mm 単位のスケールと基板の仮組みを確認します。
 2. Prepare the acrylic-window drawing and order from [Hazaiya](docs/WINDOW_OUTSOURCING.md).<br>アクリル窓の図面を準備し、はざいやへ発注します。
 3. Gather materials, tools and the reused **CSI–USB board, LED board and white shell** using the [BOM](bom/BOM_JP.md).<br>部品表の写真を見ながら、材料・工具と再利用する基板・シェルをそろえます。
 

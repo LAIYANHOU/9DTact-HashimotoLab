@@ -2,7 +2,7 @@
 
 ## CAD and fabrication
 
-- [ ] Add printed-mold STL files and successful print, sealing and release settings.
+- [ ] Export the upstream mold DXF profiles as STL and record print, sealing and release settings.
 - [ ] Add the acrylic-window drawing with thickness, tolerances and Hazaiya specifications.
 - [ ] Export STEP files; identify the SolidWorks configuration corresponding to each STL, especially the two LEAP fingertip variants.
 - [ ] Record base, ring and fingertip print material, orientation, layer height, supports and finishing.
