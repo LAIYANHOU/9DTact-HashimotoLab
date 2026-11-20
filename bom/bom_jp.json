@@ -119,95 +119,60 @@
       "section": "components",
       "name": "第一層透明矽膠",
       "quantity_basis": "依批次量測耗用量",
-      "specification": "原 BOM 的透明 9345 矽膠。",
-      "links": [
-        {
-          "label": "Amazon JP 搜尋",
-          "url": "https://www.amazon.co.jp/s?k=9345+%E9%80%8F%E6%98%8E+%E3%82%B7%E3%83%AA%E3%82%B3%E3%83%BC%E3%83%B3+%E4%BB%98%E5%8A%A0%E5%9E%8B",
-          "kind": "search",
-          "label_en": "Amazon JP search"
-        },
-        {
-          "label": "日本代理商材料目錄",
-          "url": "https://sac-corp.co.jp/categories/additive_silicone.php",
-          "kind": "vendor",
-          "label_en": "Japanese distributor catalog"
-        }
-      ],
-      "status": "search_only",
-      "validation_note": "替換材料時比較透明度、固化與層間黏合。",
+      "specification": "透明 9345 矽膠；硬度約 Shore 45。",
+      "links": [],
+      "status": "not_found",
+      "validation_note": "尚未找到日本現貨。",
       "legacy_reference": "Transparent silicone",
       "name_en": "Layer 1: transparent silicone",
       "quantity_basis_en": "Measure consumption per batch",
-      "specification_en": "Clear 9345 silicone from the original BOM.",
-      "validation_note_en": "Compare clarity, curing and interlayer adhesion when changing material.",
+      "specification_en": "Transparent 9345 silicone; approximately Shore 45.",
+      "validation_note_en": "Japan stock not found.",
       "photo": {
         "path": "../assets/photos/materials/layer-1-transparent.jpg",
         "alt_en": "Layer 1: two white Huizhou-labelled bottles with QR codes",
         "builder_identified_date": "2026-11-19"
-      }
+      },
+      "builder_specified_date": "2026-11-20"
     },
     {
       "id": "JP-05",
       "section": "components",
-      "name": "第二層半透明矽膠：Shore 0A",
+      "name": "第二層半透明矽膠：Ecoflex 00-30",
       "quantity_basis": "依批次量測耗用量",
-      "specification": "淘寶 item 649539121020 選 Shore 0A，取代原 5A。",
+      "specification": "暫用 Ecoflex 00-30，與第三層相同。",
       "links": [
         {
-          "label": "Amazon JP 搜尋",
-          "url": "https://www.amazon.co.jp/s?k=Shore+0A+silicone+translucent",
-          "kind": "search",
-          "label_en": "Amazon JP search"
-        },
-        {
-          "label": "SAC Ecoflex 00-30 候選",
-          "url": "https://sac-corp.myshopify.com/products/ecoflex-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD-00-30-%EF%BE%84%EF%BE%97%EF%BD%B2%EF%BD%B1%EF%BE%99%EF%BD%B7%EF%BD%AF%EF%BE%84",
-          "kind": "product",
-          "label_en": "SAC Ecoflex 00-30 candidate"
-        },
-        {
-          "label": "SAC Ecoflex 00-50 候選",
-          "url": "https://sac-corp.myshopify.com/products/ecoflex-00-50-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD",
-          "kind": "product",
-          "label_en": "SAC Ecoflex 00-50 candidate"
-        },
-        {
-          "label": "日本 Shore 0A 試作／材料詢問",
-          "url": "https://ytc-eng.com/silicon_syurui",
-          "kind": "vendor",
-          "label_en": "Japan A0 prototyping/material inquiry"
-        },
-        {
-          "label": "材料研究",
-          "url": "../docs/MATERIALS.md",
-          "kind": "local",
-          "label_en": "Material research"
+          "label": "Ecoflex 00-30 — Amazon",
+          "label_en": "Ecoflex 00-30 — Amazon",
+          "url": "https://amzn.asia/d/08yFspH2",
+          "kind": "product"
         }
       ],
-      "status": "candidate",
-      "validation_note": "日本替代候選與小樣測試見材料指南。",
+      "status": "builder_specified",
+      "validation_note": "尚未試用，預期接近原淘寶 Shore 0A 材料。",
       "legacy_reference": "Translucent silicone",
-      "name_en": "Layer 2: translucent silicone, Shore 0A",
+      "name_en": "Layer 2: translucent silicone, Ecoflex 00-30",
       "quantity_basis_en": "Measure consumption per batch",
-      "specification_en": "Taobao item 649539121020, Shore 0A option; replaces 5A.",
-      "validation_note_en": "Japan alternatives: see material notes for sample testing.",
+      "specification_en": "Ecoflex 00-30 as a provisional substitute; same silicone as layer 3.",
+      "validation_note_en": "Not yet tested for layer 2; expected to be close to the original Taobao Shore 0A material.",
       "photo": {
-        "path": "../assets/photos/materials/layer-2-shore-0.jpg",
-        "alt_en": "Layer 2: two bottles with blue SHORE A 0 stickers",
+        "path": "../assets/photos/materials/layer-3-yellow-blue.jpg",
+        "alt_en": "Ecoflex 00-30 silicone in yellow and blue jars",
         "builder_identified_date": "2026-11-19"
-      }
+      },
+      "builder_specified_date": "2026-11-20"
     },
     {
       "id": "JP-06",
       "section": "components",
       "name": "第三層黑色表皮用矽膠",
       "quantity_basis": "依批次量測耗用量",
-      "specification": "黑色表皮用矽膠，黃藍兩罐。",
+      "specification": "Ecoflex 00-30，黃藍兩罐。",
       "links": [
         {
-          "label": "第三層矽膠：Amazon",
-          "label_en": "Layer 3 silicone — Amazon",
+          "label": "Ecoflex 00-30 — Amazon",
+          "label_en": "Ecoflex 00-30 — Amazon",
           "url": "https://amzn.asia/d/08yFspH2",
           "kind": "product"
         }
@@ -215,9 +180,9 @@
       "status": "builder_specified",
       "validation_note": "記錄 A/B 配比與固化條件。",
       "legacy_reference": "Silicone to make the black gel layer",
-      "name_en": "Layer 3: black-skin silicone",
+      "name_en": "Layer 3: black-skin silicone, Ecoflex 00-30",
       "quantity_basis_en": "Measure consumption per batch",
-      "specification_en": "Silicone for the black skin; yellow/blue jars.",
+      "specification_en": "Ecoflex 00-30; yellow/blue jars.",
       "validation_note_en": "Record A/B ratio and curing conditions.",
       "builder_specified_date": "2026-11-19",
       "photo": {

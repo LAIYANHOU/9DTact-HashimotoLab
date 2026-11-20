@@ -5,8 +5,8 @@
 | BOM item | Original photo | Identification / 識別する特徴 |
 | --- | --- | --- |
 | **JP-04 — Layer 1 / 第1層** | [Transparent silicone](materials/layer-1-transparent.jpg) | Two white bottles with Huizhou labels and QR codes / 恵州ラベルとQRコードのある白い2本 |
-| **JP-05 — Layer 2 / 第2層** | [Shore 0 silicone](materials/layer-2-shore-0.jpg) | Two bottles with blue “SHORE A 0” stickers / 青い「SHORE A 0」ラベルのある2本 |
-| **JP-06 — Layer 3 / 第3層** | [Yellow/blue jars](materials/layer-3-yellow-blue.jpg) | Yellow and blue silicone jars; black pigment is a separate BOM item / 黄色・青色の容器。黒色顔料は別項目 |
+| **Layer 2 — previous Taobao material / 第2層・旧材料** | [Shore 0 silicone](materials/layer-2-shore-0.jpg) | Two bottles with blue “SHORE A 0” stickers / 青い「SHORE A 0」ラベルのある2本 |
+| **JP-05 / JP-06 — Ecoflex 00-30** | [Yellow/blue jars](materials/layer-3-yellow-blue.jpg) | Yellow/blue Ecoflex jars; layer-2 substitution is untested / 黄色・青色の容器。第2層への代替は未試験 |
 | **JP-24 — Reused LED board / 再利用LED基板** | [LED board](led-board.jpg) | Green panel and two separate LED boards / 緑色のパネルと切り離した2枚のLED基板 |
 
 ## Photos to add / 追加する写真

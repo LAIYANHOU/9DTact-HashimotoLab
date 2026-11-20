@@ -32,6 +32,7 @@ def status_label(item, language):
         'builder_confirmed': ('Confirmed', '已確認'),
         'candidate': ('Candidate', '候選'),
         'search_only': ('Search', '搜尋'),
+        'not_found': ('Not found', '未找到'),
         'fabrication_required': ('Fabricate', '製作'),
         'conditional': ('If needed', '視需求'),
         'optional': ('Optional', '選用'),
@@ -57,7 +58,7 @@ def render_zh(data):
         for item in data['items']:
             if item['section'] != section['id']:
                 continue
-            links = '<br>'.join(f'[{cell(link["label"])}]({link["url"]})' for link in item['links']) or '待補'
+            links = '<br>'.join(f'[{cell(link["label"])}]({link["url"]})' for link in item['links']) or '—'
             row = [item['id'], design_marker(item) + item['name'], photo_cell(item), item['quantity_basis'], item['specification'], links,
                    f'{status_label(item, "zh")}<br>{item["validation_note"]}']
             lines.append('| ' + ' | '.join(cell(v) for v in row) + ' |')
@@ -82,7 +83,7 @@ def render_en(data):
         for item in data['items']:
             if item['section'] != section['id']:
                 continue
-            links = '<br>'.join(f'[{cell(link["label_en"])}]({link["url"]})' for link in item['links']) or 'Reuse existing assembly'
+            links = '<br>'.join(f'[{cell(link["label_en"])}]({link["url"]})' for link in item['links']) or '—'
             row = [f'**{item["id"]}**<br>{design_marker(item)}{item["name_en"]}', photo_cell(item), item['quantity_basis_en'],
                    item['specification_en'], links,
                    f'{status_label(item, "en")}<br>{item["validation_note_en"]}']

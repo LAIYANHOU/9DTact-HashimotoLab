@@ -12,7 +12,7 @@
 ## Materials and existing parts
 
 - [ ] Add readable material-label details and datasheets, A/B ratios, pigment loading, degassing and cure settings.
-- [ ] Compare a Japan-sourced layer-2 candidate with the current Taobao Shore 0A material.
+- [ ] Test Ecoflex 00-30 as the layer-2 substitute for the original Taobao Shore 0A material.
 - [ ] Record the purchased camera variant and the reused CSI–USB board pinout and connections.
 - [ ] Record the lab's available CSI–USB boards, LED boards and white shells.
 - [ ] Replace search links with exact product listings as selections are made.

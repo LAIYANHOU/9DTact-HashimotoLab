@@ -38,9 +38,9 @@ flowchart LR
 | Item | Hashimoto Lab build / この実装 |
 | --- | --- |
 | **Camera** | Amazon JP **B0C5W1QF65**, with the existing CSI–USB board |
-| **Layer 1 — transparent / 第1層・透明** | Clear 9345 silicone; Huizhou/QR-code bottles / 恵州ラベル・QRコードの容器 |
-| **Layer 2 — translucent / 第2層・半透明** | Taobao **Shore 0A**, replacing 5A; bottles marked “0” / 「0」ラベルの容器 |
-| **Layer 3 — black / 第3層・黒色** | Yellow/blue silicone jars + black pigment; links in the BOM / 黄色・青色の容器＋黒色顔料 |
+| **Layer 1 — transparent / 第1層・透明** | 9345 silicone, approx. Shore 45; Japan stock not found / 硬度は約 Shore 45、日本の在庫は未発見 |
+| **Layer 2 — translucent / 第2層・半透明** | **Ecoflex 00-30**, same as layer 3; untested substitute, expected to be close to Taobao Shore 0A / 未試験、Taobao Shore 0A に近い見込み |
+| **Layer 3 — black / 第3層・黒色** | **Ecoflex 00-30** + black pigment; links in the BOM / Ecoflex 00-30 ＋黒色顔料 |
 | **Acrylic window / アクリル窓** | Outsource to **はざいや / Hazaiya** |
 | **Casting molds / 注型モールド** | **3D print / 3D プリント** |
 | **★ CSI–USB / LED / white shell** | **Reuse. Outsourced white shell: White Nylon FS3300PA; no PLA. / 再利用。白色シェルの外注材は White Nylon FS3300PA、PLA 不可。** |

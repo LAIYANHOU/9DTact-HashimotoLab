@@ -6,7 +6,8 @@ Online references reviewed on 2026-11-18; builder updates added on 2026-11-19–
 
 - Six local hardware files, preserved byte-for-byte; [checksums and inventory](../hardware/manifest.json).
 - Original `9DTact_BOM.docx`, retained in the parent folder; [24 cleaned source product references](../bom/TAOBAO_REFERENCE.md).
-- Second-layer material: original Taobao translucent-silicone product, selected Shore 0 option; builder describes it as Shore 0A.
+- On 2026-11-20, the builder selected Ecoflex 00-30 as the provisional layer-2 substitute, using the same Amazon product as layer 3. It is untested for layer 2; closeness to the previous Taobao Shore 0A material is the builder’s expectation.
+- Layer 1: the builder estimates approximately Shore 45 and reports that Japanese stock has not been found; no procurement link is listed.
 - Four original lab photographs supplied and identified by the builder on 2026-11-19: layer-1 Huizhou/QR-code bottles (JP-04), layer-2 “SHORE A 0” bottles (JP-05), layer-3 yellow/blue jars (JP-06), and reused LED board (JP-24). See the [photo inventory](../assets/photos/README.md).
 - Camera previously purchased: [Amazon Japan ASIN B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65).
 - Acrylic camera window can be outsourced to [Hazaiya](https://www.hazaiya.co.jp/); other molds are 3D printed.
@@ -31,9 +32,7 @@ Online references reviewed on 2026-11-18; builder updates added on 2026-11-19–
 
 - [Hazaiya drawing quotation](https://www.hazaiya.co.jp/index.php/estimate-drawing): lists `.dxf`, `.ai` and `.svg` uploads. [Machining order page](https://www.hazaiya.co.jp/estimate): process options.
 - [SAC silicone catalog](https://sac-corp.co.jp/categories/additive_silicone.php): Japanese source for Smooth-On materials.
-- [SAC Ecoflex 00-30](https://sac-corp.myshopify.com/products/ecoflex-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD-00-30-%EF%BE%84%EF%BE%97%EF%BD%B2%EF%BD%B1%EF%BE%99%EF%BD%B7%EF%BD%AF%EF%BE%84) and [Ecoflex 00-50](https://sac-corp.myshopify.com/products/ecoflex-00-50-%EF%BD%B4%EF%BD%BA%EF%BE%8C%EF%BE%9A%EF%BD%AF%EF%BD%B8%EF%BD%BD): Japanese product pages; both displayed sold-out text during review.
-- [Smooth-On Ecoflex 00-30](https://www.smooth-on.com/products/ecoflex-00-30/) and [Ecoflex 00-50](https://www.smooth-on.com/products/ecoflex-00-50/): primary hardness, appearance and handling references.
-- [Ytech / 株式会社ワイテック material page](https://ytc-eng.com/silicon_syurui): explicitly lists milky-white Shore 0A silicones for its casting/prototyping services. Ask about raw A/B sales and sample supply.
+- [Smooth-On Ecoflex 00-30](https://www.smooth-on.com/products/ecoflex-00-30/): manufacturer material reference.
 - [SAC Silc-PIG](https://sac-corp.myshopify.com/products/silc-pig-9%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%B5%E3%83%B3%E3%83%97%E3%83%A9%E3%83%BC) and [Smooth-On Silc Pig](https://www.smooth-on.com/products/silc-pig/): pigment sourcing and silicone compatibility. Exact black package and dosing require checking.
 - [SAC Sil-Poxy](https://sac-corp.myshopify.com/products/sil-poxy): silicone bonding and repair adhesive.
 - [HAKKO FX600](https://www.hakko.com/japan/products/hakko_fx600.html): primary reference for a Japanese temperature-controlled soldering-iron candidate.
