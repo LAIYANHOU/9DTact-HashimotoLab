@@ -6,7 +6,7 @@ Online references reviewed on 2026-11-18; builder updates added on 2026-11-19–
 
 - Six local hardware files, preserved byte-for-byte; [checksums and inventory](../hardware/manifest.json).
 - Original `9DTact_BOM.docx`, retained in the parent folder; [24 cleaned source product references](../bom/TAOBAO_REFERENCE.md).
-- On 2026-11-20, the builder selected Ecoflex 00-30 as the provisional layer-2 substitute, using the same Amazon product as layer 3. It is untested for layer 2; closeness to the previous Taobao Shore 0A material is the builder’s expectation.
+- On 2026-11-20, the builder confirmed that remaining Taobao Shore 0A stock is used first for layer 2. Ecoflex 00-30 (the layer-3 product) is the backup only after that stock runs out; it is untested for layer 2 and expected by the builder to be close to the Taobao material.
 - Layer 1: the builder estimates approximately Shore 45 and reports that Japanese stock has not been found; no procurement link is listed.
 - Four original lab photographs supplied and identified by the builder on 2026-11-19: layer-1 Huizhou/QR-code bottles (JP-04), layer-2 “SHORE A 0” bottles (JP-05), layer-3 yellow/blue jars (JP-06), and reused LED board (JP-24). See the [photo inventory](../assets/photos/README.md).
 - Camera previously purchased: [Amazon Japan ASIN B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65).

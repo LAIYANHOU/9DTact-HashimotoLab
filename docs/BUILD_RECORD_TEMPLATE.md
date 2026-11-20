@@ -29,9 +29,9 @@ Copy this file for each build. Leave unknowns marked `TBC`.<br>
 
 | Field / 項目 | Layer 1: transparent / 第1層：透明 | Layer 2: translucent / 第2層：半透明 | Layer 3: black / 第3層：黒色 |
 | --- | --- | --- | --- |
-| Brand, model, variant and purchase link / 製品・仕様・購入先 | Transparent 9345 / 透明 9345 | Ecoflex 00-30; layer-2 substitute untested / 第2層の代替は未試験 | [Silicone](https://amzn.asia/d/08yFspH2); package/model / 包装・型番: TBC |
+| Brand, model, variant and purchase link / 製品・仕様・購入先 | Transparent 9345 / 透明 9345 | Taobao Shore 0A stock first; Ecoflex 00-30 backup (untested) / Taobao Shore 0A を優先、予備は Ecoflex 00-30（未試験） | [Silicone](https://amzn.asia/d/08yFspH2); package/model / 包装・型番: TBC |
 | Batch and opening date / ロット・開封日 | TBC | TBC | TBC |
-| Hardness and scale A/00 / 硬度とスケール | Approx. Shore 45 / 約 Shore 45 | Shore 00-30 | Shore 00-30 |
+| Hardness and scale A/00 / 硬度とスケール | Approx. Shore 45 / 約 Shore 45 | Shore 0A | Shore 00-30 |
 | A/B weights and ratio basis / A/B 重量・比率基準 | TBC | TBC | TBC |
 | Pigment and loading / 顔料・添加量 | N/A or TBC | N/A or TBC | [Pigment](https://ja.aliexpress.com/item/1005012698616201.html); amount / 添加量: TBC |
 | Degassing conditions / 脱泡条件 | TBC | TBC | TBC |

@@ -138,27 +138,27 @@
     {
       "id": "JP-05",
       "section": "components",
-      "name": "第二層半透明矽膠：Ecoflex 00-30",
+      "name": "第二層半透明矽膠：Shore 0A",
       "quantity_basis": "依批次量測耗用量",
-      "specification": "暫用 Ecoflex 00-30，與第三層相同。",
+      "specification": "優先使用剩餘的淘寶 Shore 0A。",
       "links": [
         {
-          "label": "Ecoflex 00-30 — Amazon",
-          "label_en": "Ecoflex 00-30 — Amazon",
+          "label": "備用 Ecoflex 00-30 — Amazon",
+          "label_en": "Backup Ecoflex 00-30 — Amazon",
           "url": "https://amzn.asia/d/08yFspH2",
           "kind": "product"
         }
       ],
       "status": "builder_specified",
-      "validation_note": "尚未試用，預期接近原淘寶 Shore 0A 材料。",
+      "validation_note": "用完後再以 Ecoflex 00-30 替代；第二層尚未試用，預期接近淘寶 Shore 0A。",
       "legacy_reference": "Translucent silicone",
-      "name_en": "Layer 2: translucent silicone, Ecoflex 00-30",
+      "name_en": "Layer 2: translucent silicone, Shore 0A",
       "quantity_basis_en": "Measure consumption per batch",
-      "specification_en": "Ecoflex 00-30 as a provisional substitute; same silicone as layer 3.",
-      "validation_note_en": "Not yet tested for layer 2; expected to be close to the original Taobao Shore 0A material.",
+      "specification_en": "Use the remaining Taobao Shore 0A stock first.",
+      "validation_note_en": "When depleted, use Ecoflex 00-30; not yet tested for layer 2, expected to be close to Taobao Shore 0A.",
       "photo": {
-        "path": "../assets/photos/materials/layer-3-yellow-blue.jpg",
-        "alt_en": "Ecoflex 00-30 silicone in yellow and blue jars",
+        "path": "../assets/photos/materials/layer-2-shore-0.jpg",
+        "alt_en": "Layer 2: two bottles with blue SHORE A 0 stickers",
         "builder_identified_date": "2026-11-19"
       },
       "builder_specified_date": "2026-11-20"
