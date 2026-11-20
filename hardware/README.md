@@ -31,14 +31,14 @@ Open STL files in a slicer. For STEP exchange, open the SolidWorks file, select 
 
 Geometry sheets: [base](../assets/parts/sensor-base.png) · [ring](../assets/parts/isolation-ring.png) · [LEAP mount](../assets/parts/leap-fingertip.png) · [Rotating preview](../assets/parts-turntable.gif).
 
-Record print material, layer height, supports and orientation in the [build record](../docs/BUILD_RECORD_TEMPLATE.md). **Reuse the white optical shell; do not print it in PLA.**
+Use the lab's **PLA** for the base, ring, LEAP adapter, molds and calibration board. Reuse the white shell; outsourced replacements use **White Nylon FS3300PA**, not PLA. Record layer height, supports and orientation in the [build record](../docs/BUILD_RECORD_TEMPLATE.md).
 
 ## Molds and acrylic window
 
 - **Molds:** extrude the original 9DTact DXF profiles to 2.5 / 2.8 / 3.0 mm, export STL and print. Source links: **JP-29** in the [BOM](../bom/BOM_JP.md).
 - **Window:** transparent acrylic, outsourced to Hazaiya; final production drawing is still needed. See [window outsourcing](../docs/WINDOW_OUTSOURCING.md).
 - **★ CSI–USB converter / ★ LED board / ★ white shell:** reuse existing assemblies.
-- **Calibration board:** obtain the original file from [upstream fabrication](https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication) if recalibration is required.
+- **Calibration board:** [original STL](https://github.com/linchangyi1/9DTact/blob/main/9DTact_Design/fabrication/calibration_board.STL); print in lab PLA.
 
 ## Upstream mapping
 

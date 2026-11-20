@@ -19,8 +19,8 @@ PARTS=[
 def label(draw,xy,value,size=22,fill=INK,bold=False,mono=False):
  name='DejaVuSansMono.ttf' if mono else 'DejaVuSans-Bold.ttf' if bold else 'DejaVuSans.ttf'
  draw.text(xy,value,font=ImageFont.truetype(str(FONTS/name),size),fill=fill)
-def read_mesh(part):
- raw=(ROOT/'hardware/mesh'/part['filename']).read_bytes(); count=struct.unpack_from('<I',raw,80)[0]
+def read_mesh(part,path=None):
+ raw=(Path(path) if path is not None else ROOT/'hardware/mesh'/part['filename']).read_bytes(); count=struct.unpack_from('<I',raw,80)[0]
  if len(raw)!=84+50*count: raise ValueError('Invalid binary STL size')
  mesh=np.array([struct.unpack_from('<9f',raw,84+50*i+12) for i in range(count)]).reshape(-1,3,3)
  part['triangles']=count; part['extents']=mesh.max(axis=(0,1))-mesh.min(axis=(0,1))
@@ -117,7 +117,14 @@ def animate(parts):
  frames[0].save(OUT/'parts-turntable.gif',save_all=True,append_images=frames[1:],duration=110,loop=0,optimize=True,disposal=2)
  print('Rendered rotating GIF',flush=True)
 def main():
- parser=argparse.ArgumentParser(); parser.add_argument('--animate',action='store_true'); parser.add_argument('--bom-only',action='store_true'); args=parser.parse_args()
+ parser=argparse.ArgumentParser(); parser.add_argument('--animate',action='store_true'); parser.add_argument('--bom-only',action='store_true')
+ parser.add_argument('--stl',type=Path); parser.add_argument('--output',type=Path); args=parser.parse_args()
+ if (args.stl is None)!=(args.output is None): parser.error('--stl and --output must be supplied together')
+ if args.stl is not None:
+  mesh=read_mesh({'filename':args.stl.name},args.stl)
+  args.output.parent.mkdir(parents=True,exist_ok=True)
+  draw_mesh(mesh,'#3983ad',(480,360),38,-55).save(args.output)
+  print('Rendered '+str(args.output),flush=True); return
  parts=[(part,read_mesh(part)) for part in PARTS]; bom_assets(parts)
  if args.bom_only: return
  static_assets(parts)

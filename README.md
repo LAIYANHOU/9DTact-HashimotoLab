@@ -31,7 +31,7 @@ flowchart LR
 
 ## Prepare / 製作前の準備
 
-1. **Print custom parts and molds.** Use the lab's STL files and the mold profiles linked in the [BOM](bom/BOM_JP.md). Check millimetre scale and dry-fit the camera PCB.<br>部品表の専用 STL とモールド図面を使って造形し、mm 単位のスケールと基板の仮組みを確認します。
+1. **Print custom parts and molds.** Use the lab's STL files and the mold profiles linked in the [BOM](bom/BOM_JP.md). Use **lab PLA for all printed parts except the white shell**. Check millimetre scale and dry-fit the camera PCB.<br>部品表の専用 STL とモールド図面を使います。**白色シェル以外は研究室の PLA で造形**し、スケールと基板の仮組みを確認します。
 2. Prepare the acrylic-window drawing and order from [Hazaiya](docs/WINDOW_OUTSOURCING.md).<br>アクリル窓の図面を準備し、はざいやへ発注します。
 3. Gather materials, tools and the reused **CSI–USB board, LED board and white shell** using the [BOM](bom/BOM_JP.md).<br>部品表の写真を見ながら、材料・工具と再利用する基板・シェルをそろえます。
 
@@ -43,7 +43,7 @@ flowchart LR
 | **Layer 3 — black / 第3層・黒色** | Yellow/blue silicone jars + black pigment; links in the BOM / 黄色・青色の容器＋黒色顔料 |
 | **Acrylic window / アクリル窓** | Outsource to **はざいや / Hazaiya** |
 | **Casting molds / 注型モールド** | **3D print / 3D プリント** |
-| **★ CSI–USB / LED / white shell** | **Reuse. Do not print the white shell in PLA. / 再利用。白色シェルは PLA 不可。** |
+| **★ CSI–USB / LED / white shell** | **Reuse. Outsourced white shell: White Nylon FS3300PA; no PLA. / 再利用。白色シェルの外注材は White Nylon FS3300PA、PLA 不可。** |
 
 ## Demolding layers 2 and 3 / 第2層・第3層の脱型
 

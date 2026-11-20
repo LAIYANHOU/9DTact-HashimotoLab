@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "review_date": "2026-11-19",
+  "review_date": "2026-11-20",
   "project": "9DTact-HashimotoLab",
   "currency": "JPY",
   "prices_verified": false,
@@ -48,7 +48,12 @@
       "name_en": "Camera",
       "quantity_basis_en": "1 per sensor",
       "specification_en": "Amazon Japan B0C5W1QF65.",
-      "validation_note_en": "Record the camera variant, PCB dimensions, lens and interface."
+      "validation_note_en": "Record the camera variant, PCB dimensions, lens and interface.",
+      "photo": {
+        "path": "../assets/bom/camera.png",
+        "alt_en": "Camera and ribbon cable",
+        "builder_provided_date": "2026-11-20"
+      }
     },
     {
       "id": "JP-02",
@@ -63,7 +68,12 @@
       "name_en": "★ Existing CSI-to-USB converter",
       "quantity_basis_en": "1 reused board per sensor",
       "specification_en": "Existing camera-compatible CSI–USB board.",
-      "validation_note_en": "Keep its cables; record pinout and supply."
+      "validation_note_en": "Keep its cables; record pinout and supply.",
+      "photo": {
+        "path": "../assets/bom/csi-usb.png",
+        "alt_en": "Existing CSI–USB converter board",
+        "builder_provided_date": "2026-11-20"
+      }
     },
     {
       "id": "JP-03",
@@ -97,7 +107,12 @@
       "name_en": "Clear acrylic camera window",
       "quantity_basis_en": "1 per sensor; spares as needed",
       "specification_en": "Clear acrylic window, outsourced to Hazaiya. Original-design thickness: 2 mm.",
-      "validation_note_en": "Set final thickness, outline and tolerances from the existing shell."
+      "validation_note_en": "Set final thickness, outline and tolerances from the existing shell.",
+      "photo": {
+        "path": "../assets/bom/acrylic-window.png",
+        "alt_en": "Clear acrylic camera window",
+        "builder_provided_date": "2026-11-20"
+      }
     },
     {
       "id": "JP-04",
@@ -232,95 +247,124 @@
       "quantity_basis_en": "Batch consumable",
       "specification_en": "Black pigment for layer 3.",
       "validation_note_en": "Record pigment loading and check light blocking after curing.",
-      "builder_specified_date": "2026-11-19"
+      "builder_specified_date": "2026-11-19",
+      "photo": {
+        "path": "../assets/bom/black-pigment.png",
+        "alt_en": "Black silicone pigment",
+        "builder_provided_date": "2026-11-20"
+      }
     },
     {
       "id": "JP-08",
       "section": "components",
       "name": "M2 熱熔嵌件",
       "quantity_basis": "原版參考 8；修改版待核對",
-      "specification": "M2 熱熔銅螺母；原規格 M2-5-3。",
+      "specification": "M2 熱熔嵌件。",
       "links": [
         {
-          "label": "Amazon JP 搜尋",
-          "url": "https://www.amazon.co.jp/s?k=M2+%E3%82%A4%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%88%E3%83%8A%E3%83%83%E3%83%88+%E7%9C%9F%E9%8D%AE+5+3",
-          "kind": "search",
-          "label_en": "Amazon JP search"
+          "label": "M2 inserts — Amazon",
+          "label_en": "M2 inserts — Amazon",
+          "url": "https://amzn.asia/d/03SohLQh",
+          "kind": "product"
         }
       ],
-      "status": "search_only",
+      "status": "builder_specified",
       "validation_note": "依 CAD 核對長度、外徑與埋入深度。",
       "legacy_reference": "M2 heat-set threaded inserts",
       "name_en": "M2 heat-set inserts",
       "quantity_basis_en": "Original reference: 8; modified build TBC",
-      "specification_en": "M2 heat-set inserts; legacy designation M2-5-3.",
-      "validation_note_en": "Match body length, outside diameter and insertion depth to CAD."
+      "specification_en": "M2 heat-set inserts.",
+      "validation_note_en": "Match body length, outside diameter and insertion depth to CAD.",
+      "photo": {
+        "path": "../assets/bom/m2-inserts.png",
+        "alt_en": "M2 heat-set inserts",
+        "builder_provided_date": "2026-11-20"
+      },
+      "builder_specified_date": "2026-11-20"
     },
     {
       "id": "JP-09",
       "section": "components",
       "name": "底座／外殼 M2 螺絲",
       "quantity_basis": "原版參考 4；修改版待核對",
-      "specification": "M2 × 6 mm 機械螺絲。",
+      "specification": "M2 螺絲套件；底座／外殼使用 M2 × 6 mm。",
       "links": [
         {
-          "label": "Amazon JP 搜尋",
-          "url": "https://www.amazon.co.jp/s?k=M2+6mm+%E5%B0%8F%E3%81%AD%E3%81%98+%E3%82%B9%E3%83%86%E3%83%B3%E3%83%AC%E3%82%B9",
-          "kind": "search",
-          "label_en": "Amazon JP search"
+          "label": "M2 screw kit — Amazon",
+          "label_en": "M2 screw kit — Amazon",
+          "url": "https://amzn.asia/d/0bO89G9S",
+          "kind": "product"
         }
       ],
-      "status": "search_only",
+      "status": "builder_specified",
       "validation_note": "確認頭部空間與鎖入長度。",
       "legacy_reference": "M2 screws for installing the sensor base",
       "name_en": "M2 base/shell screws",
       "quantity_basis_en": "Original reference: 4; modified build TBC",
-      "specification_en": "M2 × 6 mm machine screws.",
-      "validation_note_en": "Check head clearance and thread engagement."
+      "specification_en": "M2 screw assortment; use M2 × 6 mm for the base/shell.",
+      "validation_note_en": "Check head clearance and thread engagement.",
+      "photo": {
+        "path": "../assets/bom/m2-screw-kit.png",
+        "alt_en": "M2 screw assortment",
+        "builder_provided_date": "2026-11-20"
+      },
+      "builder_specified_date": "2026-11-20"
     },
     {
       "id": "JP-10",
       "section": "components",
       "name": "模具 M3 螺帽",
       "quantity_basis": "原版參考 8／套；列印模具待核對",
-      "specification": "模具固定用 M3 螺帽。",
+      "specification": "M3 螺帽，與 JP-11 共用同一套件。",
       "links": [
         {
-          "label": "Amazon JP 搜尋",
-          "url": "https://www.amazon.co.jp/s?k=M3+%E5%85%AD%E8%A7%92%E3%83%8A%E3%83%83%E3%83%88+%E3%82%B9%E3%83%86%E3%83%B3%E3%83%AC%E3%82%B9",
-          "kind": "search",
-          "label_en": "Amazon JP search"
+          "label": "M3 screw/nut kit — Amazon",
+          "label_en": "M3 screw/nut kit — Amazon",
+          "url": "https://amzn.asia/d/0erRoT15",
+          "kind": "product"
         }
       ],
-      "status": "search_only",
+      "status": "builder_specified",
       "validation_note": "數量依列印模具調整。",
       "legacy_reference": "M3 nuts for installing the mold",
       "name_en": "M3 mold nuts",
       "quantity_basis_en": "Original reference: 8 per set; printed molds TBC",
-      "specification_en": "M3 nuts for mold clamping.",
-      "validation_note_en": "Adjust quantity to the printed mold."
+      "specification_en": "M3 nuts; same kit as JP-11.",
+      "validation_note_en": "Adjust quantity to the printed mold.",
+      "photo": {
+        "path": "../assets/bom/m3-fastener-kit.png",
+        "alt_en": "M3 screw and nut assortment shared by JP-10 and JP-11",
+        "builder_provided_date": "2026-11-20"
+      },
+      "builder_specified_date": "2026-11-20"
     },
     {
       "id": "JP-11",
       "section": "components",
       "name": "模具 M3 螺絲",
       "quantity_basis": "原版參考 8／套；列印模具待核對",
-      "specification": "原 BOM 的 M3 × 30 mm 模具螺絲。",
+      "specification": "M3 螺絲套件，與 JP-10 共用。",
       "links": [
         {
-          "label": "Amazon JP 搜尋",
-          "url": "https://www.amazon.co.jp/s?k=M3+30mm+%E5%B0%8F%E3%81%AD%E3%81%98+%E3%83%8A%E3%83%83%E3%83%88",
-          "kind": "search",
-          "label_en": "Amazon JP search"
+          "label": "M3 screw/nut kit — Amazon",
+          "label_en": "M3 screw/nut kit — Amazon",
+          "url": "https://amzn.asia/d/0erRoT15",
+          "kind": "product"
         }
       ],
-      "status": "search_only",
-      "validation_note": "依列印模具核對夾持長度與孔位。",
+      "status": "builder_specified",
+      "validation_note": "螺絲長度依模具堆疊厚度選擇。",
       "legacy_reference": "M3 screws for installing the mold",
       "name_en": "M3 mold screws",
       "quantity_basis_en": "Original reference: 8 per set; printed molds TBC",
-      "specification_en": "M3 × 30 mm mold screws from the original BOM.",
-      "validation_note_en": "Match clamping length and hole positions to the printed mold."
+      "specification_en": "M3 screw assortment; same kit as JP-10.",
+      "validation_note_en": "Select screw length to match the mold stack.",
+      "photo": {
+        "path": "../assets/bom/m3-fastener-kit.png",
+        "alt_en": "M3 screw and nut assortment shared by JP-10 and JP-11",
+        "builder_provided_date": "2026-11-20"
+      },
+      "builder_specified_date": "2026-11-20"
     },
     {
       "id": "JP-12",
@@ -641,22 +685,35 @@
       "section": "reused",
       "name": "★ 白色 sensor shell",
       "quantity_basis": "1／sensor，來自既有零件",
-      "specification": "既有白色外殼，**不可用 PLA 列印。**",
-      "links": [],
+      "specification": "沿用既有白色外殼；外包製作指定 **White Nylon FS3300PA**。",
+      "links": [
+        {
+          "label": "STL",
+          "label_en": "STL",
+          "url": "https://github.com/linchangyi1/9DTact/blob/main/9DTact_Design/fabrication/sensor_shell.STL",
+          "kind": "reference"
+        }
+      ],
       "status": "reuse_skip",
-      "validation_note": "沿用現有光學外殼。",
+      "validation_note": "外包使用此 STL，**不可用 PLA 列印。**",
       "legacy_reference": null,
       "name_en": "★ Existing white sensor shell",
       "quantity_basis_en": "1 reused shell per sensor",
-      "specification_en": "Existing white shell. **Do not print in PLA.**",
-      "validation_note_en": "Keep the existing optical shell."
+      "specification_en": "Reuse the white shell; outsourced replacements: **White Nylon FS3300PA**.",
+      "validation_note_en": "Use this STL for outsourcing. **Do not print in PLA.**",
+      "photo": {
+        "path": "../assets/bom/white-shell.png",
+        "alt_en": "White sensor shell",
+        "builder_provided_date": "2026-11-20"
+      },
+      "builder_specified_date": "2026-11-20"
     },
     {
       "id": "JP-26",
       "section": "fabrication",
       "name": "修改版底座",
       "quantity_basis": "1／sensor",
-      "specification": "厚基板用 sensor base；STL 與 SolidWorks。",
+      "specification": "厚基板用 sensor base；STL 與 SolidWorks。 使用實驗室 PLA 列印。",
       "links": [
         {
           "label": "STL",
@@ -676,7 +733,7 @@
       "legacy_reference": null,
       "name_en": "Modified sensor base",
       "quantity_basis_en": "1 per sensor",
-      "specification_en": "Thicker-PCB sensor base; STL and SolidWorks.",
+      "specification_en": "Thicker-PCB sensor base; STL and SolidWorks. Print in the lab’s PLA.",
       "validation_note_en": "Record print settings and camera-PCB fit.",
       "photo": {
         "path": "../assets/bom/sensor-base.png",
@@ -689,7 +746,7 @@
       "section": "fabrication",
       "name": "修改版 camera isolation ring",
       "quantity_basis": "1／sensor",
-      "specification": "修改版相機遮光環；STL 與 SolidWorks。",
+      "specification": "修改版相機遮光環；STL 與 SolidWorks。 使用實驗室 PLA 列印。",
       "links": [
         {
           "label": "STL",
@@ -709,7 +766,7 @@
       "legacy_reference": null,
       "name_en": "Modified camera isolation ring",
       "quantity_basis_en": "1 per sensor",
-      "specification_en": "Revised camera isolation ring; STL and SolidWorks.",
+      "specification_en": "Revised camera isolation ring; STL and SolidWorks. Print in the lab’s PLA.",
       "validation_note_en": "Check slicer scale and light isolation after assembly.",
       "photo": {
         "path": "../assets/bom/isolation-ring.png",
@@ -722,7 +779,7 @@
       "section": "fabrication",
       "name": "LEAP fingertip 固定件",
       "quantity_basis": "依裝設手指數量",
-      "specification": "帶晶片座 STL 與可編輯 SolidWorks 指尖變體。",
+      "specification": "帶晶片座 STL 與可編輯 SolidWorks 指尖變體。 使用實驗室 PLA 列印。",
       "links": [
         {
           "label": "STL",
@@ -742,7 +799,7 @@
       "legacy_reference": null,
       "name_en": "LEAP fingertip attachment",
       "quantity_basis_en": "One per equipped finger",
-      "specification_en": "Chip-holder STL and editable SolidWorks fingertip variant.",
+      "specification_en": "Chip-holder STL and editable SolidWorks fingertip variant. Print in the lab’s PLA.",
       "validation_note_en": "Check screw engagement, cable clearance and joint travel.",
       "photo": {
         "path": "../assets/bom/leap-fingertip.png",
@@ -755,7 +812,7 @@
       "section": "fabrication",
       "name": "注型模具板（3D 列印）",
       "quantity_basis": "1 套（3 片）",
-      "specification": "Mold 1：2.5 mm；Mold 2：2.8 mm；底板：3.0 mm。",
+      "specification": "Mold 1：2.5 mm；Mold 2：2.8 mm；底板：3.0 mm。 使用實驗室 PLA 列印。",
       "links": [
         {
           "label": "Mold 1 DXF",
@@ -781,7 +838,7 @@
       "legacy_reference": null,
       "name_en": "Casting mold plates (3D print)",
       "quantity_basis_en": "1 set (3 plates)",
-      "specification_en": "Mold 1: 2.5 mm; mold 2: 2.8 mm; base: 3.0 mm.",
+      "specification_en": "Mold 1: 2.5 mm; mold 2: 2.8 mm; base: 3.0 mm. Print in the lab’s PLA.",
       "validation_note_en": "Extrude the DXF profiles to these thicknesses, export STL and print."
     },
     {
@@ -789,13 +846,13 @@
       "section": "fabrication",
       "name": "Calibration board",
       "quantity_basis": "校正時使用／共用",
-      "specification": "上游 calibration_board 設計。",
+      "specification": "原版 calibration_board.STL；使用實驗室 PLA 列印。",
       "links": [
         {
-          "label": "上游 fabrication",
-          "url": "https://github.com/linchangyi1/9DTact/tree/main/9DTact_Design/fabrication",
-          "kind": "reference",
-          "label_en": "Upstream fabrication"
+          "label": "STL",
+          "label_en": "STL",
+          "url": "https://github.com/linchangyi1/9DTact/blob/main/9DTact_Design/fabrication/calibration_board.STL",
+          "kind": "reference"
         }
       ],
       "status": "conditional",
@@ -803,8 +860,15 @@
       "legacy_reference": null,
       "name_en": "Calibration board",
       "quantity_basis_en": "Shared; when calibrating",
-      "specification_en": "Upstream calibration_board design.",
-      "validation_note_en": "Recalibrate after material or mechanical changes."
+      "specification_en": "Original calibration_board.STL; print in the lab’s PLA.",
+      "validation_note_en": "Recalibrate after material or mechanical changes.",
+      "photo": {
+        "path": "../assets/bom/calibration-board.png",
+        "alt_en": "3D preview rendered from the original 9DTact calibration_board.STL",
+        "source_url": "https://github.com/linchangyi1/9DTact/blob/main/9DTact_Design/fabrication/calibration_board.STL",
+        "source_sha256": "f9717c9311eace0419dd79b1ceb2568b782a202d650b9c751e64352bbf563d14"
+      },
+      "builder_specified_date": "2026-11-20"
     },
     {
       "id": "JP-31",

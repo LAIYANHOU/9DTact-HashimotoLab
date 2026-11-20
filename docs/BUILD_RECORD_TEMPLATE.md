@@ -23,7 +23,7 @@ Copy this file for each build. Leave unknowns marked `TBC`.<br>
 | Acrylic window / アクリル窓 | TBC | Hazaiya specification, thickness, tolerances / 外注仕様・板厚・公差: TBC | TBC |
 | ★ CSI–USB board / 変換基板 | Existing board ID / 既存基板 ID: TBC | Markings, pinout, wiring / 表記・ピン配置・配線: TBC | Reuse; matching replacement not found / 再利用、同一代替品なし |
 | ★ LED board / LED 基板 | Existing assembly ID / 既存品 ID: TBC | Wiring and supply / 配線・電源: TBC | TBC |
-| ★ White shell / 白色シェル | Existing part ID / 既存品 ID: TBC | Reuse; no PLA / 再利用、PLA 不可 | TBC |
+| ★ White shell / 白色シェル | Existing part ID / 既存品 ID: TBC | Reuse; outsourced: White Nylon FS3300PA, no PLA / 再利用、外注材：White Nylon FS3300PA、PLA 不可 | TBC |
 
 ## Silicone and bonding / シリコーン・接着
 

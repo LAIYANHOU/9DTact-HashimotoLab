@@ -1,6 +1,6 @@
 # Sources / 参考資料
 
-Online references reviewed on 2026-11-18; builder updates added on 2026-11-19.
+Online references reviewed on 2026-11-18; builder updates added on 2026-11-19–20.
 
 ## Builder-provided evidence
 
@@ -10,11 +10,14 @@ Online references reviewed on 2026-11-18; builder updates added on 2026-11-19.
 - Four original lab photographs supplied and identified by the builder on 2026-11-19: layer-1 Huizhou/QR-code bottles (JP-04), layer-2 “SHORE A 0” bottles (JP-05), layer-3 yellow/blue jars (JP-06), and reused LED board (JP-24). See the [photo inventory](../assets/photos/README.md).
 - Camera previously purchased: [Amazon Japan ASIN B0C5W1QF65](https://www.amazon.co.jp/dp/B0C5W1QF65).
 - Acrylic camera window can be outsourced to [Hazaiya](https://www.hazaiya.co.jp/); other molds are 3D printed.
-- Existing CSI–USB board, LED board and white shell are reused. A matching CSI–USB replacement was not found. White shell must not be PLA.
+- Existing CSI–USB board, LED board and white shell are reused. A matching CSI–USB replacement was not found. For outsourced white shells, the builder specifies **White Nylon FS3300PA**; the lab's PLA can be used for all other printed parts.
 - On 2026-11-19, the builder specified [layer-3 silicone](https://amzn.asia/d/08yFspH2) and [black pigment](https://ja.aliexpress.com/item/1005012698616201.html) and confirmed shared tools.
 - Builder-supplied isolation-ring SolidWorks source was added on 2026-11-19; its exact bytes are in the hardware manifest.
 - Both local LEAP fingertip files derive from official LEAP CAD.
 - Demolding layers 2 and 3: builder specifies careful utility-knife release along the mold–silicone interface, replacing hand pressure/pulling at the edge. The builder supplied [the assembly tutorial](https://www.youtube.com/watch?v=VxMceWVz7QQ) and screenshots showing both demolding stages. See the [comparison figure](../assets/process/demolding-comparison.png).
+
+- On 2026-11-20, the builder supplied eight JP-labelled screenshots, the selected Amazon links for JP-08–11, and the original shell/calibration-board STL links. The screenshots are preserved unchanged in `assets/bom/`; JP-10 and JP-11 share one image.
+- [Calibration-board preview](../assets/bom/calibration-board.png): rendered directly from the [original STL](https://github.com/linchangyi1/9DTact/blob/main/9DTact_Design/fabrication/calibration_board.STL). The source checksum is recorded in [BOM data](../bom/bom_jp.json).
 
 ## Original 9DTact design
 

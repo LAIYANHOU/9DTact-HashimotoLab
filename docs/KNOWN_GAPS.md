@@ -5,7 +5,7 @@
 - [ ] Export the upstream mold DXF profiles as STL and record print, sealing and release settings.
 - [ ] Add the acrylic-window drawing with thickness, tolerances and Hazaiya specifications.
 - [ ] Export STEP files; identify the SolidWorks configuration corresponding to each STL, especially the two LEAP fingertip variants.
-- [ ] Record base, ring and fingertip print material, orientation, layer height, supports and finishing.
+- [ ] Record print orientation, layer height, supports and finishing for the PLA base, ring and fingertip.
 - [ ] Record camera-PCB dimensions, installed clearances and modified-build fastener sizes/counts.
 - [ ] Record LEAP version, finger coverage, fastening and cable routing.
 
